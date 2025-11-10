@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+  background: linear-gradient(45deg,grey,white) ;
 }
 .div-pag {
     display: grid;
