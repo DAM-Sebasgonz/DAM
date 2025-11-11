@@ -427,18 +427,19 @@
 # # o
 # tupla02 = ()
 
-import random
-lista = []
-alfabeto = "abcdefghijklmnñopqrstuvwxyz"
-cont = 1
-while cont <= 10:
-    tupla = (random.choice(alfabeto), random.randint(1,100))
-    if tupla not in lista:
-        lista.append(tupla)
+# import random
+# lista = []
+# alfabeto = "abcdefghijklmnñopqrstuvwxyz"
+# cont = 1
+# while cont <= 10:
+#     tupla = (random.choice(alfabeto), random.randint(1,100))
+#     if tupla not in lista:
+#         lista.append(tupla)
 
-print(lista)
-print ("--")
-print(lista.sort())
+# print(lista)
+# print ("--")
+# print(lista.sort())
+
 
 
 

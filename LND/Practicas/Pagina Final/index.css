@@ -1,7 +1,7 @@
 body{
-background-image: linear-gradient(45deg, #3d3434, rgb(255, 251, 251));
-background-size: cover;
-background-attachment: fixed;
+    background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+    background-attachment: fixed;
+    
 }
 .div-pag {
     display: grid;
@@ -53,4 +53,7 @@ background-attachment: fixed;
     grid-row: span 2 / span 2;
     grid-column-start: 5;
     grid-row-start: 4;
+}
+img{
+    width: 350px;
 }
