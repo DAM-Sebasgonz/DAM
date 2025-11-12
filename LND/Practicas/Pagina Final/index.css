@@ -8,16 +8,21 @@ body{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 5px;
-}
     
+}
 .div1 {
     grid-column: span 6 / span 6;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .div2 {
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
     grid-row-start: 2;
+    grid-column-start: 1;
 }
 
 .div3 {
@@ -55,5 +60,15 @@ body{
     grid-row-start: 4;
 }
 img{
-    width: 350px;
+    width: 60%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+img:hover{
+    filter:
+    brightness(1.2)
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+    transform: scale(1.05);
+
 }
