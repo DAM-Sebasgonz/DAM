@@ -26,7 +26,6 @@ while True:
                     aux_persona.append(nombre)
                     aux_persona.append (trabajo)
                     aux_persona.append(salario)
-
                     personas.append(aux_persona)
         case "3":
             nif_borrar = input("Introduzca el NIF del usuario a borrar -->")
