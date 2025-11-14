@@ -18,15 +18,16 @@ while True:
             else: 
                 opc_crear = input("Desea insertar un nuevo usuario? (S/N)-->").lower()
                 if opc_crear == "s":
-                    nombre = input("Nombre? -->")
-                    trabajo = input("Trabaja? (S/N) -->").lower()
+                    nif = input("Escriba su NIF--> ")
+                    nombre = input("Nombre? --> ")
+                    trabajo = input("Trabaja? (S/N) --> ").lower()
                     salario = float(input("Introduzca el salario mensual--> ")) 
-                    
                     aux_persona.append(nif)
                     aux_persona.append(nombre)
                     aux_persona.append (trabajo)
                     aux_persona.append(salario)
                     personas.append(aux_persona)
+                    print("La persona se ha añadido")
         case "3":
             nif_borrar = input("Introduzca el NIF del usuario a borrar -->")
             for pers in personas:
