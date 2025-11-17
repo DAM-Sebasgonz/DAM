@@ -39,7 +39,7 @@ while True:
                 print(f"El NIF {nif_borrar} no se encuentra en la lista")
         case "4":
             for pers in personas:
-                print(f"NIF: {pers[0]} | Nombre: {pers[1]} | Trabaja: {pers[2]} | Salario: {pers[3]} ")  
+                print(f"NIF: {pers[0]} | Nombre: {pers[1]} | Trabaja: {pers[2]} | Salario: {pers[3]} ")
         case "9":
             print("\nFin del programa")
             break
