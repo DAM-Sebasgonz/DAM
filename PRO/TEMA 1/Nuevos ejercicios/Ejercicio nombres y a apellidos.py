@@ -18,3 +18,5 @@ match len(lista_datos):
             print(lista_datos[1] + " " + lista_datos[2] + ", " + lista_datos[0])
         elif nro_apellidos == 1:
             print(lista_datos[2] + "," + lista_datos[0] + ", " + lista_datos[1])
+    case _:
+        print("Formato no reconocido")

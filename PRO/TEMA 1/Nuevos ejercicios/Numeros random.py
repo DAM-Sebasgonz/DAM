@@ -20,11 +20,3 @@ while intentos <= nro_total_intentos:
 else:
     print(f"Po po po...no has acertado. El numero era el {valor_adivinar}")
 print("\nFin de ejecucion ")
-    
-
-
-
-
-
-# for n_intentos in range(1,6):
-#     pass

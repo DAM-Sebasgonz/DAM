@@ -11,7 +11,7 @@ else:
                     print(f"el numero {numero} es potencia de dos")
                     break
                 potencia_dos *= 2
-            else:
-                print(f"el numero {numero} no es potencia de 2")
+        else:
+            print(f"el numero {numero} no es potencia de 2")
     else:
         print("El numero no es potencia de dos")
