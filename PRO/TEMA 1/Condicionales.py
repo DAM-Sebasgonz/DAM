@@ -40,15 +40,15 @@
 
 # # if else 
 
-a = 3
-b = 5
+# a = 3
+# b = 5
 
-if a > b:
-    valor = "a > b"
-else:
-    if a == b
-        valor = "a = b"
-    else:
-        valor = 2
+# if a > b:
+#     valor = "a > b"
+# else:
+#     if a == b
+#         valor = "a = b"
+#     else:
+#         valor = 2
 
 
