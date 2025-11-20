@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let sueldo = parseFloat(prompt("Ingrese el sueldo del operario:"));
+let antiguedad = parseInt(prompt("Ingrese los años de antigüedad del operario:"));
+if (sueldo < 500 && antiguedad >= 10){
+    let aumento = sueldo * 0.20;
+    let sueldoFinal = sueldo + aumento;
+    document.write("El sueldo a pagar con aumento es: " + sueldoFinal);
+}
+else if (sueldo < 500 && antiguedad < 10){
+    let aumento = sueldo * 0.05;
+    let sueldoFinal = sueldo + aumento;
+    document.write("El sueldo a pagar con aumento es: " + sueldoFinal);
+}
+else {
+    document.write("El sueldo a pagar es: " + sueldo);
+}
+
+    </script>
+</body>
+</html>
