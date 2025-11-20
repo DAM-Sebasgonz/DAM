@@ -40,5 +40,28 @@
 # print(len(countries))
 
 
+# dicc = {"b": 17}
+# # valor_dvto = dicc.setdefault("a", 8)
+# valor_dvto = dicc.setdefault("b")
+# print(valor_dvto)
+# print(dicc)
+
+# dicc = {17:["b"]}
+
+# valor_dvto = dicc.setdefault(17, ["a"])
+# if valor_dvto == None:
+#     print("Insertado")
+#     dicc[17] = ["a"]
+# else:
+#     dicc[17] = ["a"]
+# print(dicc)
+
+
+
+
+
+
+
+
 
 

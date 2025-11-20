@@ -21,7 +21,7 @@ while True:
                     nif = input("Escriba su NIF--> ")
                     nombre = input("Nombre? --> ")
                     trabajo = input("Trabaja? (S/N) --> ").lower()
-                    salario = float(input("Introduzca el salario mensual--> ")) 
+                    salario = float(input("Introduzca el salario mensual--> "))
                     aux_persona.append(nif)
                     aux_persona.append(nombre)
                     aux_persona.append (trabajo)
@@ -45,6 +45,6 @@ while True:
             break
         case _:
             print("Introduzca una opcion valida")
-
+            
         
         
