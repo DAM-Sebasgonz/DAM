@@ -38,13 +38,15 @@
 # La salida debe ser mostrar el texto original con el cambio realizado.
 
 while True:
+    print("="*30)
     menu = "1. Contar vocales \n2. Contar frecuencia \n3. Reemplazar ocurrencias \n4. Reemplazar ocurrencia determinada"
     print(menu)
+    print("="*30)
 
-    opc = input("opcion? --> ")
+    opc = input("Opción? --> ")
     match opc:
         case "1":
-            vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ"
+            vocales = "aeiouáéíóúAEIOUÁÉÍÓÚäëïöüÄËÏÖü"
             con_vol = input("Ingrese una palabra que desee contar vocales: ").upper()
             for letra in vocales:
                 contador = con_vol.count(letra)
@@ -55,6 +57,10 @@ while True:
             contador = frase.count(palabra)
             print(f"La palabra {palabra} aparece {contador} veces")
         case "3":
+            opc_case3 = input("Va a reemplzazr")
+
+
+
             frase = input("Ingrese una frase: ").upper()
             palabra1 = input("Ingrese la palabra que desea reemplazar:").upper()
             palabra2 = input("Ingrese la palabra por la que desea reemplazarla:").upper()
@@ -62,6 +68,10 @@ while True:
             nueva_frase = frase.replace(palabra1, palabra2)
             print(f"Se han realizado {contador} reemplazos")
             print(nueva_frase)
+        case "4":
+            print("No se como se hace")
+        case "5":
+            break
         case "_":
-            print("No funciona ese coso")
+            print("Opcion invalida..ingrese otra")
     break
