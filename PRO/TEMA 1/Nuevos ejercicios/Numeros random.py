@@ -18,5 +18,5 @@ while intentos <= nro_total_intentos:
     except:
         print("debe introducir un numero") 
 else:
-    print(f"Po po po...no has acertado. El numero era el {valor_adivinar}")
+    print(f"Po po po... no has acertado. El numero era el {valor_adivinar}")
 print("\nFin de ejecucion ")
