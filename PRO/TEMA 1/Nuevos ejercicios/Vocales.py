@@ -1,3 +1,4 @@
+
 # Escribir un programa en Python que pide al usuario un texto, una vez leído
 # muestra un menú con las operaciones a realizar con él.
 # Menú
