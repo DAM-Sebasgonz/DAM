@@ -8,4 +8,3 @@ nombredep = input("Introduzca el nombre del departamento: ")
 
 #primera parte del departamento
 while True:
-    
