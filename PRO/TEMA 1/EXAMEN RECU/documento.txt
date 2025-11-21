@@ -1,0 +1,23 @@
+ejercicio 1
+
+
+para hacer esto " DEP-datosempleado " usar f string
+
+print(f"El codigo es {departamento}-{letrasnombre}{numerosdeldni}")
+
+nif = input("Introduce el NIF/NIE: ")
+nombredep = input("Introduzca el nombre del departamento: ")
+
+Sebastian Gonzalez nightingale
+
+
+palabras = nombre.split()
+    nueva_cadena = ""
+    for p in palabras:
+        nueva_cadena = nueva_cadena + p[0:4]
+    print(nueva_cadena)
+    break
+
+
+
+    
