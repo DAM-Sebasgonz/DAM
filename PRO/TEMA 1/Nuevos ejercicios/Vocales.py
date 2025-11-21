@@ -60,8 +60,6 @@ while True:
         case "3":
             opc_case3 = input("Va a reemplzazr")
 
-
-
             frase = input("Ingrese una frase: ").upper()
             palabra1 = input("Ingrese la palabra que desea reemplazar:").upper()
             palabra2 = input("Ingrese la palabra por la que desea reemplazarla:").upper()
