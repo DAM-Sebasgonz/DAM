@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let contador = 1;
+let pares = 0;
+let impares = 0;
+
+while (contador < 5) {
+    let numero = parseInt(prompt("Ingrese número:"));
+    
+    
+    if (numero % 2 == 0) {
+        pares = pares + 1;
+        document.write("Es PAR");
+    } else {
+        impares = impares + 1;
+        document.write("Es IMPAR");
+    }
+    document.write("<br>");
+    contador = contador + 1;
+}
+    </script>
+</body>
+</html>

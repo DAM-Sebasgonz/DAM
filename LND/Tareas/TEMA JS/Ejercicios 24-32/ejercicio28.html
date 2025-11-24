@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let contador = 1;
+        let sueldoBajo = 0;
+        let sueldoAlto = 0;
+        let gastoTotal = 0;
+
+        while (contador <= 5){
+            let sueldo = parseInt(prompt("ingrese el sueldo del empleado " + contador + ":"));
+            gastoTotal = gastoTotal + sueldo;
+            if (sueldo >= 100 && sueldo <= 300){
+                sueldoBajo = sueldoBajo + 1;
+            } 
+            else {
+                sueldoAlto = sueldoAlto + 1;
+            }
+            contador = contador + 1;
+        }
+        document.write("cantidad de empleados que cobran entre $100 y $300: " + sueldoBajo + "<br>");
+        document.write("cantidad de empleados que cobran más de $300: " + sueldoAlto + "<br>");
+        document.write("importe total que gasta la empresa en sueldos: $" + gastoTotal);
+
+    </script>
+</body>
+</html>
