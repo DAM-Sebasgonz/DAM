@@ -1,7 +1,6 @@
 personas = {}
 trabajadores = {}
 
-
 menu = """1. Insertar personas\n2. Insertar trabajadores\n3. Nombre de los trabajadores desempleados\n4. Nº de personas que trabajan en una provincia\n8. Mostrar personas\n9. Salir"""
 
 while True:
@@ -17,8 +16,7 @@ while True:
                 provincia = input("nombre -->").title()
 
                 if input(f"Seguro que desea crear el usuario con NIF:{nif_entrada} (S/N) -->").upper() == "S":
-                    personas[nif_entrada] = [nombre, edad, municipio, provincia]
-                
+                    personas[nif_entrada] = [nombre, edad, municipio, provincia] 
             else:
                 print("El usuario ya se encuentra en el sistema ")
         case "2":
