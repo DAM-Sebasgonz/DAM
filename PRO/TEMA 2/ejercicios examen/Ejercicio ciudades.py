@@ -1,5 +1,5 @@
-pais = {"pollalandia":["pollita"]}
-ciudades = {"pollita": [2]}
+pais = {}
+ciudades = {}
 
 menu = """Seleccione una opción:
 1. Insertar pais
@@ -55,13 +55,44 @@ while True:
                 opc_submenu = input("Opción --> ")
                 match opc_submenu:
                     case "4.1":
-                        for llave in pais.keys( ):
-                            print(llave)
+                        for nombre_pais, lista_ciudades in pais.items():
+                            print(f"{nombre_pais}")
+                            if not lista_ciudades:
+                                print("(Sin ciudades registradas)")
+                            else:
+                                for ciudad in lista_ciudades:
+                                    poblacion = ciudades.get(ciudad, 0)
+                                    print(f"{ciudad} : {poblacion:} habitantes")
                     case "4.2":
-                        pass
+                        lista_ciudades = list(ciudades.items())
+                        for i in range(len(lista_ciudades)):
+                            for j in range(len(lista_ciudades) - 1 - i):
+                                if lista_ciudades[j][1] < lista_ciudades[j + 1][1]:
+                                    lista_ciudades[j], lista_ciudades[j + 1] = lista_ciudades[j + 1], lista_ciudades[j] #bubble sort 
+                        print("\nCiudades ordenadas por población:")
+                        for ciudad, poblacion in lista_ciudades:
+                            nombre_pais = ""
+                        for pais_nombre, lista_ciudad_pais in pais.items():
+                            if ciudad in lista_ciudad_pais:
+                                nombre_pais = pais_nombre
+                            break
+                        print(f"{ciudad}: {poblacion:} habitantes - País: {nombre_pais}")
                     case "4.3":
-                        pass
+                        if not ciudades:
+                            print("\nNo hay ciudades registradas en el sistema")
+                        else:
+                            poblacion_total = sum(ciudades.values())
+                            if poblacion_total == 0:
+                                print("\nNo hay habitantes registrados")
+                            else:
+                                poblacion_por_pais = {}
+                                for nombre_pais, ciudades_pais in pais.items():
+                                    for pais, poblacion in sorted(poblacion_por_pais.items()):
+                                        porcentaje = (poblacion / poblacion_total * 100)
+                                        print(f"{pais:<30} {poblacion:>15,} {porcentaje:>14.2f}%")
+                                        
                     case "4.4":
+                        print("Volviendo al menú principal...")
                         break
                     case _:
                         print("Elija una opcion correcta")
