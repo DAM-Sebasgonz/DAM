@@ -45,6 +45,3 @@ while True:
             break
         case _:
             print("Introduzca una opcion valida")
-            
-        
-        
