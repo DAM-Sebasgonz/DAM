@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let t1_lado1, t1_lado2, t1_lado3, t1_tipo;
+let t2_lado1, t2_lado2, t2_lado3, t2_tipo;
+let t3_lado1, t3_lado2, t3_lado3, t3_tipo;
+let t4_lado1, t4_lado2, t4_lado3, t4_tipo;
+
+let equilateros = 0;
+let isosceles = 0;
+let escalenos = 0;
+
+t1_lado1 = parseFloat(prompt('Triángulo 1 - Ingrese lado 1:'));
+t1_lado2 = parseFloat(prompt('Triángulo 1 - Ingrese lado 2:'));
+t1_lado3 = parseFloat(prompt('Triángulo 1 - Ingrese lado 3:'));
+
+if (t1_lado1 === t1_lado2 && t1_lado2 === t1_lado3) {
+    t1_tipo = 'equilátero';
+    equilateros++;
+} else if (t1_lado1 === t1_lado2 || t1_lado1 === t1_lado3 || t1_lado2 === t1_lado3) {
+    t1_tipo = 'isósceles';
+    isosceles++;
+} else {
+    t1_tipo = 'escaleno';
+    escalenos++;
+}
+
+t2_lado1 = parseFloat(prompt('Triángulo 2 - Ingrese lado 1:'));
+t2_lado2 = parseFloat(prompt('Triángulo 2 - Ingrese lado 2:'));
+t2_lado3 = parseFloat(prompt('Triángulo 2 - Ingrese lado 3:'));
+
+if (t2_lado1 === t2_lado2 && t2_lado2 === t2_lado3) {
+    t2_tipo = 'equilátero';
+    equilateros++;
+} else if (t2_lado1 === t2_lado2 || t2_lado1 === t2_lado3 || t2_lado2 === t2_lado3) {
+    t2_tipo = 'isósceles';
+    isosceles++;
+} else {
+    t2_tipo = 'escaleno';
+    escalenos++;
+}
+
+t3_lado1 = parseFloat(prompt('Triángulo 3 - Ingrese lado 1:'));
+t3_lado2 = parseFloat(prompt('Triángulo 3 - Ingrese lado 2:'));
+t3_lado3 = parseFloat(prompt('Triángulo 3 - Ingrese lado 3:'));
+
+if (t3_lado1 === t3_lado2 && t3_lado2 === t3_lado3) {
+    t3_tipo = 'equilátero';
+    equilateros++;
+} else if (t3_lado1 === t3_lado2 || t3_lado1 === t3_lado3 || t3_lado2 === t3_lado3) {
+    t3_tipo = 'isósceles';
+    isosceles++;
+} else {
+    t3_tipo = 'escaleno';
+    escalenos++;
+}
+
+t4_lado1 = parseFloat(prompt('Triángulo 4 - Ingrese lado 1:'));
+t4_lado2 = parseFloat(prompt('Triángulo 4 - Ingrese lado 2:'));
+t4_lado3 = parseFloat(prompt('Triángulo 4 - Ingrese lado 3:'));
+
+if (t4_lado1 === t4_lado2 && t4_lado2 === t4_lado3) {
+    t4_tipo = 'equilátero';
+    equilateros++;
+} else if (t4_lado1 === t4_lado2 || t4_lado1 === t4_lado3 || t4_lado2 === t4_lado3) {
+    t4_tipo = 'isósceles';
+    isosceles++;
+} else {
+    t4_tipo = 'escaleno';
+    escalenos++;
+}
+
+document.write('Triángulo 1 (lados: ' + t1_lado1 + ', ' + t1_lado2 + ', ' + t1_lado3 + '): ' + t1_tipo + '<br>');
+document.write('Triángulo 2 (lados: ' + t2_lado1 + ', ' + t2_lado2 + ', ' + t2_lado3 + '): ' + t2_tipo + '<br>');
+document.write('Triángulo 3 (lados: ' + t3_lado1 + ', ' + t3_lado2 + ', ' + t3_lado3 + '): ' + t3_tipo + '<br>');
+document.write('Triángulo 4 (lados: ' + t4_lado1 + ', ' + t4_lado2 + ', ' + t4_lado3 + '): ' + t4_tipo + '<br>');
+
+document.write('<br>b) Cantidad de triángulos por tipo:<br>');
+document.write('Equiláteros: ' + equilateros + '<br>');
+document.write('Isósceles: ' + isosceles + '<br>');
+document.write('Escalenos: ' + escalenos + '<br>');
+
+let tipoMenor = 'equilátero';
+let cantidadMinima = equilateros;
+
+if (isosceles < cantidadMinima) {
+    cantidadMinima = isosceles;
+    tipoMenor = 'isósceles';
+}
+
+if (escalenos < cantidadMinima) {
+    cantidadMinima = escalenos;
+    tipoMenor = 'escaleno';
+}
+document.write("<br>")
+document.write(tipoMenor + ' (' + cantidadMinima + ' triángulo' + (cantidadMinima !== 1 ? 's' : '') + ')');
+
+
+
+    </script>
+</body>
+</html>
