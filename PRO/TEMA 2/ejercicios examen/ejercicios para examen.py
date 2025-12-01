@@ -1,5 +1,5 @@
-pais = {"pollalandia":["pollita"]}
-ciudades = {"pollita": [2]}
+pais = {}
+ciudades = {}
 
 menu = """Seleccione una opción:
 1. Insertar pais
@@ -35,7 +35,7 @@ while True:
         
                 pais.setdefault(pais_entrada, []).append(ciudad_entrada)
                 ciudades[ciudad_entrada] = poblacion_entrada
-        
+                print("="*40)
                 print(f"Ciudad {ciudad_entrada} añadida correctamente al país {pais_entrada}")
             else:
                 print(f"{ciudad_entrada} ya se encuentra en el sistema")
@@ -55,8 +55,8 @@ while True:
                 opc_submenu = input("Opción --> ")
                 match opc_submenu:
                     case "4.1":
-                        for llave in pais.keys( ):
-                            print(llave)
+                        
+                        pass
                     case "4.2":
                         pass
                     case "4.3":
@@ -65,3 +65,5 @@ while True:
                         break
                     case _:
                         print("Elija una opcion correcta")
+        case "5":
+            break
