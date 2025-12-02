@@ -4,6 +4,8 @@ productos ={}
 
 tickets = {}
 
+tipos_productos = ["lacteos", "panaderia", "carniceria", "fruta","verduras", "menaje", "limpieza", "licores"]
+
 menu = """1. Insertar producto
 2. Actualizar inventario
 3. Realizar venta 
@@ -21,7 +23,6 @@ while True:
     opcion_menu = input("Opcion --> ")
     match opcion_menu:
         case "1":
-            tipos_productos = ["lacteos", "panaderia", "carniceria", "fruta","verduras", "menaje", "limpieza", "licores"]
             print("="*40)
             producto_entrada = input("Introduzca un producto --> ").strip()
             tipos_productosent = input("Introduca el tipo de producto --> ").strip()
@@ -30,8 +31,10 @@ while True:
             else:
                 try:
                     cantidad = int(input("Introduzca cantidad del producto --> "))
-                    precio = float("Precio de venta del producto --> ")
-                    productos[tipos_productosent][producto_entrada] = [cantidad, precio]
+                    precio = float(input("Precio de venta del producto --> ")) #correcion de reinaldo precio = float("Precio de venta del producto --> “)
+                    if tipos_productosent not in productos:
+                        productos[tipos_productosent] = {}
+                        productos[tipos_productosent][producto_entrada] = [cantidad, precio]
                     print(f"{producto_entrada} se ha añadido correctamente al inventario")
                 except ValueError:
                     print("Error valor incorrecto")
@@ -40,15 +43,12 @@ while True:
             tipos_productosent = input("Introduzca el tipo del articulo --> ").strip()
             if tipos_productosent not in tipos_productos:
                 print(f"Error {tipos_productosent} no existe")
-                continue
-            if producto_entrada not in productos[tipos_productos]:
+            if producto_entrada not in productos[tipos_productosent]: #correcion de reinaldo if producto_entrada not in productos[tipos_productos]:
                 print(f"Error {producto_entrada} no existe")
-                continue
             try:
                 cantidad = int(input("Cantidad que desea cambiar --> "))
                 if cantidad < 0:
                     print("La cantidad del producto no puede ser menor a 0")
-                    continue
                 productos[tipos_productosent][productos][0] += cantidad
                 print("Cantidad del producto modificada correctamente")
             except ValueError:
@@ -59,15 +59,12 @@ while True:
             tipos_productosent = input("Que tipo de producto es --> ").strip()
             if producto_entrada not in productos:
                 print(f"El producto {producto_entrada} no esta en el inventario")
-                continue
             if tipos_productosent not in tipos_productos:
                 print(f"El producto {tipos_productosent} no existe")
-                continue
             try:
                 cantidad_deseada = int(input("que cantidad de producto desea llevar --> "))
                 if cantidad <= 0:
                     print("La cantida de producto no puede ser negativa o igual a cero")
-                    continue
                 existencia_producto = productos[tipos_productosent][producto_entrada][0]
                 precio = productos[tipos_productosent][1]             
                 if cantidad_deseada > existencia_producto:
@@ -93,12 +90,15 @@ while True:
                 opc_submenu = input("Opción --> ").upper
                 match opc_submenu:
                     case "a":
+                        
                         pass
                     case "b":
-                        pass
+                        break
         case "5":
             print("Hasta luego...") 
+            break
+            
         case _:
             print("opcion invalida")
-
+            continue
                        

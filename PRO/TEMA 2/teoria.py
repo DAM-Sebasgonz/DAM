@@ -440,7 +440,12 @@
 # print ("--")
 # print(lista.sort())
 
+# CONJUNTOS
 
+# crear conjunto
+
+conjunto01 = set()
+print(conjunto01)
 
 
 
