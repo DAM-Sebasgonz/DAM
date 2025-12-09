@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-</body>
-<script>
-let numero1;
+  </head>
+  <body></body>
+  <script>
+        let numero1;
 let numero2;
 let numero3;
 
@@ -19,11 +18,30 @@ function numeroscarga() {
 }
 
 function orden(n1, n2, n3) {
-    if (n1 < n2 && n1 < n3) document.write("El número menor es: " + n1);
-    if (n2 < n1 && n2 < n3) document.write("El número menor es: " + n2);
-    if (n3 < n1 && n3 < n2) document.write("El número menor es: " + n3);
+    if (n1 <= n2 && n1 <= n3) {
+        if (n2 <= n3) {
+            document.write(n1 + ", " + n2 + ", " + n3);
+        } else {
+            document.write(n1 + ", " + n3 + ", " + n2);
+        }
+    }
+    if (n2 <= n1 && n2 <= n3) {
+        if (n1 <= n3) {
+            document.write(n2 + ", " + n1 + ", " + n3);
+        } else {
+            document.write(n2 + ", " + n3 + ", " + n1);
+        }
+    }
+    if (n3 <= n1 && n3 <= n2) {
+        if (n1 <= n2) {
+            document.write(n3 + ", " + n1 + ", " + n2);
+        } else {
+            document.write(n3 + ", " + n2 + ", " + n1);
+        }
+    }
 }
+
 numeroscarga();
 orden(numero1, numero2, numero3);
-</script>
+     </script>
 </html>
