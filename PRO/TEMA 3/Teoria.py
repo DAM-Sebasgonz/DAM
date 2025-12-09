@@ -29,11 +29,3 @@
 #     saluda(name="gay")
 # else:
 #     saluda (name="hetero")
-
-    
-
-
-
-
-
-
