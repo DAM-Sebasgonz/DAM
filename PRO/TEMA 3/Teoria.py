@@ -29,3 +29,21 @@
 #     saluda(name="gay")
 # else:
 #     saluda (name="hetero")
+
+# PARAMETROS INMUTABLES
+
+
+# def f(a,b):
+#     print(f"a={a}")
+#     print(f"b={b}")
+#     a+= 100
+#     b = b*3
+#     print(f"a={a}")
+#     print(f"b={b}")
+
+# if __name__ == "__main__":
+#     a = 45
+#     b = "hola"
+#     f(a,b)
+#     print(f"En el principal a={a}")
+#     print(f"En el principal b={b}")
