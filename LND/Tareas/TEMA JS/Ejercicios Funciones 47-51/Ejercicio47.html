@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,29 @@
 </head>
 <body>
 </body>
-<script>
-    function mayor(a,b,c){
-        
-    }
-        
-</script>
+  <script>
+        function encontrarMayor(num1, num2, num3) {
+            let mayor = num1;
+            
+            if (num2 > mayor) {
+                mayor = num2;
+            }
+            
+            if (num3 > mayor) {
+                mayor = num3;
+            }
+            
+            return mayor;
+        }
+
+        let n1 = parseInt(prompt("Ingrese el primer número:"));
+        let n2 = parseInt(prompt("Ingrese el segundo número:"));
+        let n3 = parseInt(prompt("Ingrese el tercer número:"));
+
+        let mayor = encontrarMayor(n1, n2, n3);
+
+        document.write("<h2>Resultado</h2>");
+        document.write("<p>Los números ingresados son: " + n1 + ", " + n2 + ", " + n3 + "</p>");
+        document.write("<p>El mayor es: <strong>" + mayor + "</strong></p>");
+    </script>
 </html>
