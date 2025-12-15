@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+    <script>
+
+let peso = parseInt(prompt("Ingrese el peso de su paquete(KG): "));
+let codigo = parseInt(prompt("Ingrese destino: 1. Nacional y 2. Internacional "));
+let coste;
+
+function costeEnvio(peso, destino){
+    if (codigo === 1) { 
+        coste = 10 + (2 * peso);
+        document.write(">>> El coste del envio es: " + coste)
+    }
+    if (codigo === 2) {
+        coste = 20 + (5 * peso);
+        document.write(">>> El coste del envio es: " + coste)
+    }
+}
+costeEnvio(peso,codigo)
+    </script>
+</html>

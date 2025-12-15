@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let voto;
+    let rojo = 0;
+    let azul = 0;
+    let verde = 0;
+    let total;
+    let numero;
+
+    while(true){
+        voto = prompt("Ingrese su voto 1. Rojo 2. Azul 3. Verde o 0-Fin: ")
+        if (voto == 0){break} 
+        switch (voto) {
+            case "1":
+                rojo += 1
+                break
+            case "2":
+                azul += 1
+                break
+            case "3":
+                verde += 1
+                break
+            default:
+                document.write(">>> Voto invalido")  
+        }
+    }
+
+    document.write("--RESULTADOS--");
+    document.write("<br>")
+    document.write("Rojo: " + rojo + " votos");
+    document.write("<br>")
+    document.write("Azul: " + azul + " votos");
+    document.write("<br>")
+    document.write("Verde: " + verde + " votos");
+
+    document.write("<br>")
+
+    if(rojo > azul && rojo > verde){document.write("Ganador: Rojo con el" + totalR + "de los votos")}
+    if(azul > rojo && azul > verde){document.write("Ganador: Azul con el" + total + "de los votos")}
+    if(verde > rojo && verde > azul){document.write("Ganador: Verde con el" + total + "de los votos")}1
+    1
+</script>
+</html>

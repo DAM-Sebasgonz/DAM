@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+    <script>
+        // Sistema de Análisis Estadístico de Rendimiento Académico
+
+        let aprobados = 0
+        let suma
+
+        document.write("--Inicio del proceso de calificaciones--");
+
+        for (let i = 1; i <= 5; i++){
+            let nota_entrada = parseInt(prompt("Ingrese nota alumno "+ i + ":"));
+            document.write("<br>");
+            document.write("Ingrese nota alumno "+ i + " : " + nota_entrada);
+            if (nota_entrada < 1 && nota_entrada < 10){
+                document.write("<br>")
+                document.write("[Error]: Nota fuera de rango (0-10). Intente de nuevo");
+            }   
+            if (nota_entrada >= 5){
+                aprobados++;
+            } 
+            suma = nota_entrada;
+        }
+
+        let promedio = suma/5;
+
+        document.write("<br>")
+        document.write("-- REPORTE ESTADÍSTICO --")
+        document.write("<br>")
+        document.write("Total de alumnos aprobados: " + aprobados)
+        document.write("<br>")
+        document.write("Promedio del grupo: " + promedio)
+
+
+        
+
+
+        
+
+        
+
+            
+
+
+        
+    </script>
+</html>
