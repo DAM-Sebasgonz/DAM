@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sumaManana = 0;
+let sumaTarde = 0;
+let sumaNoche = 0;
+
+let i = 0;
+while (i < 5) {
+    let edad = parseInt(prompt("Turno Mañana - Ingrese edad del estudiante " + (i + 1) + ":"));
+    sumaManana += edad;
+    i++;
+}
+
+i = 0;
+while (i < 6) {
+    let edad = parseInt(prompt("Turno Tarde - Ingrese edad del estudiante " + (i + 1) + ":"));
+    sumaTarde += edad;
+    i++;
+}
+
+i = 0;
+while (i < 11) {
+    let edad = parseInt(prompt("Turno Noche - Ingrese edad del estudiante " + (i + 1) + ":"));
+    sumaNoche += edad;
+    i++;
+}
+
+let promedioManana = sumaManana / 5;
+let promedioTarde = sumaTarde / 6;
+let promedioNoche = sumaNoche / 11;
+
+document.write("<br>");
+document.write("Promedio Turno Mañana: " + promedioManana + "<br>");
+document.write("Promedio Turno Tarde: " + promedioTarde + "<br>");
+document.write("Promedio Turno Noche: " + promedioNoche + "<br>");
+document.write("<br>");
+
+if (promedioManana > promedioTarde && promedioManana > promedioNoche) {
+    document.write("El turno MAÑANA tiene el promedio de edades mayor<br>");
+} else if (promedioTarde > promedioManana && promedioTarde > promedioNoche) {
+    document.write("El turno TARDE tiene el promedio de edades mayor<br>");
+} else {
+    document.write("El turno NOCHE tiene el promedio de edades mayor<br>");
+}
+    </script>
+</body>
+</html>

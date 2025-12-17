@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let numero = parseInt(prompt("Ingrese un valor del 1 al 10:"));
+if (numero >= 1 && numero <= 10) {
+    document.write("Tabla de multiplicar del " + numero + "");
+    document.write("<br>");
+    for (let i = 1; i <= 12; i++) {
+        let resultado = numero * i;
+        document.write(numero + " x " + i + " = " + resultado + "<br>");
+    }
+} 
+else {
+    document.write("Por favor, ingrese un número válido entre 1 y 10.");
+}
+
+    </script>
+</body>
+</html>
