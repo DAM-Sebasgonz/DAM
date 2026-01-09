@@ -15,15 +15,15 @@ print(paso, "x", numero, "=", (paso * numero))
 # ERRORES INTENCIONADOS:
 # - En Python NO existe ++paso ni paso++.
 # - Además, hay una línea con paréntesis mal cerrados.
-print(paso, "x", numero, "=", (++paso * numero))
-print(paso, "x", numero, "=", (++paso * numero))
-print(paso, "x", numero, "=", (++paso * numero))
-print(paso, "x", numero, "=", (++paso * numero))
+print(paso, "x", numero, "=", (paso+= * numero))
+print(paso, "x", numero, "=", (paso+= * numero))
+print(paso, "x", numero, "=", (paso+= * numero))
+print(paso, "x", numero, "=", (paso+= * numero))
 
 print(" 6 x", numero, "=", (paso++ * numero))
 print(paso, "x", numero, "=", (paso++ * numero))
-print(paso, "x", numero, "=", paso++ * numero)
-print(paso, "x", numero, "=", paso++ * numero
+print(paso, "x", numero, "=", (paso++ * numero)
+print(paso, "x", numero, "=", (paso++ * numero)
 print(paso, "x", numero, "=", 10 * numero)
 
 print("----------------------")

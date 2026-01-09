@@ -1,0 +1,2 @@
+Particion EFI - 60GB
+Particion Swap - 
