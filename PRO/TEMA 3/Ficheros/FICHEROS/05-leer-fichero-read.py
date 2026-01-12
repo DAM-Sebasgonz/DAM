@@ -1,5 +1,5 @@
 try:
-    fichero = open('dir_trab/fichero01.txt', 'r')
+    fichero = open('', 'r')
 except:
     print("Ha ocurrido un error con el fichero\n")
 else:
