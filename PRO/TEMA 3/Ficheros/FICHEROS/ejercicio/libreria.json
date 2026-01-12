@@ -1,0 +1,50 @@
+{
+    "libros": [
+        {
+            "idioma": "en",
+            "título": "Everyday Italian",
+            "autor": ["Giada De Laurentiis"],
+            "año": "2005",
+            "precio": "30.00",
+            "categoría": "COCINA"
+        },
+        {
+            "idioma": "en",
+            "título": "Harry Potter",
+            "autor": ["J K. Rowling"],
+            "año": "2005",
+            "precio": "29.99",
+            "categoría": "INFANTIL"
+        },
+        {
+            "idioma": "en",
+            "título": "XQuery Fast",
+            "autor": [
+                "James McGovern",
+                "James Linn"
+            ],
+            "año": "2003",
+            "precio": "49.99",
+            "categoría": "DISEÑO WEB"
+        },
+        {
+            "idioma": "en",
+            "título": ["Learning XML"],
+            "autor": ["Erik T. Ray"],
+            "año": "2003",
+            "precio": "39.95",
+            "categoría": "DISEÑO WEB"
+        }
+    ],
+    "revistas": [
+        {
+            "idioma": "es",
+            "título": "Hola",
+            "autor": ["Editorial libre"],
+            "año": "2023",
+            "mes":"12",
+            "precio": "5.00",
+            "categoría": "VARIEDADES"
+        }
+    ]
+}

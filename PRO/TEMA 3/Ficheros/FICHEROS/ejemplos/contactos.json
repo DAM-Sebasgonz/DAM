@@ -1,0 +1,17 @@
+[
+   {
+      "campo01": "uno",
+      "campo02": "dos",
+      "campo03": "tres"
+   },
+   {
+      "campo01": "1",
+      "campo02": "2",
+      "campo03": "3"
+   },
+   {
+      "campo01": "cuatro",
+      "campo02": "",
+      "campo03": "seis"
+   }
+]

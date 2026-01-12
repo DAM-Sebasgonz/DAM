@@ -1,0 +1,18 @@
+<data name="contactos">
+    <contacto id="1">
+        <nombre>Manuel</nombre>
+        <email>manuel@ejemplo.com</email>
+    </contacto>
+    <contacto id="2">
+        <nombre>Lorena</nombre>
+        <email>lorena@ejemplo.com</email>
+    </contacto>
+    <contacto id="3">
+        <nombre>Javier</nombre>
+        <email>javier@ejemplo.com</email>
+    </contacto>
+    <contacto id="4">
+        <nombre>Marta</nombre>
+        <email>marta@ejemplo.com</email>
+    </contacto>
+</data>
