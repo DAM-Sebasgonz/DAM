@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+    <script>
+        class pokemon{
+            nombre; 
+            nivel
+            vida;
+            ataque;
+            
+            constructor(nombre, nivel){
+                this.nombre = nombre
+                this.nivel = nivel
+                this.vida =  nivel * 3
+                this.ataque = nivel * 5
+            }
+            
+            recibirDaño(valor){
+                this.vida -= valor
+                alert(this.nombre + "Le queda" + this.vida + "vida")
+            }
+        }
+
+        function batalla(poke1, poke2){
+            while(poke1.vida > 0 && poke2.vida > 0)
+            {
+                poke1.recibirDaño(poke2.ataque)
+                if (poke1.vida <= 0) return poke2;
+
+                poke2.recibirDaño(poke1.ataque)
+                if (poke2.vida <= 0) return poke1;
+            }
+        }
+
+        let pokemon1 = new pokemon("Pikachu", 20);
+        let pokemon2 = new pokemon("Wartotle", 20);
+
+        let ganador = batalla (pokemon1 , pokemon2 );
+
+        alert("El ganador: " + batalla(pokemon1, pokemon2).nombre)
+
+        //Crear otro pokemmon y una funcion que haga daño uno al otro segun su ataque
+
+        
+
+
+
+        
+
+    </script>
+</html>
