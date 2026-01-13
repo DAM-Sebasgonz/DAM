@@ -1,0 +1,7 @@
+<data name="contactos">
+    <contacto id="1">
+        <nombre>Manuel</nombre>
+        <empleo>Desarrollador web</empleo>
+        <email>manuel@ejemplo.com</email>
+    </contacto>
+    </data>

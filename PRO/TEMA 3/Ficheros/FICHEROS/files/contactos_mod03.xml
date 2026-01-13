@@ -1,0 +1,22 @@
+<data name="contactos">
+    <contacto id="1">
+        <nombre>Manuel</nombre>
+        <empleo>Desarrollador web</empleo>
+        <email>manuel@ejemplo.com</email>
+    <empresa_actual>ninguna</empresa_actual></contacto>
+    <contacto id="2">
+        <nombre>Lorena</nombre>
+        <empleo>Gestora de proyectos</empleo>
+        <email>lorena@ejemplo.com</email>
+    <empresa_actual>ninguna</empresa_actual></contacto>
+    <contacto id="3">
+        <nombre>Javier</nombre>
+        <empleo>DAnalista de datos</empleo>
+        <email>javier@ejemplo.com</email>
+    <empresa_actual>ninguna</empresa_actual></contacto>
+    <contacto id="4">
+        <nombre>Marta</nombre>
+        <empleo>Experta en Python</empleo>
+        <email>marta@ejemplo.com</email>
+    <empresa_actual>ninguna</empresa_actual></contacto>
+</data>

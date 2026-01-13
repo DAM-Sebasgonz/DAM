@@ -47,3 +47,16 @@
 #     f(a,b)
 #     print(f"En el principal a={a}")
 #     print(f"En el principal b={b}")
+
+
+#Funciones LAMBDA
+
+# def f(x):
+#     return x**2
+
+# data = range(1,11)
+# map_gen = map(lambda n: pow(n,2), data)
+
+# for valor in map_gen:
+#     print(valor)
+

@@ -1,0 +1,22 @@
+[
+   {
+      "email": "manuel@ejemplo.com",
+      "empleo": "Desarrollador Web",
+      "nombre": "Manuel"
+   },
+   {
+      "email": "lorena@ejemplo.com",
+      "empleo": "Gestora de proyectos",
+      "nombre": "Lorena"
+   },
+   {
+      "email": "javier@ejemplo.com",
+      "empleo": "Analista de datos",
+      "nombre": "Javier"
+   },
+   {
+      "email": "marta@ejemplo.com",
+      "empleo": "'Experta en Python",
+      "nombre": "Marta"
+   }
+]
