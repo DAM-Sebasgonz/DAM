@@ -3,7 +3,7 @@ lista = []
 
 # versión usando with
 
-with open ("files/DatosPersonas.csv", "r", newline="\n") as csvfile:
+with open ("C:/DAM/PRO/TEMA 3/Ficheros/FICHEROS/files/DatosPersonas.csv", "r", newline="\n") as csvfile:
 
     # creamos un objeto con el método reader() para la lectura de los datos
     reader = csv.reader(csvfile, delimiter = ";")  
@@ -12,9 +12,9 @@ with open ("files/DatosPersonas.csv", "r", newline="\n") as csvfile:
 
     # IMPORTANTE -- los datos del reader sólo se puede recorrer una única vez
 
-    for nombre, empleo, email in reader:
-        # imprimir en pantalla
-        print (nombre, empleo, email)
+    # for nombre, empleo, email in reader:
+    #     # imprimir en pantalla
+    #     print (nombre, empleo, email)
 
     # for tupla in reader:
     #     # imprimir en pantalla la tupla que se ha obtenido
@@ -22,9 +22,9 @@ with open ("files/DatosPersonas.csv", "r", newline="\n") as csvfile:
 
     # lo almacenamos en una lista para posteriormente trabajar con ella
 
-    # for nombre, empleo, email in reader: 
-    #     # generar de nuevo la lista original
-    #     lista.append((nombre, empleo, email))
+    for nombre, empleo, email in reader: 
+        # generar de nuevo la lista original
+        lista.append((nombre, empleo, email))
 
 #     for tupla in reader: 
 #         # generar de nuevo la lista original
@@ -35,11 +35,11 @@ with open ("files/DatosPersonas.csv", "r", newline="\n") as csvfile:
 
 # versión 02 sin usar with
 
-# import csv
-# lista = []
+import csv
+lista = []
 
-# csvfile = open ("files/DatosPersonas.csv", "r", newline="\n")
-# reader = csv.reader(csvfile, delimiter = ";")
+csvfile = open ("files/DatosPersonas.csv", "r", newline="\n")
+reader = csv.reader(csvfile, delimiter = ";")
 
 #     # en reader está todo lo leído cada elemento es una tupla
 #     # que corresponde a una los elementos de una fila del fichero
@@ -48,9 +48,9 @@ with open ("files/DatosPersonas.csv", "r", newline="\n") as csvfile:
 #     # imprimir en pantalla
 #     print (nombre, empleo, email)
 
-# # cerramos el fichero despúes de usados los datos de la lista generada por el reader
+# # IMPORTANTE ... cerramos el fichero despúes de usados los datos de la lista generada por el reader
 
-# csvfile.close() 
+csvfile.close() 
 
 # # IMPORTANTE -- la lista de datos sólo se puede recorrer una única vez
 
