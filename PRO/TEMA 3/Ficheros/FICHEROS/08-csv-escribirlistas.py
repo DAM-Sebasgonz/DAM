@@ -8,8 +8,8 @@ contactos = [
         ("Javier", "Analista de datos", "javier@ejemplo.com"),
         ("Marta", "Experta en Python", "marta@ejemplo.com") ]
 
-with open ("files/contactos.csv", "w", newline="\n") as csvfile:
+with open ("C:/DAM/PRO/TEMA 3/Ficheros/FICHEROS/files/contactos.csv", "w", newline="\n") as csvfile:
         # creamos un objeto de la clase
-        writer = csv.writer(csvfile, delimiter = ";")
+        writer = csv.writer(csvfile, delimiter = ",")
         for contacto in contactos:
                 writer.writerow(contacto)
