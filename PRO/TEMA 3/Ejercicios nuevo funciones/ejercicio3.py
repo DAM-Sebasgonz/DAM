@@ -17,3 +17,5 @@ def cuentaParImpar(numero):
         return (pares_resto + 1, impares_resto)
     else:
         return (pares_resto, impares_resto + 1) #quice hacerlo como lo explicaste en clases para el dia del examen verlo mas claro por si cae ejercicio de recursividad ;)
+    
+print(cuentaParImpar(345))
