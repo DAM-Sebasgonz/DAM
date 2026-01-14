@@ -3,5 +3,5 @@
 fichero = open("files/string.bin", "wb")
 
 # Escribir dos líneas de texto en modo binario
-fichero.write(b"Welcome to LinuxHint.\nLearn Python Programming.")
+fichero.write(b"Hola mundo \n Desde Ficheros de Python.")
 fichero.close()
