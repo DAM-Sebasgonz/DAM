@@ -1,12 +1,12 @@
 # copiar un fichero en otro en modo binario
 
 try:
-    fichero_lectura = open('files/jack_russell.png', 'rb')
+    fichero_lectura = open('C:/DAM/PRO/TEMA 3/Ficheros/FICHEROS/files/jack_russell.png', 'rb')
 except:
     print("Ha ocurrido un error con el fichero de lectura\n")
 else:
     try:
-        fichero_escritura = open('files/perro.png', 'wb')
+        fichero_escritura = open('C:/DAM/PRO/TEMA 3/Ficheros/FICHEROS/files/Perro.png', 'wb')
     except:
         print("Ha ocurrido un error con el fichero de escritura\n")
     else:
