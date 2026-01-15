@@ -10,7 +10,7 @@ def sinDuplicados(lista):
     else:
         return [primero] + resto  # si no, lo pongo al principio
     
-print(sinDuplicados([1, 3, 5, 2, 1, 4, 7, 7, 3].sort()))
+print(sinDuplicados([1, 3, 5, 2, 1, 4, 7, 7, 3]))
 
 
 
