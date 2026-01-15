@@ -31,6 +31,6 @@ create table if not exists Proyecto (
     ClienteID Varchar(9), -- FK_Cliente
     ResponsableID Varchar(9), -- FK_Empleado
 	Presupuesto Int Not Null
-) Engine = InnoDB
+) Engine = InnoDB;
 
-create table if not exists 
+
