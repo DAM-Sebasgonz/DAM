@@ -129,5 +129,4 @@ def mostrar_reservas():
 if __name__ == "__main__": 
     funcion_menu()
     
-    
 # Cada vez que se quiere acceder al diccionario mediante el [reserva] se entra y se pregunta directamente por el dato del diccionario.
