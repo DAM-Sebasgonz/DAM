@@ -25,10 +25,17 @@ create table if not exists Proyecto (
     FechaEntrega Datetime,
     ClienteID Varchar(9),
     ResponsableID Varchar(9),
-    Presupuesto Int Not Null,
-    Primary key (ProyectoID),
-    Constraint FK_Proyectos_Clientes Foreign Key (ClienteID) References Clientes(CIF) ON UPDATE CASCADE ON DELETE RESTRICT,
-    Constraint FK_Proyectos_Empleados Foreign Key (ResponsableID) References Empleados(DNI) ON UPDATE CASCADE ON DELETE RESTRICT
+    Presupuesto Int Not Null check(Presupuesto >= 1000),
+    revision_presupuesto int (Presupuesto * 1.15 )
+    Primary Key (ProyectoID),
+    CHECK (FechaInicio >= '2025-01-01' AND FechaInicio <= FechaEntrega),
+    
+    Constraint FK_Proyectos_Clientes Foreign Key (ClienteID) References Clientes(CIF) 
+		ON UPDATE CASCADE 
+		ON DELETE RESTRICT,
+    Constraint FK_Proyectos_Empleados Foreign Key (ResponsableID) References Empleados(DNI) 
+		ON UPDATE CASCADE 
+		ON DELETE RESTRICT
 ) Engine = InnoDB;
 
 create table if not exists Tareas (
@@ -38,7 +45,9 @@ create table if not exists Tareas (
     FechaLimite Datetime Not Null,
     Descripcion Varchar(100),
     Primary Key (TareaID, ProyectoID),
-    CONSTRAINT FK_Tareas_Proyecto FOREIGN KEY (ProyectoID) REFERENCES Proyecto(ProyectoID) ON UPDATE CASCADE ON DELETE RESTRICT
+    CONSTRAINT FK_Tareas_Proyecto FOREIGN KEY (ProyectoID) REFERENCES Proyecto(ProyectoID) 
+		ON UPDATE CASCADE 
+		ON DELETE RESTRICT
 ) Engine = InnoDB;
 
 create table if not exists Avance_Tareas (
@@ -46,5 +55,14 @@ create table if not exists Avance_Tareas (
     ProyectoID Int,
     PorcentajeAvance Int not null default 0 check (PorcentajeAvance between 0 and 100),
     Primary Key (TareaID, ProyectoID),
-    Constraint FK_AvanceTareas_Tareas Foreign Key (TareaID, ProyectoID) References Tareas(TareaID, ProyectoID) ON UPDATE CASCADE ON DELETE RESTRICT
+    Constraint FK_AvanceTareas_Tareas Foreign Key (TareaID, ProyectoID) References Tareas(TareaID, ProyectoID) 
+		ON UPDATE CASCADE 
+        ON DELETE RESTRICT
 ) Engine = InnoDB;
+
+
+
+
+
+
+
