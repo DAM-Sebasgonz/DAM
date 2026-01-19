@@ -60,7 +60,7 @@ def zona_disponible():
 def verificar_NIF_NIE( valor:str ) -> bool:
     '''Verifica que valor sea un NIF o NIE correcto.
        valor es el nif o nie a validar.
-       Retorna True si es correcto, False en caso contrario.''' #Esto se ha sacado de un ejemplo que haz colgado en el aula virtual
+       Retorna True si es correcto, False en caso contrario.''' #Esto se ha sacado de un ejemplo que has colgado en el aula virtual
 
     alfabeto_nif = 'TRWAGMYFPDXBNJZSQVHLCKE'
 
@@ -109,7 +109,7 @@ def cancelar_reserva():
     if not verificar_NIF_NIE(dni_cancelar): 
         print("DNI no válido.")
         return
-    for zona, datos in entradas:
+    for zona, datos in entradas.items():
         for reserva in datos["reservas"]:
             if reserva["dni"] == dni_cancelar:
                 datos["asientos_disponibles"] += reserva["asientos_reservados"]
@@ -127,6 +127,6 @@ def mostrar_reservas():
                 print(f"  DNI: {reserva['dni']}, Nombre: {reserva['nombre']}, Asientos reservados: {reserva['asientos_reservados']}") # Mostramos todas las reservas de la zona correspondiente 
 
 if __name__ == "__main__": 
-    funcion_menu()
+    funcion_menu() 
     
 # Cada vez que se quiere acceder al diccionario mediante el [reserva] se entra y se pregunta directamente por el dato del diccionario.
