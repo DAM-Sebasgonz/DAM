@@ -60,7 +60,7 @@ def zona_disponible():
 def verificar_NIF_NIE( valor:str ) -> bool:
     '''Verifica que valor sea un NIF o NIE correcto.
        valor es el nif o nie a validar.
-       Retorna True si es correcto, False en caso contrario.''' #Esto se ha sacado de un ejemplo que haz colgado en el aula virtual
+       Retorna True si es correcto, False en caso contrario.''' #Esto se ha sacado de un ejemplo que has colgado en el aula virtual
 
     alfabeto_nif = 'TRWAGMYFPDXBNJZSQVHLCKE'
 
