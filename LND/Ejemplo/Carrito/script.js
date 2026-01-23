@@ -46,7 +46,6 @@ function mostrarCarrito(){
         
 }
 
-
 //Funcion que calcule el importe total
 //producto1.precio * producto1.cantidad + produtcto2.precio * producto2.cantiodad.. ........
 function importeTotal()
