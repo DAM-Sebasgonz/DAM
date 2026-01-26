@@ -28,7 +28,7 @@ function mostrarCarrito() {
             <div class="item-carrito">
                 <div class="item-info">
                     <div class="item-nombre">${item.nombre}</div>
-                    <div class="item-precio">€${item.precio.toFixed(2)}</div>
+                    <div class="item-precio">€${item.precio}</div>
                 </div>
                 <button class="btn-eliminar" onclick="eliminarDelCarrito(${indice})">Eliminar</button>
             </div>
