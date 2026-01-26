@@ -34,36 +34,57 @@ function anadirCarrito(nombre, precio){
 }
 
 //Funcion para mostrar el nombre precio y cantidad de los articulos
-function mostrarCarrito(){
+function mostrarCarrito() {
 
-    lista.innerHTML = `LISTA DEL CARRITO`;
-    let contador = 0;
+    lista.innerHTML = "LISTA DEL CARRITO";
 
-    while (contador < carrito.length){
-        //creo elemento div
+    carrito.forEach((producto) => {
+
         let divlista = document.createElement("div");
+        divlista.classList.add("elemento");
 
-        //modifica html
-        divlista.innerHTML = `<strong>${carrito[contador].nombre}</strong>      
-        <button ${}>+</button>
-        <button ${}>-</button>
-        <br>
-        <ul>
-            <li>Precio: ${carrito[contador].precio}💰</li>
-            <li>Cantidad: ${carrito[contador].cantidad}</li>
-        </ul>`
+        divlista.innerHTML = `
+            <strong>${producto.nombre}</strong>
+            <button class="btn-mas">+</button>
+            <button class="btn-menos">-</button>
+            <ul>
+                <li>Precio: ${producto.precio} 💰</li>
+                <li>Cantidad: ${producto.cantidad}</li>
+            </ul>
+        `;
 
-        //añade una clase
-        divlista.classList.add("elemento") ;
+        let btnMas = divlista.querySelector(".btn-mas");
+        let btnMenos = divlista.querySelector(".btn-menos");
 
-        //hace hijo el elemento
-        lista.appendChild(divlista); 
+        btnMas.addEventListener("click", () => {
+            producto.cantidad++;
+            mostrarCarrito();
+            importeTotal();
+        });
 
-        contador++;
-    }
-        
+        btnMenos.addEventListener("click", () => {
+            producto.cantidad--;
+
+            // 🔁 reconstruir carrito sin métodos de array
+            let nuevoCarrito = [];
+            let i = 0;
+
+            while (i < carrito.length) {
+                if (carrito[i].cantidad > 0) {
+                    nuevoCarrito.push(carrito[i]);
+                }
+                i++;
+            }
+
+            carrito = nuevoCarrito;
+
+            mostrarCarrito();
+            importeTotal();
+        });
+
+        lista.appendChild(divlista);
+    });
 }
-
 
 //Funcion que calcule el importe total
 //producto1.precio * producto1.cantidad + produtcto2.precio * producto2.cantiodad.. ........
@@ -82,5 +103,3 @@ function importeTotal()
 }
 
 cargarBotones();
-
-
