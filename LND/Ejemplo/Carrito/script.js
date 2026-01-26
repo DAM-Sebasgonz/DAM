@@ -1,23 +1,31 @@
-const lista = document.getElementById("lista-carrito");
+const lista = document.getElementById("carrito");
+const botones = document.querySelectorAll(".btn-agregar")
 
 let carrito = [];
 
-let producto1 = {
-    nombre: "Asus TUF 8400F",
-    precio: 1034,
-    cantidad: 2
+class Producto {
+    constructor(nombre, precio, cantidad) {
+        this.nombre = nombre;
+        this.precio = parseFloat(precio);
+        this.cantidad = cantidad;
+    }
 }
 
-let producto2 = {
-    nombre: "Iphone 17",
-    precio: 1400,
-    cantidad: 4
+//Funcion que recorra la lista de botones y les cargue un evento
+function cargarBotones(){
+    botones.forEach((boton) => {
+        boton.addEventListener("click", () => {
+            const nombre = boton.dataset.nombre;
+            const precio = boton.dataset.precio
+            anadirCarrito(nombre, precio) //añado el item
+            mostrarCarrito(); //lo muestro
+        })
+
+    })
 }
 
-let producto3 = {
-    nombre: "Logitech G733",
-    precio: 130,
-    cantidad: 2
+function anadirCarrito(nombre, precio){
+    carrito.push(new Producto(nombre, precio, 1));
 }
 
 //Funcion para mostrar el nombre precio y cantidad de los articulos
@@ -36,7 +44,7 @@ function mostrarCarrito(){
         La cantidad del ${contador+1}º es ${carrito[contador].cantidad}<br><hr><hr>`
 
         //añade una clase
-        divlista.classList.add("elemento-lista") 
+        divlista.classList.add("elemento") ;
 
         //hace hijo el elemento
         lista.appendChild(divlista); 
@@ -45,6 +53,7 @@ function mostrarCarrito(){
     }
         
 }
+
 
 //Funcion que calcule el importe total
 //producto1.precio * producto1.cantidad + produtcto2.precio * producto2.cantiodad.. ........
@@ -62,11 +71,6 @@ function importeTotal()
     document.write(`El total es ${total}💰`)
 }
 
-
-carrito.push(producto1);
-carrito.push(producto2);
-carrito.push(producto3);
+cargarBotones();
 
 
-mostrarCarrito();
-importeTotal();

@@ -1,0 +1,29 @@
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo{
+    flex: 2;
+}
+
+#lista{
+    flex: 7;  
+    background-color: cadetblue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#total{
+    flex: 1;
+}
+
+.elemento{
+    background-color: brown;
+    width: 300px;
+    border: 2px solid black;
+    margin: 10px;
+}

@@ -6,7 +6,7 @@ Adafruit_BMP280 bmp;
 
 float temperatura
 float presion
-// Faltaria una variable que nos diga que si el cohete solto el satelite o no bool puede ser
+// Faltaria una variable que nos diga que si el cohete que soltó el satelite o no bool puede ser
 
 
 const int intervalo_lectura = 100
