@@ -1,4 +1,5 @@
 const lista = document.getElementById("carrito");
+const lista2 = document.getElementById("total");
 const botones = document.querySelectorAll(".btn-agregar")
 
 let carrito = [];
@@ -19,19 +20,23 @@ function cargarBotones(){
             const precio = boton.dataset.precio
             anadirCarrito(nombre, precio) //añado el item
             mostrarCarrito(); //lo muestro
+            importeTotal();
         })
 
     })
 }
 
 function anadirCarrito(nombre, precio){
-    carrito.push(new Producto(nombre, precio, 1));
+    
+    const productoExistente = carrito.find(producto => producto.nombre === nombre);
+    if (productoExistente) productoExistente.cantidad++;
+    else carrito.push(new Producto(nombre, precio, 1));
 }
 
 //Funcion para mostrar el nombre precio y cantidad de los articulos
 function mostrarCarrito(){
 
-    lista.innerHTML = " ";
+    lista.innerHTML = `LISTA DEL CARRITO`;
     let contador = 0;
 
     while (contador < carrito.length){
@@ -39,9 +44,14 @@ function mostrarCarrito(){
         let divlista = document.createElement("div");
 
         //modifica html
-        divlista.innerHTML = `El nombre del ${contador+1}º es <strong>${carrito[contador+1].nombre}</strong><br>
-        El precio del ${contador+1}º es ${carrito[contador].precio}<br>
-        La cantidad del ${contador+1}º es ${carrito[contador].cantidad}<br><hr><hr>`
+        divlista.innerHTML = `<strong>${carrito[contador].nombre}</strong>      
+        <button ${}>+</button>
+        <button ${}>-</button>
+        <br>
+        <ul>
+            <li>Precio: ${carrito[contador].precio}💰</li>
+            <li>Cantidad: ${carrito[contador].cantidad}</li>
+        </ul>`
 
         //añade una clase
         divlista.classList.add("elemento") ;
@@ -53,6 +63,7 @@ function mostrarCarrito(){
     }
         
 }
+
 
 //Funcion que calcule el importe total
 //producto1.precio * producto1.cantidad + produtcto2.precio * producto2.cantiodad.. ........
@@ -67,7 +78,7 @@ function importeTotal()
         contador ++;
     }
 
-    document.write(`El total es ${total}`)
+    lista2.innerHTML = `<h2>El <b>total</b> es: ${total}</h2>`;
 }
 
 cargarBotones();
