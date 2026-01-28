@@ -25,32 +25,37 @@ function cargarBotones() {
 }
 
 function anadirCarrito(nombre, precio) {
-    const productoExistente = carrito.find(producto => producto.nombre === nombre);
-    if (productoExistente) {
-        productoExistente.cantidad++;
+
+    const indice = carrito.findIndex(producto => producto.nombre === nombre);
+
+    if (indice !== -1) {
+        carrito[indice].cantidad++;
     } else {
         carrito.push(new Producto(nombre, precio, 1));
     }
 }
 
 function sumarItem(nombre) {
-    const producto = carrito.find(p => p.nombre === nombre);
-    if (producto) {
-        producto.cantidad++;
+    
+    const indice = carrito.findIndex(p => p.nombre === nombre);
+    
+    if (indice !== -1) {
+        carrito[indice].cantidad++;
         mostrarCarrito();
         importeTotal();
     }
 }
 
 function restarItem(nombre) {
-    const producto = carrito.find(p => p.nombre === nombre);
     
-    if (producto) {
-        producto.cantidad--;
+    const indice = carrito.findIndex(p => p.nombre === nombre);
+    
+    if (indice !== -1) {
         
-        if (producto.cantidad === 0) {
-            const index = carrito.indexOf(producto);
-            carrito.splice(index, 1);
+        carrito[indice].cantidad--;
+        
+        if (carrito[indice].cantidad === 0) {
+            carrito.splice(indice, 1);
         }
         
         mostrarCarrito();
@@ -72,7 +77,7 @@ function mostrarCarrito() {
             <button class="btn-restar">-</button>
             <br>
             <ul>
-                <li>Precio: ${carrito[contador].precio}💰</li>
+                <li>Precio: ${carrito[contador].precio}</li>
                 <li>Cantidad: ${carrito[contador].cantidad}</li>
             </ul>`;
 
