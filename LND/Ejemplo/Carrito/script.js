@@ -1,72 +1,109 @@
-const lista = document.getElementById("lista-carrito");
+const lista = document.getElementById("carrito");
+const lista2 = document.getElementById("total");
+const botones = document.querySelectorAll(".btn-agregar");
 
 let carrito = [];
 
-let producto1 = {
-    nombre: "Asus TUF 8400F",
-    precio: 1034,
-    cantidad: 2
+class Producto {
+    constructor(nombre, precio, cantidad) {
+        this.nombre = nombre;
+        this.precio = parseFloat(precio);
+        this.cantidad = cantidad;
+    }
 }
 
-let producto2 = {
-    nombre: "Iphone 17",
-    precio: 1400,
-    cantidad: 4
+function cargarBotones() {
+    botones.forEach((boton) => {
+        boton.addEventListener("click", () => {
+            const nombre = boton.dataset.nombre;
+            const precio = boton.dataset.precio;
+            anadirCarrito(nombre, precio);
+            mostrarCarrito();
+            importeTotal();
+        });
+    });
 }
 
-let producto3 = {
-    nombre: "Logitech G733",
-    precio: 130,
-    cantidad: 2
+function anadirCarrito(nombre, precio) {
+    const productoExistente = carrito.find(producto => producto.nombre === nombre);
+    if (productoExistente) {
+        productoExistente.cantidad++;
+    } else {
+        carrito.push(new Producto(nombre, precio, 1));
+    }
 }
 
-//Funcion para mostrar el nombre precio y cantidad de los articulos
-function mostrarCarrito(){
+function sumarItem(nombre) {
+    const producto = carrito.find(p => p.nombre === nombre);
+    if (producto) {
+        producto.cantidad++;
+        mostrarCarrito();
+        importeTotal();
+    }
+}
 
-    lista.innerHTML = `ALGO`;
+function restarItem(nombre) {
+    const producto = carrito.find(p => p.nombre === nombre);
+    
+    if (producto) {
+        producto.cantidad--;
+        
+        if (producto.cantidad === 0) {
+            const index = carrito.indexOf(producto);
+            carrito.splice(index, 1);
+        }
+        
+        mostrarCarrito();
+        importeTotal();
+    }
+}
+
+function mostrarCarrito() {
+    lista.innerHTML = `LISTA DEL CARRITO`;
     let contador = 0;
 
-    while (contador < carrito.length){
-        //creo elemento div
+    while (contador < carrito.length) {
         let divlista = document.createElement("div");
+        let nombreProducto = carrito[contador].nombre;
 
-        //modifica html
-        divlista.innerHTML = `El nombre del ${contador+1}º es <strong>${carrito[contador].nombre}</strong><br>
-        El precio del ${contador+1}º es ${carrito[contador].precio}💰<br>
-        La cantidad del ${contador+1}º es ${carrito[contador].cantidad}<br><hr><hr>`
+        divlista.innerHTML = `
+            <strong>${nombreProducto}</strong>
+            <button class="btn-sumar">+</button>
+            <button class="btn-restar">-</button>
+            <br>
+            <ul>
+                <li>Precio: ${carrito[contador].precio}💰</li>
+                <li>Cantidad: ${carrito[contador].cantidad}</li>
+            </ul>`;
 
-        //añade una clase
-        divlista.classList.add("elemento-lista") 
+        divlista.classList.add("elemento");
+        lista.appendChild(divlista);
 
-        //hace hijo el elemento
-        lista.appendChild(divlista); 
+        const btnSumar = divlista.querySelector(".btn-sumar");
+        btnSumar.addEventListener("click", () => sumarItem(nombreProducto));
+
+        const btnRestar = divlista.querySelector(".btn-restar");
+        btnRestar.addEventListener("click", () => restarItem(nombreProducto));
 
         contador++;
     }
-        
+
+    if(carrito.length === 0) {
+        lista.innerHTML = "El carrito está vacío";
+        lista2.innerHTML = "";
+    }
 }
 
-//Funcion que calcule el importe total
-//producto1.precio * producto1.cantidad + produtcto2.precio * producto2.cantiodad.. ........
-function importeTotal()
-{
+function importeTotal() {
     let contador = 0;
     let total = 0;
-    
-    while (contador < carrito.length)
-    {
+
+    while (contador < carrito.length) {
         total += carrito[contador].precio * carrito[contador].cantidad;
-        contador ++;
+        contador++;
     }
 
-    document.write(`El total es ${total}💰`)
+    lista2.innerHTML = `<h2>El <b>total</b> es: ${total}</h2>`;
 }
 
-
-carrito.push(producto1);
-carrito.push(producto2);
-carrito.push(producto3);
-
-
-mostrarCarrito();
-importeTotal();
+cargarBotones();
