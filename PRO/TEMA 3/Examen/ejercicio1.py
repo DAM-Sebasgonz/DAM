@@ -10,4 +10,4 @@ def digitoNoSeEncuentra(numero:int, digito:int) -> bool:
     return digitoNoSeEncuentra(numero // 10, digito)    
 
 if __name__ == "__main__":
-    print(digitoNoSeEncuentra(1323, 5))
+    print(digitoNoSeEncuentra(1323, 3))
