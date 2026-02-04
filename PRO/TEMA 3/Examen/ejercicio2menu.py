@@ -87,12 +87,6 @@ def mostrar_menu():
     print("0. Salir")
     print("-" * 60)
 
-def agregarProducto():
-    nombre = input("Ingrese el nombre del producto: ")
-    categoria = input("Ingrese la categoria del producto: ")
-    if nombre not in inventario:
-        
-
 if __name__ == "__main__":
     inventario = inicializar_inventario()
     
