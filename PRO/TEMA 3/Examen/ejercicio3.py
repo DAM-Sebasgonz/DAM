@@ -22,12 +22,12 @@ resultado_jornada = {
 }
 
 with open("resultado_jornadaxx.csv", "w") as f:
-    csv.writer(partidos)
+    csv.writer(f, delimiter=",")
 
 print("\nArchivo resultado_jornadaxx.csv creado correctamente")
 
 if os.path.exists("clasificacion.csv"):
-    with open("clasificacion.csv", "r") as f:
+    with open("clasificacion.csv", "w") as f:
         clasificacion = csv.reader(f)
 else:
     clasificacion = {}
@@ -90,9 +90,9 @@ def criterio(e):
         -e["goles_marcados"]
     )
 
-clasificacion_lista.sort(criterio)
+clasificacion_lista.sort(key = criterio)
 
 with open("clasificacion.csv", "w") as f:
-    csv.writer(clasificacion)
+    csv.writer(f, delimiter=",")
 
 print("Archivo clasificacion.csv actualizado correctamente")
