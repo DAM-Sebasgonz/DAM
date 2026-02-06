@@ -1,7 +1,7 @@
 const track = document.querySelector(".carousel-track");
 const slides = document.querySelectorAll(".slide");
 const btnDelante = document.getElementById("Btn-delante");
-const btnAtras = document.getElementById("Btn-atras");
+const btnAtras = document.getElementById("Btn-atras");  //Cambiar para que solo sea un boton y luego integrarlo en una funcion.
 
 let index = 0;
 
@@ -12,7 +12,7 @@ btnDelante.addEventListener("click", () => {
         index = 0;
     }
 
-    track.style.transform = `translateX(-${index * 100}%)`; // esto lo vi en internet y me parecio bien ponerlo asi
+    track.style.transform = `translateX(-${index * 100}%)`; 
 });
 
 btnAtras.addEventListener("click", () => {
