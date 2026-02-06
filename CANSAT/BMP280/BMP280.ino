@@ -28,9 +28,6 @@ void setup() {
                   Adafruit_BMP280:: STANDBY_MS_1);  
 }
 
-
-
-
 void loop() {
   float temperatura = bmp.readTemperature();
   float presion = bmp.readPressure() / 100.0; /*Leemos en hectopascales ya que es la unidad de presion atmosferica*/
