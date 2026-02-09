@@ -12,12 +12,17 @@ const contenedorTablero = document.getElementById('tablero-juego');
 const displayMovimientos = document.getElementById('movimientos');
 const modalVictoria = document.getElementById('modal-victoria');
 
-
 // 2. FUNCIONES 
 
 // PASO 1: LÓGICA DE DATOS
 function crearTableroLogico() {
+
     // TAREA A: Duplicar los símbolos para tener 8 pares (16 cartas)
+
+    simbolosOriginales.forEach(simbolo => {
+        tablero.push(simbolo);
+        tablero.push(simbolo);
+    });
 
     //Barajar (Desordenar) el array 'tablero' aleatoriamente
     tablero.sort(() => Math.random() - 0.5);
@@ -31,27 +36,41 @@ function dibujarTableroHTML() {
     contenedorTablero.innerHTML = ''; // Limpieza inicial
 
     // TAREA B: Recorrer el array 'tablero' y crear el HTML usa foreach(simbolo)
-        //1.Crea un elemento div y añade la clase carta
-        //2. Guardar el símbolo real en un dataset () 
-        //3. Crear el HTML interno (Frontal y Trasera) (AQUI NO HAY QUE HACER NADA)
+    
+    tablero.forEach((simbolo) => {
+        let carta = document.createElement("div")
+        carta.classList.add("carta")
+
         carta.innerHTML = `
             <div class="contenido-carta">
                 <div class="cara-frontal">?</div>
                 <div class="cara-trasera">${simbolo}</div>
-            </div>
-        `;
+            </div>`
+
+        contenedorTablero.appendChild(carta)
+
+        carta.addEventListener("click",() => {
+            manejarClick(carta)});
+    });
+
+        //1.Crea un elemento div y añade la clase carta  
+        //2. Guardar el símbolo real en un dataset () 
+        //3. Crear el HTML interno (Frontal y Trasera) (AQUI NO HAY QUE HACER NADA)
         // 4. Añadir evento click que llame a 'manejarClick' a traves de () => {manejarClick(carta)}
         // 5. Añadir al contenedor
+
 }
 
 // PASO 3: GESTIONAR EL CLIC
 function manejarClick(carta) {
 
+    
+ 
     // TAREA C: Validaciones de seguridad
         // Si está bloqueado O la carta ya está volteada O ya fue encontrada volvemos, para ello se usan las clases voletada y encontrada
 
     // TAREA D: Voltear carta
-        // 1. Añadir clase visual
+        // 1. Añadir clase volteado
         // 2. Guardar en memoria
 
     // TAREA E: Control de turno (Si hay 2 cartas volteadas)
@@ -63,6 +82,24 @@ function manejarClick(carta) {
 
 // PASO 4: VERIFICAR SI SON IGUALES
 function verificarPar() {
+
+    let carta1 = cartasVolteadas[0]
+    let carta2 = cartasVolteadas[1]
+
+    if 
+    (carta1.dataset.simbolo == carta2.dataset.simbolo){
+        carta1.classList.add("volteada")
+        carta2.classList.add("volteada")
+        paresEncontrados += 1
+        bloqueado == true
+    } 
+    else {
+        carta1.classList.add("encontrada")
+        carta2.classList.add("encontrada")
+        bloqueado == false
+    }
+
+    
     // TAREA F: Recuperar las 2 cartas del array y guardarlas en dos variables
     
     // TAREA G: Comparar sus dataset.simbolo
