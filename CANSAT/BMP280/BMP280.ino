@@ -4,22 +4,20 @@
 
 Adafruit_BMP280 bmp;
 
-float temperatura
-float presion
-// Faltaria una variable que nos diga que si el cohete solto el satelite o no bool puede ser
-
-
-const int intervalo_lectura = 100
+float temperatura;
+float presion;
+bool cohete_solto_satelite = false;
+const int intervalo_lectura = 100;
 
 void setup() {
-  Serial.begin(); /*nº de baudios que hacen falta*/
+  Serial.begin(9600); /*nº de baudios que hacen falta*/
   while(!Serial) delay(10);
   
   if (!bmp.begin()){ /*direccion I2C*/
-    Serial.println("No ha encontrado el Sensor BMP280")
-  while(1) delay(10) /* repite el programa hasta que se encuentre el sensor con un delay de 10MS*/
+    Serial.println("No ha encontrado el Sensor BMP280");
+  while(1) delay(10); /* repite el programa hasta que se encuentre el sensor con un delay de 10MS*/
   }
-  Serial.println("Sensor encontrado")
+  Serial.println("Sensor encontrado");
 
   bmp.setsampling(Adafruit_BMP280::MODE_NORMAL, 
                   Adafruit_BMP280:: SAMPLING_X16,
@@ -42,8 +40,6 @@ void loop() {
 
   Serial.println("----------------------");
 
-
-  delay(/*Tiempo de la siguiente lectura*/)
-
+  delay(intervalo_lectura);
 
 }
