@@ -1,7 +1,22 @@
-# Mostrar por pantalla los N primeros números primos. Se pide al usuario el valor de N que
-# debe ser un número entero positivo (debe verificarse).
-# La salida se debe realizar de forma tabulada en la cual cada fila se imprimen 10 números
-# primos.
-# Recuerden que un número primo es aquel que sólo es dividido por la unidad y por el mismo. 
+n = int(input("Introduce cuántos números primos quieres mostrar: "))
 
+while n <= 0:
+    print("El número debe ser positivo")
+    print(n)
 
+contador = 0
+numero = 2
+
+while contador < n:
+    es_primo = True
+    
+    for divisor in range(2, numero):
+        if numero % divisor == 0:
+            es_primo = False
+            break
+    
+    if es_primo:
+        print(numero)
+        contador += 1
+    
+    numero += 1
