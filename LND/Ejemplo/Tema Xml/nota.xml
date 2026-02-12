@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nota prioridad= "alta">
+    <para>Gerente de Ventas</para>
+    <de>Departamento de TI</de>
+    <fecha>
+        <dia>10</dia>
+        <mes>Octubre</mes>
+        <anio>2023</anio>
+    </fecha>
+    <titulo> Caida del Servidor </titulo>
+    <cuerpo>
+        El servidor principal se ha reiniciado.
+        Por favor, no guardar datos hasta nuevo visto.
+    </cuerpo>
+    <firma> Soporte Tecnico </firma>
+</nota>
