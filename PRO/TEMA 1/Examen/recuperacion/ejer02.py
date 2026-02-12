@@ -14,9 +14,7 @@ while i < n:
         diferencia = -diferencia
 
     espacios = diferencia
-
     distancia = mitad - diferencia
-
     linea = ""
 
     j = 0
