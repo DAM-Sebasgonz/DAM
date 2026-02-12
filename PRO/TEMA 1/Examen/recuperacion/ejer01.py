@@ -6,7 +6,7 @@ i = 0
 
 while i < len(cadena):
     caracter = cadena[i]
-
+    
     if caracter == "(":
         contador = contador + 1
     elif caracter == ")":
