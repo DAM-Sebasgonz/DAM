@@ -1,6 +1,4 @@
-# Ejercicio 001: Verificar si una cadena esta bien encerrada entre parentesis
-
-cadena = input("Ingrese la cadena de caracteres: ")
+cadena = input("Ingrese texto: ")
 
 contador = 0
 bien = True
