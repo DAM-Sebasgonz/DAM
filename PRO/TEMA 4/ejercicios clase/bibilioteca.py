@@ -20,3 +20,5 @@ if __name__ == "__main__":
     revista01 = Revista("Hola", "Editorial Omega", "125", "01/02/2026")
 
     revista01.prestarRecurso()
+    
+
