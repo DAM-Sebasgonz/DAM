@@ -13,7 +13,6 @@ def analizaLista(lista_rec):
     else:
         num_rec_iteracion, letras_rec_iteracion =  analizaLista(mivalor)
         num_rec_total.extend(num_rec_iteracion)
-        #
         letras_rec_total.extend(letras_rec_iteracion)
 
     return sorted(num_rec_total) , sorted(letras_rec_total)
