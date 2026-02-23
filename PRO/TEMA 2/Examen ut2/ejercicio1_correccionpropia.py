@@ -3,8 +3,7 @@
 productos = {}       # {"lacteos": {"leche": [10, 1.20]}, ...}
 tickets = {}
 
-tipos_productos = ["lacteos", "panaderia", "carniceria", "fruta", "verduras",
-                   "menaje", "limpieza", "licores"]
+tipos_productos = ["lacteos", "panaderia", "carniceria", "fruta", "verduras","menaje", "limpieza", "licores"]
 
 menu = """1. Insertar producto
 2. Actualizar inventario

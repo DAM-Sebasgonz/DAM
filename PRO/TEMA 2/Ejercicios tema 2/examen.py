@@ -197,8 +197,7 @@ while not salir:
                                 ventas_por_producto[producto] += cantidad
                     
                     # Ordenar por cantidad vendida (descendente)
-                    productos_ordenados = sorted(ventas_por_producto.items(), 
-                                                 key=lambda x: x[1], reverse=True)
+                    productos_ordenados = sorted(ventas_por_producto.items(),key=lambda x: x[1], reverse=True)
                     
                     # Mostrar los 3 primeros
                     print(f"\n{'PRODUCTO':<25} {'TIPO':<15} {'CANTIDAD VENDIDA'}")
