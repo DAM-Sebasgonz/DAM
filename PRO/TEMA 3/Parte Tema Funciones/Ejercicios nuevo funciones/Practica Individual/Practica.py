@@ -44,7 +44,7 @@ def funcion_menu():
                 break
             case _:
                 print("Opción no válida, por favor intente de nuevo.")
-                              
+                
 def zona_disponible():
     """
     Muestra la cantidad de asientos disponibles en una zona específica.
