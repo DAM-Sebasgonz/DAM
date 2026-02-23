@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ticket [
+  <!ELEMENT ticket (cabecera, productos)>
+  <!ELEMENT cabecera (empresa, fecha)>
+  <!ELEMENT empresa (#PCDATA)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT productos (producto+)>
+  <!ELEMENT producto (nombre, cantidad?, precio)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+]>
+
+<ticket>
+  <cabecera>
+    <empresa>Supermercados Ejemplo S.A.</empresa>
+    <fecha>2024-02-23</fecha>
+  </cabecera>
+  <productos>
+    <producto>
+      <nombre>Leche entera 1L</nombre>
+      <cantidad>2</cantidad>
+      <precio>1.25</precio>
+    </producto>
+    <producto>
+      <nombre>Pan de molde</nombre>
+      <precio>1.10</precio>
+    </producto>
+    <producto>
+      <nombre>Yogur natural pack 4</nombre>
+      <cantidad>1</cantidad>
+      <precio>2.35</precio>
+    </producto>
+  </productos>
+</ticket>
