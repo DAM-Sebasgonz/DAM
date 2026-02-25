@@ -48,7 +48,7 @@ class Libro:
         return prestado
 
     def devolverLibro(self):
-       self.cambiarEstado()
+        self.cambiarEstado()
 
 def insertarLibro(diccionario, objeto):
     diccionario.setdefault(objeto.autor, []) 

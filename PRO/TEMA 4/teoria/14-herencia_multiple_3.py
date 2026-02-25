@@ -24,6 +24,7 @@ class Cat(donotSwim, donotFly):
 
 
 if __name__ == '__main__':
-    cat = Cat()
-    print('\n')
+    # cat = Cat()
+    # print('\n')
+    # print(Cat.__mro__)
     bat = donotSwim('Bat')
