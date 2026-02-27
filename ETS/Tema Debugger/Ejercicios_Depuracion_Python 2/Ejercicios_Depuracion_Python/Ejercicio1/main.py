@@ -11,8 +11,7 @@ def main() -> None:
 
     b = 3
 
-    c = a
-    a += 1
+    c = a 
 
     b += 1
     c = b
