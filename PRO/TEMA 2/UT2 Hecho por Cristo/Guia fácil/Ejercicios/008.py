@@ -29,6 +29,3 @@ for elto in lista:
     suma+=elto
 print(lista)
 print("La suma es:",suma)
-
-  
-                       
