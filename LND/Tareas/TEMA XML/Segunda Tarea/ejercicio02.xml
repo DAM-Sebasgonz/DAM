@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+    <!ENTITY nombre_empresa "TechComponents S.L.">
+
+    <!ELEMENT factura (datos_empresa, datos_cliente, lineas_factura, resumen_pago)>
+    <!ATTLIST factura
+        n_fac ID #REQUIRED
+        fecha CDATA #IMPLIED
+    >
+
+    <!ELEMENT datos_empresa (nombre, direccion, ciudad, cif)>
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+
+    <!ELEMENT cif (#PCDATA)>
+    <!ATTLIST cif pais CDATA #FIXED "ES"
+    >
+
+    <!ELEMENT datos_cliente (nombre, direccion, ciudad, cif, (telefono | email)?)>
+
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+
+    <!ELEMENT lineas_factura (linea+)>
+
+    <!ELEMENT linea (ref, descripcion, cantidad, precio)>
+    <!ELEMENT ref (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio moneda (EUR|USD) #REQUIRED
+    >
+
+    <!ELEMENT resumen_pago (forma_pago)>
+
+    <!ELEMENT forma_pago EMPTY>
+    <!ATTLIST forma_pago tipo (Efectivo|Tarjeta|Transferencia) #REQUIRED
+    >
+]>
+<factura n_fac="FAC2024001" fecha="2024-06-15">
+    <datos_empresa>
+        <nombre>&nombre_empresa;</nombre>
+        <direccion>Calle Tecnología, 42</direccion>
+        <ciudad>Madrid</ciudad>
+        <cif pais="ES">B12345678</cif>
+    </datos_empresa>
+
+    <datos_cliente>
+        <nombre>Informática Pérez S.A.</nombre>
+        <direccion>Avenida del Hardware, 7</direccion>
+        <ciudad>Barcelona</ciudad>
+        <cif>A87654321</cif>
+        <email>compras@informaticaperez.es</email>
+    </datos_cliente>
+
+    <lineas_factura>
+        <linea>
+            <ref>CPU-001</ref>
+            <descripcion>Procesador Intel Core i9-14900K</descripcion>
+            <cantidad>2</cantidad>
+            <precio moneda="EUR">589.99</precio>
+        </linea>
+        <linea>
+            <ref>RAM-032</ref>
+            <descripcion>Memoria RAM DDR5 32GB Kingston</descripcion>
+            <cantidad>4</cantidad>
+            <precio moneda="EUR">129.50</precio>
+        </linea>
+        <linea>
+            <ref>GPU-RTX</ref>
+            <descripcion>Tarjeta Gráfica NVIDIA RTX 4080</descripcion>
+            <cantidad>1</cantidad>
+            <precio moneda="USD">1199.00</precio>
+        </linea>
+    </lineas_factura>
+    <resumen_pago>
+        <forma_pago tipo="Transferencia" />
+    </resumen_pago>
+</factura>

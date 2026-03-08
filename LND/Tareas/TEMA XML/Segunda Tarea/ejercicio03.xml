@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reserva [
+    <!ENTITY nombre_cadena "Grand Luxury Resorts">
+
+    <!ELEMENT reserva (datos_hotel, datos_huesped, detalle_estancia, estado_reserva)>
+    <!ATTLIST reserva
+        cod_res ID #REQUIRED
+        fecha_registro CDATA #IMPLIED
+    >
+
+    <!ELEMENT datos_hotel (nombre, ubicacion, estrellas, registro_turismo)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ubicacion (#PCDATA)>
+    <!ELEMENT estrellas (#PCDATA)>
+
+    <!ELEMENT registro_turismo (#PCDATA)>
+    <!ATTLIST registro_turismo categoria CDATA #FIXED "Gran_Lujo"
+    >
+
+    <!ELEMENT datos_huesped (nombre_completo, dni, ciudad_origen, (movil | fijo)?)>
+    <!ELEMENT nombre_completo (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT ciudad_origen (#PCDATA)>
+    <!ELEMENT movil (#PCDATA)>
+    <!ELEMENT fijo (#PCDATA)>
+
+    <!ELEMENT detalle_estancia (habitacion+)>
+
+    <!ELEMENT habitacion (num_hab, tipo, noches, precio_noche)>
+    <!ELEMENT num_hab (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT noches (#PCDATA)>
+
+    <!ELEMENT precio_noche (#PCDATA)>
+    <!ATTLIST precio_noche divisa (EUR|GBP|JPY) #REQUIRED
+    >
+
+    <!ELEMENT estado_reserva (confirmacion)>
+
+    <!ELEMENT confirmacion EMPTY>
+    <!ATTLIST confirmacion metodo (App|Web|Presencial) #REQUIRED
+    >
+]>
+
+<reserva cod_res="RES20240701" fecha_registro="2024-07-01">
+
+    <datos_hotel>
+        <nombre>&nombre_cadena;</nombre>
+        <ubicacion>Marbella, España</ubicacion>
+        <estrellas>5</estrellas>
+        <registro_turismo categoria="Gran_Lujo">GL-AND-00842</registro_turismo>
+    </datos_hotel>
+
+    <datos_huesped>
+        <nombre_completo>Laura Martínez Ruiz</nombre_completo>
+        <dni>45678901X</dni>
+        <ciudad_origen>Valencia</ciudad_origen>
+        <movil>+34 612 345 678</movil>
+    </datos_huesped>
+
+    <detalle_estancia>
+        <habitacion>
+            <num_hab>301</num_hab>
+            <tipo>Suite Junior</tipo>
+            <noches>5</noches>
+            <precio_noche divisa="EUR">450.00</precio_noche>
+        </habitacion>
+        <habitacion>
+            <num_hab>302</num_hab>
+            <tipo>Habitación Doble Deluxe</tipo>
+            <noches>5</noches>
+            <precio_noche divisa="EUR">280.00</precio_noche>
+        </habitacion>
+    </detalle_estancia>
+
+    <estado_reserva>
+        <confirmacion metodo="Web" />
+    </estado_reserva>
+
+</reserva>

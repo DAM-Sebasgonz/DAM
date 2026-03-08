@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo [
+    <!ENTITY biblioteca "Biblioteca Municipal de Madrid">
+    <!ELEMENT catalogo (libro+)>
+    <!ELEMENT libro (titulo, autor, precio)>
+    <!ATTLIST libro
+        codigo ID #REQUIRED
+        estado (disponible|prestado) "disponible">
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio moneda CDATA "EUR">
+]>
+<catalogo>
+    <libro codigo="L001" estado="disponible">
+        <titulo>El Quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <precio moneda="EUR">12,50</precio>
+    </libro>
+
+    <libro codigo="L002" estado="prestado">
+        <titulo>Cien años de soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+        <precio moneda="EUR">15,00</precio>
+    </libro>
+
+    <libro codigo="L003">
+        <titulo>1984</titulo>
+        <autor>George Orwell</autor>
+        <precio moneda="USD">10,99</precio>
+    </libro>
+</catalogo>
