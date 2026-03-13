@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE catalogo [
-    <!ENTITY biblioteca "Biblioteca Municipal de Madrid">
-    <!ELEMENT catalogo (libro+)>
-    <!ELEMENT libro (titulo, autor, precio)>
-    <!ATTLIST libro
-        codigo ID #REQUIRED
-        estado (disponible|prestado) "disponible">
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT autor (#PCDATA)>
-    <!ELEMENT precio (#PCDATA)>
-    <!ATTLIST precio moneda CDATA "EUR">
+        <!ENTITY biblioteca "Biblioteca Municipal de Madrid">
+        <!ELEMENT catalogo (libro+)>
+        <!ELEMENT libro (titulo, autor, precio)>
+        <!ATTLIST libro
+            codigo ID #REQUIRED
+            estado (disponible|prestado) "disponible">
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ATTLIST precio moneda CDATA "EUR">
 ]>
 <catalogo>
     <libro codigo="L001" estado="disponible">
