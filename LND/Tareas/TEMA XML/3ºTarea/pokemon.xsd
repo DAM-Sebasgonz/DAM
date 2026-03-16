@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="pokemons">
+    <xs:element name="pokedex">
         <xs:complexType>
-            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+            <xs:sequence minOccurs="1" maxOccurs="151">
                 <xs:element name="pokemon">
                     <xs:complexType>
-                        <xs:sequence >
+                        <xs:sequence>
                             <xs:element name="nombre" type="xs:string" />
                             <xs:element name="vida" type="xs:integer" />
                             <xs:element name="ataque" type="xs:integer" />

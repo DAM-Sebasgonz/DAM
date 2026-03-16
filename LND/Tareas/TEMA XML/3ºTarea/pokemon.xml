@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pokemons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pokemon.xsd">
+<pokedex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pokemon.xsd">
     <pokemon>
         <nombre>Bulbasaur</nombre>
         <vida>200</vida>
@@ -8,10 +8,10 @@
         <tipo>Planta</tipo>
     </pokemon>
     <pokemon>
-        <nombre>Bulbasaur</nombre>
+        <nombre>Venasaur</nombre>
         <vida>200</vida>
         <ataque>100</ataque>
         <defensa>25</defensa>
         <tipo>Planta</tipo>
     </pokemon>
-</pokemons>
+</pokedex>
