@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>documentacion &#8212; documentación de ETS - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=4936afed"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Código fuente para documentacion</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Programa diseñado para la administración de catálogos de películas.</span>
+<span class="sd">Version 1.0.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="RecursoCinematografico">
+<a class="viewcode-back" href="../documentacion.html#documentacion.RecursoCinematografico">[documentos]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">RecursoCinematografico</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Clase base para representar un recurso cinematográficod de manera general.</span>
+
+<span class="sd">    :param identificador: Código único del recurso.</span>
+<span class="sd">    :type identificador: str</span>
+<span class="sd">    :param fecha_registro: Fecha en la que se dio de alta el recurso.</span>
+<span class="sd">    :type fecha_registro: datetime.date</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">identificador</span><span class="p">,</span> <span class="n">fecha_registro</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">identificador</span> <span class="o">=</span> <span class="n">identificador</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fecha_registro</span> <span class="o">=</span> <span class="n">fecha_registro</span></div>
+
+
+<div class="viewcode-block" id="Pelicula">
+<a class="viewcode-back" href="../documentacion.html#documentacion.Pelicula">[documentos]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">Pelicula</span><span class="p">(</span><span class="n">RecursoCinematografico</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Clase que representa una película, heredando de RecursoCinematografico.</span>
+
+<span class="sd">    Atributos heredados:</span>
+<span class="sd">        identificador (str): ID del recurso.</span>
+<span class="sd">        fecha_registro (datetime.date): Fecha de registro automática.</span>
+
+<span class="sd">    :param identificador: Código único de la película.</span>
+<span class="sd">    :type identificador: str</span>
+<span class="sd">    :param titulo: Nombre de la obra.</span>
+<span class="sd">    :type titulo: str</span>
+<span class="sd">    :param duracion: Tiempo de duración en minutos.</span>
+<span class="sd">    :type duracion: int</span>
+<span class="sd">    :param genero: Categoría cinematográfica.</span>
+<span class="sd">    :type genero: str</span>
+<span class="sd">    :param presupuesto: Valor monetario asignado a la producción.</span>
+<span class="sd">    :type presupuesto: float</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">identificador</span><span class="p">,</span> <span class="n">titulo</span><span class="p">,</span> <span class="n">duracion</span><span class="p">,</span> <span class="n">genero</span><span class="p">,</span> <span class="n">presupuesto</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">identificador</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">titulo</span> <span class="o">=</span> <span class="n">titulo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">duracion</span> <span class="o">=</span> <span class="n">duracion</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">genero</span> <span class="o">=</span> <span class="n">genero</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">presupuesto</span> <span class="o">=</span> <span class="n">presupuesto</span>
+
+<div class="viewcode-block" id="Pelicula.calcular_impuestos">
+<a class="viewcode-back" href="../documentacion.html#documentacion.Pelicula.calcular_impuestos">[documentos]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular_impuestos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tasa</span><span class="o">=</span><span class="mf">0.21</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Calcula los impuestos basados en el presupuesto de la película.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            tasa (float): Porcentaje de impuesto a aplicar (por defecto 0.21).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: El monto total de impuestos calculado.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: Si el presupuesto de la película es un valor negativo.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">presupuesto</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;El presupuesto no puede ser negativo&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">presupuesto</span> <span class="o">*</span> <span class="n">tasa</span></div>
+
+
+<div class="viewcode-block" id="Pelicula.es_apta_para_maraton">
+<a class="viewcode-back" href="../documentacion.html#documentacion.Pelicula.es_apta_para_maraton">[documentos]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">es_apta_para_maraton</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Determina si la película es breve para un maratón.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">duracion</span> <span class="o">&lt;</span> <span class="mi">90</span></div>
+</div>
+
+
+<div class="viewcode-block" id="GestorBiblioteca">
+<a class="viewcode-back" href="../documentacion.html#documentacion.GestorBiblioteca">[documentos]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">GestorBiblioteca</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Administrador del catálogo de películas.</span>
+
+<span class="sd">    :ivar catalogo: Lista que contiene los objetos de tipo Pelicula.</span>
+<span class="sd">    :vartype catalogo: list[Pelicula]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">catalogo</span> <span class="o">=</span> <span class="p">[]</span>
+
+<div class="viewcode-block" id="GestorBiblioteca.agregar_pelicula">
+<a class="viewcode-back" href="../documentacion.html#documentacion.GestorBiblioteca.agregar_pelicula">[documentos]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">agregar_pelicula</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pelicula</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Añade una nueva película al catálogo.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pelicula</span><span class="p">,</span> <span class="n">Pelicula</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">catalogo</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pelicula</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="GestorBiblioteca.obtener_estatisticas">
+<a class="viewcode-back" href="../documentacion.html#documentacion.GestorBiblioteca.obtener_estatisticas">[documentos]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">obtener_estatisticas</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Calcula métricas financieras del catálogo completo.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple: Un conjunto de valores financieros:</span>
+<span class="sd">            total_presupuesto (float): Suma de todos los presupuestos.</span>
+<span class="sd">            promedio (float): Media de presupuesto por película.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">catalogo</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+        <span class="n">total_presupuesto</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">presupuesto</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">catalogo</span><span class="p">)</span>
+        <span class="n">promedio</span> <span class="o">=</span> <span class="n">total_presupuesto</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">catalogo</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">total_presupuesto</span><span class="p">,</span> <span class="n">promedio</span></div>
+</div>
+
+
+<div class="viewcode-block" id="buscar_por_genero">
+<a class="viewcode-back" href="../documentacion.html#documentacion.buscar_por_genero">[documentos]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">buscar_por_genero</span><span class="p">(</span><span class="n">gestor</span><span class="p">,</span> <span class="n">genero</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Filtra los títulos de las películas según su género.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        gestor (GestorBiblioteca): Instancia del gestor que contiene el catálogo.</span>
+<span class="sd">        genero (str): Nombre del género a filtrar.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list[str]: Lista con los títulos de las películas encontradas.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">titulo</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">gestor</span><span class="o">.</span><span class="n">catalogo</span> <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">genero</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">genero</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span></div>
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">ETS</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navegación</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../documentacion.html"><code class="docutils literal notranslate"><span class="pre">GestorBiblioteca</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentacion.html#documentacion.Pelicula"><code class="docutils literal notranslate"><span class="pre">Pelicula</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentacion.html#documentacion.RecursoCinematografico"><code class="docutils literal notranslate"><span class="pre">RecursoCinematografico</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentacion.html#documentacion.buscar_por_genero"><code class="docutils literal notranslate"><span class="pre">buscar_por_genero()</span></code></a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Código de módulo</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Sebastian.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
