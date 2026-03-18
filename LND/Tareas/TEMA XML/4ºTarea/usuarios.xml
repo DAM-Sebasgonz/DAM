@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactos.xsd">
+    <nombre>GamerPro</nombre>
+    <apellido1>Jimenez</apellido>
+    <apellido>Gonzalez</apellido>
+    <email>gamer@test.com</email>
+    <telefono>6991231</telefono>
+    <mascota>
+        <perro>Rayo</perro>
+        <gato>mishi</gato>
+    </mascota>
+
+</contactos>

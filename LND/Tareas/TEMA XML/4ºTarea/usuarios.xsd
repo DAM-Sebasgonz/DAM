@@ -1,0 +1,16 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="contactos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"></xs:element>
+                <xs:element name="apellido1" type="xs:string"></xs:element>
+                <xs:element name="apellido2" type="xs:string"></xs:element>
+                <xs:element name="email" type="xs:string"></xs:element>
+                <xs:element name="telefono" type="xs:integer"></xs:element>
+                <xs:element name="mascota"></xs:element>
+
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

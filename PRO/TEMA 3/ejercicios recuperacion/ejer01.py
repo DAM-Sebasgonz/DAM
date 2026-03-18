@@ -1,11 +1,7 @@
-import pickle
 import os 
+import pickle
 
-usuarios = {}
-
-def validadEdad(numero):
-    if 18<= numero < 70
+def validadEdad(edad):
+    if 18 <= edad > 70:
         return True
     return False
-
-def validadEstadCivil(estado):
