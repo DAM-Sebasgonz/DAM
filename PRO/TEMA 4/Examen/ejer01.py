@@ -188,3 +188,5 @@ if __name__ == "__main__":
         print(f"Tu apuesta: {apuesta}")
         print(f"Premio obtenido: {premio} euros")
         print()
+
+print()
