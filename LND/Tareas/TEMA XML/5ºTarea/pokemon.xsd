@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pokemon">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="#[0-9]{3}[a-Z]{0,1}"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="habilidades">
+                    <xs:simpleType>
+                        <xs:restriction>
+                            <xs:enumeration value="[A-Z][a-z]{2,14}"></xs:enumeration>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
