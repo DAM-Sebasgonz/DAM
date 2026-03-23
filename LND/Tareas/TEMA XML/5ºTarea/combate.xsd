@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="tipoIdSesion">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(EU|US|JP)-[0-9]{8}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoEscenarioPredefinido">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Namek" />
+            <xs:enumeration value="Gothan" />
+            <xs:enumeration value="Zion" />
+            <xs:enumeration value="Midgard" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoEscenarioCoord">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="COORD\.[a-z]{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoEscenario">
+        <xs:union memberTypes="tipoEscenarioPredefinido tipoEscenarioCoord" />
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoHit">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(P1|P2)-HIT[0-9]{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCombo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(P1|P2)- [UDLRAB] [UDLRAB] [UDLRAB] [UDLRAB] [UDLRAB] [UDLRAB]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoResultado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="GANA_P1" />
+            <xs:enumeration value="GANA_P2" />
+            <xs:enumeration value="DRAW" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="partida">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id_sesion" type="tipoIdSesion" />
+                <xs:element name="escenario" type="tipoEscenario" />
+                <xs:element name="log">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:choice>
+                                <xs:element name="hit" type="tipoHit" />
+                                <xs:element name="combo" type="tipoCombo" />
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="resultado" type="tipoResultado" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido_obra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="construcciones.xsd">
+    <codigo_albaran>2026-BAR-88</codigo_albaran>
+    <ubicacion>A1 B5 Z9</ubicacion>
+    <material>
+        <id_material>MAT-X.550</id_material>
+        <dimensiones>10 50 100</dimensiones>
+        <estado_revision>APROBADO</estado_revision>
+    </material>
+    <material>
+        <id_material>MAT-H.120</id_material>
+        <dimensiones>25 25 25</dimensiones>
+        <estado_revision>503</estado_revision>
+    </material>
+</pedido_obra>
+
+<!-- Esta todo bien Arturo-->

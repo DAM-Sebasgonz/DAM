@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<partida xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="combate.xsd">
+    <id_sesion>EU-12345</id_sesion> <!--El problema es que 12345 solo tiene 5 digitos pero el patron exige 8-->
+    <escenario>COORD.RAIN</escenario> <!--El problema es que el patron exige 3 letras minusculas pero RAIN tiene 4 letras mayusculas-->
+    <log>
+        <hit>P1-HIT099</hit>
+        <combo>P2- U D L R A B B</combo> <!--El problema es que el patron exige exactamente 6 botones pero aquí hay 7-->
+        <hit>P3-HIT100</hit> <!--El problema es que el patron exige P1 o P2 pero aquí hay P3-->
+    </log>
+    <resultado>VICTORIA</resultado> <!--El problema es que el patron solo permite GANA_P1, GANA_P2 o DRAW pero aquí hay VICTORIA-->
+</partida>

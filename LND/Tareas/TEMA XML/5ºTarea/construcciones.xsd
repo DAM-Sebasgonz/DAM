@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="tipoCodigoAlbaran">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="2026-[A-Z]{3}-[0-9]{2,4}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoZona">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][1-9]" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoUbicacion">
+    <xs:list itemType="tipoZona" />
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoIdMaterial">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="MAT-[A-Z]\.[1-9][0-9]{2}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoDimension">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoDimensiones">
+    <xs:restriction>
+      <xs:simpleType>
+        <xs:list itemType="tipoDimension" />
+      </xs:simpleType>
+      <xs:length value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoEstadoTexto">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="APROBADO" />
+      <xs:enumeration value="PENDIENTE" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoEstadoCodigo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{3}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoEstadoRevision">
+    <xs:union memberTypes="tipoEstadoTexto tipoEstadoCodigo" />
+  </xs:simpleType>
+
+  <xs:element name="pedido_obra">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="codigo_albaran" type="tipoCodigoAlbaran" />
+        <xs:element name="ubicacion" type="tipoUbicacion" />
+        <xs:element name="material" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_material" type="tipoIdMaterial" />
+              <xs:element name="dimensiones" type="tipoDimensiones" />
+              <xs:element name="estado_revision" type="tipoEstadoRevision" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
