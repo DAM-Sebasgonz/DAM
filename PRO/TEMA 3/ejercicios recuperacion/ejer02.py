@@ -6,7 +6,10 @@ def suma_lista_anidada(lista):
         except TypeError:
             total += elemento                    
     return total
-print(suma_lista_anidada([1, 2, [3, 4], 5]))         
-print(suma_lista_anidada([[1, 2], [3, [4, 5]], 6]))   
-print(suma_lista_anidada([[[[[10]]]]]))               
-print(suma_lista_anidada([]))                        
+
+if __name__ == "__main__":
+    
+    suma_lista_anidada([1, 2, [3, 4], 5])      
+    suma_lista_anidada([[1, 2], [3, [4, 5]], 6]) 
+    suma_lista_anidada([[[[[10]]]]])               
+    suma_lista_anidada([])                     #Pruebas del PDF 

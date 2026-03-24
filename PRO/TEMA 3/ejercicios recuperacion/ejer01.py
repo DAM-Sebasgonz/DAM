@@ -205,5 +205,8 @@ def menuPrincipal():
             case _:
                 print("Opcion invalida.")
 
-usuarios = cargarUsuarios()
-menuPrincipal()
+
+if __name__ == "__main__":
+    
+    cargarUsuarios()
+    menuPrincipal()
