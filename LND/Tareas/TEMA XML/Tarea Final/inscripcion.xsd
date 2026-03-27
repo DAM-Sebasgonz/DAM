@@ -1,13 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="inscripcion">
         <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pokemon" minOccurs="1" maxOccurs="6">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="especie" type="xs:string"/>
+                            <xs:element name="estadisticas">
+                                <xs:simpleType>
+                                    <xs:restriction>
+                                        <xs:simpleType>
+                                            <xs:list itemType="xs:integer"/>
+                                        </xs:simpleType>
+                                        <xs:length value="6"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <xs:element name="movimientos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="move" minOccurs="1" maxOccurs="4">
+                                            <xs:complexType mixed="true">
+
+                                                <xs:attribute name="tipo">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="Fuego"/>
+                                                            <xs:enumeration value="Agua"/>
+                                                            <xs:enumeration value="Planta"/>
+                                                            <xs:enumeration value="Electrico"/>
+                                                            <xs:enumeration value="Tierra"/>
+                                                            <xs:enumeration value="Volador"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+
+                                                <xs:attribute name="potencia">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:integer">
+                                                            <xs:minInclusive value="0"/>
+                                                            <xs:maxInclusive value="200"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+
+                                                <!-- clase: valor por defecto "fisico" -->
+                                                <xs:attribute name="clase" default="fisico">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="fisico"/>
+                                                            <xs:enumeration value="especial"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <!-- mote: opcional, máximo 12 caracteres -->
+                        <xs:attribute name="mote">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:maxLength value="12"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+
+                        <!-- nivel: entre 1 y 100 -->
+                        <xs:attribute name="nivel">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="1"/>
+                                    <xs:maxInclusive value="100"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+
+                        <!-- sexo: M o F -->
+                        <xs:attribute name="sexo">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="M"/>
+                                    <xs:enumeration value="F"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+
+            <!-- id: patrón ENT-1234-ES -->
             <xs:attribute name="id">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="ENT-[0-9]{4}[A-Z]{2}"/>
+                        <xs:pattern value="ENT-\d{4}-[A-Z]{2}"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
+
+            <!-- fecha: fija a 2026 -->
+            <xs:attribute name="fecha">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="2026"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+
+            <!-- rango: Bronce, Plata, Oro o Elite -->
+            <xs:attribute name="rango">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Bronce"/>
+                        <xs:enumeration value="Plata"/>
+                        <xs:enumeration value="Oro"/>
+                        <xs:enumeration value="Elite"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+
         </xs:complexType>
     </xs:element>
+
 </xs:schema>
