@@ -12,7 +12,7 @@ const display = document.getElementById('display');
 // TAREA A: Función para actualizar la pantalla
 function actualizarDisplay() {
     // 1. Asigna el valor de 'numeroActual' a la pantalla
-    display.textContent(numeroActual) 
+    display.textContent= numeroActual 
 }
 
 // TAREA B: Función al pulsar un número
@@ -26,12 +26,11 @@ function agregarNumero(numero) {
     // 3. Llama a actualizarDisplay()
 
     if (numeroActual === "0"){
-        numeroActual == numero
+        numeroActual = numero
     }
     else{
         numeroActual = numeroActual + numero
     }
-    numeroActual = numero
     actualizarDisplay();
 }
 
