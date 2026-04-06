@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="control_viaje">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="operador" type="xs:string">
+                    <xs:simpleType>
+                        <xs:restriction>
+                            <xs:pattern value="{a-zA-Z}[5-20]"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="ruta" type="xs:string">
+                    <xs:simpleType>
+                        <xs:restriction>
+                            <xs:pattern value="{a-zA-Z}[3]"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="sensores_temp" type="xs:integer">
+                    <xs:simpleType>
+                        <xs:restriction>
+                            <xs:pattern value="[-20-60]"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

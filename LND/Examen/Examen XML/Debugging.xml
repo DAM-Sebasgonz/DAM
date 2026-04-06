@@ -1,0 +1,17 @@
+<!-- Falta la declaracion que dice que esto es un XML --> 
+<control_viaje id_tren="123-abcd" version="1.0">
+    <!-- En la id del tren faltaria un numero, ademas de que esta tiene una letra de mas para que esta sea valida ej: 1234-abc -->
+    <!-- la version tiene que tener como valor "2.0" -->
+    <operador>Renfe</operador>
+    <ruta>MAD</ruta>
+    <sensores_temp>10 20 30</sensores_temp> 
+    <!-- La lista de este deberias tener otro numero entero mas para que sean exactamente 4 y este sea valido -->
+    <seguridad>
+        <codigo_manual>ABC12345</codigo_manual>
+    <!-- El elemento codigo_manual solo puede tener las letras X,Y,Z y no puede tener otro numero que no sean 1, 2 ,3-->
+    </seguridad>
+    <vagon>
+        <id_vagon>V-01</id_vagon>
+        <estado_carga>85</estado_carga>
+    </vagon>
+</control_viaje>

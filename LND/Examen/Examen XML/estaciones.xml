@@ -1,0 +1,9 @@
+<!DOCTYPE red_ferroviaria SYSTEM "file.dtd" [
+    <!ELEMENT sede_central (#PCDATA) >
+    <!ELEMENT estacion (#PCDATA)>
+    <!ELEMENT  (#PCDATA)>
+    <!ELEMENT capacidad (#PCDATA)>
+    
+]>
+<red_ferroviaria>
+</red_ferroviaria>
