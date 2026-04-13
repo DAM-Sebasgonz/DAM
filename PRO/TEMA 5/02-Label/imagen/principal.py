@@ -2,7 +2,7 @@ import os
 import sys
 
 from PySide6.QtWidgets import QApplication, QWidget
-from ui_prueba_Widget import Ui_Form
+from ui_lbl_imagen import Ui_Form
 
 class ClaseVentana(QWidget, Ui_Form):
     def __init__(self, parent=None):

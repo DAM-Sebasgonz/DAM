@@ -8,7 +8,7 @@ import sys
 from PySide6.QtWidgets import QApplication
 from PySide6.QtUiTools import QUiLoader
 
-loader = QUiLoader ()
+loader = QUiLoader()
 basedir = os.path.dirname(__file__)
 
 def mainwindow_setup(w):

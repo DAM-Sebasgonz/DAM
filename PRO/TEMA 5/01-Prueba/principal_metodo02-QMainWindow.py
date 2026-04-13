@@ -1,10 +1,10 @@
 import os
 import sys
 
-from PySide6.QtWidgets import QApplication, QWidget
-from ui_prueba_Widget import Ui_Form
+from PySide6.QtWidgets import QApplication, QMainWindow
+from ui_prueba_MainWindow import Ui_MainWindow
 
-class ClaseVentana(QWidget, Ui_Form):
+class ClaseVentana(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(ClaseVentana, self).__init__(parent)
         self.setupUi(self)
