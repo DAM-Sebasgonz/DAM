@@ -2,7 +2,7 @@ import os
 import sys
 
 from PySide6.QtWidgets import QApplication, QWidget
-from  import Ui_Form
+from calculadora import Ui_Form
 
 class ClaseVentana(QWidget, Ui_Form):
     def __init__(self, parent=None):
