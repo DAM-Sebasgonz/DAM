@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="videojuegos.xsl" type="text/xsl"?>
+<tienda nombre="GameCenter">
+  <videojuego id="v1" consola="PS5" stock="si">
+    <titulo>Elden Ring</titulo>
+    <desarrollador>FromSoftware</desarrollador>
+    <precio moneda="EUR">60</precio>
+    <genero>RPG</genero>
+  </videojuego>
+  <videojuego id="v2" consola="Switch" stock="si">
+    <titulo>Zelda: TotK</titulo>
+    <desarrollador>Nintendo</desarrollador>
+    <precio moneda="EUR">55</precio>
+    <genero>Aventura</genero>
+  </videojuego>
+  <videojuego id="v3" consola="PC" stock="no">
+    <titulo>Cyberpunk 2077</titulo>
+    <desarrollador>CD Projekt</desarrollador>
+    <precio moneda="USD">40</precio>
+    <genero>RPG</genero>
+  </videojuego>
+  <videojuego id="v4" consola="PS5" stock="si">
+    <titulo>Spider-Man 2</titulo>
+    <desarrollador>Insomniac</desarrollador>
+    <precio moneda="EUR">75</precio>
+    <genero>Accion</genero>
+  </videojuego>
+</tienda>

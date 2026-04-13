@@ -1,0 +1,49 @@
+<franquicia nombre="GameMaster Corp">
+  <tienda ciudad="Madrid" tipo="fisica">
+    <videojuego id="v1" stock="si">
+      <titulo>Elden Ring</titulo>
+      <precio>60</precio>
+      <categoria>RPG</categoria>
+    </videojuego>
+    <videojuego id="v2" stock="no">
+      <titulo>Zelda: TotK</titulo>
+      <precio>55</precio>
+      <categoria>Aventura</categoria>
+    </videojuego>
+    <videojuego id="v3" stock="si">
+      <titulo>Cyberpunk 2077</titulo>
+      <precio>30</precio>
+      <categoria>RPG</categoria>
+    </videojuego>
+  </tienda>
+
+  <tienda ciudad="Barcelona" tipo="fisica">
+    <videojuego id="v1" stock="si">
+      <titulo>Elden Ring</titulo>
+      <precio>45</precio>
+      <categoria>RPG</categoria>
+    </videojuego>
+    <videojuego id="v4" stock="si">
+      <titulo>Spider-Man 2</titulo>
+      <precio>70</precio>
+      <categoria>Accion</categoria>
+    </videojuego>
+  </tienda>
+
+  <tienda ciudad="Online" tipo="web">
+    <videojuego id="v1" stock="no">
+      <titulo>Elden Ring</titulo>
+      <precio>40</precio>
+    </videojuego>
+    <videojuego id="v3" stock="si">
+      <titulo>Cyberpunk 2077</titulo>
+      <precio>25</precio>
+      <categoria>RPG</categoria>
+    </videojuego>
+    <videojuego id="v5" stock="si">
+      <titulo>Starfield</titulo>
+      <precio>50</precio>
+      <categoria>RPG</categoria>
+    </videojuego>
+  </tienda>
+</franquicia>
