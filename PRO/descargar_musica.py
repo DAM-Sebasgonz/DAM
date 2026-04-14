@@ -1,18 +1,22 @@
 import yt_dlp
+import os
 
-def descargar_musica_sin_drm():
+def descargar_musica():
     busqueda = input("Introduce el nombre de la canción y el artista: ").strip()
-    
+
     if not busqueda:
+        print("No introdujiste ningún texto.")
         return
+
+    # Crear la carpeta de descargas si no existe
+    os.makedirs("descargas", exist_ok=True)
 
     ydl_opts = {
         'format': 'bestaudio/best',
-        'default_search': 'ytsearch', 
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'mp4',
-            'preferredquality': '320',
+            'preferredcodec': 'mp3',   # ✅ Codec válido para audio
+            'preferredquality': '320', # ✅ Calidad en kbps (solo para mp3)
         }],
         'outtmpl': 'descargas/%(title)s.%(ext)s',
         'noplaylist': True,
@@ -20,12 +24,13 @@ def descargar_musica_sin_drm():
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            print(f"\nBuscando '{busqueda}' en la red...")
-            # Añadimos 'ytsearch:' antes de la búsqueda
+            print(f"\nBuscando '{busqueda}'...")
             ydl.download([f"ytsearch1:{busqueda}"])
-            print("\n¡Logrado! Archivo guardado en la carpeta 'descargas'.")
+            print("\n¡Descarga completada! Archivo guardado en 'descargas/'.")
+    except yt_dlp.utils.DownloadError as e:
+        print(f"Error al descargar: {e}")
     except Exception as e:
-        print(f"Vaya, algo salió mal: {e}")
+        print(f"Error inesperado: {e}")
 
 if __name__ == "__main__":
-    descargar_musica_sin_drm()
+    descargar_musica()
