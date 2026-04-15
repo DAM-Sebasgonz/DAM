@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="carta.xsl" type="text/xsl"?>
+
+<menu>
+  <categoria nombre="Entrantes">
+    <plato>
+      <nombre>Croquetas de Jamón</nombre>
+      <precio>8.50</precio>
+    </plato>
+    <plato>
+      <nombre>Tabla de Quesos</nombre>
+      <precio>12.00</precio>
+    </plato>
+  </categoria>
+  
+  <categoria nombre="Principales">
+    <plato>
+      <nombre>Chuletón a la brasa</nombre>
+      <precio>24.00</precio>
+    </plato>
+  </categoria>
+</menu>
