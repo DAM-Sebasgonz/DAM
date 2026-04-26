@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="auditoria.xsl"?>
+<save_data version="67" game="Kinart Chronicles">
+    
+    <meta_data>
+        <char_guid>8B00905B482B037C5542ACBA7068B33D</char_guid>
+        <char_name>Kinart</char_name>
+        <char_type>0</char_type>
+        <level>42</level>
+        <experience_points>1485920</experience_points>
+        <save_count>655</save_count>
+        <playtime>
+            <simulated hours="52" minutes="51" seconds="23" raw_seconds="190283.04" />
+            <wall_clock raw_seconds="190298.25" />
+        </playtime>
+        <last_location x="214167.33" y="37177.02" z="-4328.72" zone="GhornfellArea" />
+        <worlds_playtime>
+            <world id="074277844C1679FD7FCAD4A634CA6BE9" seconds="1775425097" />
+            <world id="088DB31342DB6BDD0357FF8DD9BC4075" seconds="1774955813" />
+        </worlds_playtime>
+    </meta_data>
+
+    <character>
+        <customization>
+            <body_type>female_A_01</body_type>
+            <head_type>female_A_04</head_type>
+            <hair_preset>Preset30</hair_preset>
+            <facial_hair_preset>F_A_PresetNone</facial_hair_preset>
+            <skin_tone>SkinTone2</skin_tone>
+            <hair_color>Color6</hair_color>
+            <eye_color>Color5</eye_color>
+            <eyebrow_color>Color7</eyebrow_color>
+        </customization>
+
+        <vitals>
+            <health name="health" current="55" max="100" />
+            <stamina name="stamina" current="90" max="100" />
+            <endurance name="endurance" current="22.29" max="100" />
+            <sustenance name="sustenance" current="69.27" max="100" />
+            <hydration name="hydration" current="11.43" max="100" />
+            <toxicity name="toxicity" current="15" max="100" />
+            
+        </vitals>
+
+        <status_effects>
+            <effect id="Cold" hash="1501092416" active="false" value="0" />
+            <effect id="Poison" hash="1673355410" active="false" value="0" />
+            <effect id="Burning" hash="1232270846" active="false" value="0" />
+            <effect id="Bleeding" hash="3836059435" active="true" value="15" />
+            <effect id="Slow" hash="897314269" active="false" value="0" />
+            <effect id="WellRested" hash="2050017224" active="false" value="0" />
+            <effect id="Cosiness" hash="334594781" active="true" value="100" />
+            <effect id="Wither" hash="2596365627" active="false" value="0" />
+        </status_effects>
+
+        <skills>
+            <skill id="SKILL_MINING" xp="210048" level="28" />
+            <skill id="SKILL_SMITHING" xp="215451" level="29" />
+            <skill id="SKILL_MAGIC" xp="204138" level="27" />
+            <skill id="SKILL_COMBAT" xp="274651" level="32" />
+            <skill id="SKILL_ALCHEMY" xp="185420" level="25" />
+            <skill id="SKILL_COOKING" xp="192850" level="26" />
+            <skill id="SKILL_CRAFTING" xp="198765" level="27" />
+            <skill id="SKILL_ARCHERY" xp="226340" level="30" />
+        </skills>
+
+        <mount>
+            <equipped>None</equipped>
+            <unlocked_mounts />
+        </mount>
+
+        <soul_rift>
+            <duration>0</duration>
+            <playing_event>false</playing_event>
+            <pre_hydration>-1</pre_hydration>
+            <pre_sustenance>-1</pre_sustenance>
+            <pre_endurance>-1</pre_endurance>
+            <tracked_enemies />
+        </soul_rift>
+    </character>
+
+    <inventory max_slots="96">
+        <item slot="0" guid="xhfTr0w-D6YlaquA" item_data="WEAPON_Sword_Iron" type="equipment">
+            <durability current="1105" max="1500" />
+            <vital_shield>0</vital_shield>
+            <name>Iron Sword</name>
+            <rarity>common</rarity>
+        </item>
+        <item slot="1" guid="-UE8u0uSiSKi6He" item_data="ARMOR_Chest_Leather" type="equipment">
+            <durability current="1045" max="1200" />
+            <vital_shield>90</vital_shield>
+            <name>Leather Chestplate</name>
+            <rarity>uncommon</rarity>
+        </item>
+        <item slot="5" guid="3IjCVUNRgB1IX8aq" item_data="TOOL_Pickaxe_Steel" type="equipment">
+            <durability current="15" max="1651" />
+            <vital_shield>0</vital_shield>
+            <name>Steel Pickaxe</name>
+            <rarity>uncommon</rarity>
+        </item>
+        <item slot="6" guid="WUr7AUdyosKuVAG1i6wXuw" item_data="ARMOR_Legs_Leather" type="equipment">
+            <durability current="1157" max="1200" />
+            <vital_shield>0</vital_shield>
+            <name>Leather Legguards</name>
+            <rarity>uncommon</rarity>
+        </item>
+        <item slot="7" guid="JfkfPUY00MzGGX29" item_data="WEAPON_Bow_Wood" type="equipment">
+            <durability current="0" max="800" />
+            <vital_shield>0</vital_shield>
+            <name>Wooden Bow (Broken)</name>
+            <rarity>common</rarity>
+        </item>
+        <item slot="8" guid="ewxUMkeOWpm_SAqmJXs89Q" item_data="POTION_Health_Minor" type="consumable" count="4">
+            <name>Minor Health Potion</name>
+            <rarity>common</rarity>
+            <effect>Restores 25 health</effect>
+        </item>
+        <item slot="10" guid="tSQXG0RF2XG7fyGv3E41Iw" item_data="POTION_Mana_Minor" type="consumable" count="3">
+            <name>Minor Mana Potion</name>
+            <rarity>common</rarity>
+            <effect>Restores 30 mana</effect>
+        </item>
+        <item slot="11" guid="EAPc1kwvo0KXSnS9XAN_Og" item_data="SCROLL_Fireball" type="consumable" count="18">
+            <name>Fireball Scroll</name>
+            <rarity>common</rarity>
+            <effect>Deals 50 fire damage</effect>
+        </item>
+        <item slot="14" guid="8aMo304H-ipeVsezR7ysYw" item_data="POTION_Stamina_Major" type="consumable" count="2">
+            <name>Major Stamina Potion</name>
+            <rarity>rare</rarity>
+            <effect>Restores 80 stamina</effect>
+        </item>
+        
+        <item slot="2" guid="YdfPXEej83HwkWW5" item_data="RES_Wood_Oak" type="resource" count="739">
+            <name>Oak Wood</name>
+            <category>timber</category>
+        </item>
+        <item slot="3" guid="Gvjlok0hEWuJIK6W" item_data="RES_Stone_Cobble" type="resource" count="593">
+            <name>Cobblestone</name>
+            <category>stone</category>
+        </item>
+        <item slot="4" guid="QDfzWUN0-ktgWJ6M" item_data="RES_Ore_Iron" type="resource" count="27">
+            <name>Iron Ore</name>
+            <category>ore</category>
+        </item>
+        <item slot="9" guid="ziJyKkjO9ax3UsWGTvPMtw" item_data="RES_Ore_Copper" type="resource" count="50">
+            <name>Copper Ore</name>
+            <category>ore</category>
+        </item>
+        <item slot="71" guid="ziJyKkjO9ax3UsWGTvPMtw" item_data="RES_Ore_Copper" type="resource" count="45">
+            <name>Copper Ore</name>
+            <category>ore</category>
+        </item>
+        
+        <item slot="22" guid="MwC-jkDKhNWM6zqjafbQvA" item_data="RES_Herb_Feverfew" type="resource" count="3">
+            <name>Feverfew</name>
+            <category>herb</category>
+        </item>
+        <item slot="23" guid="TkeFoUCjR_yMBQieswuk7A" item_data="RES_Gem_Sapphire" type="resource" count="5">
+            <name>Sapphire</name>
+            <category>gem</category>
+        </item>
+        <item slot="24" guid="l_qjSkUJtjWFgm6fpQ1daw" item_data="RES_Leather_Hide" type="resource" count="13">
+            <name>Leather Hide</name>
+            <category>material</category>
+        </item>
+        <item slot="25" guid="QBKWhkswkrzrdFKVpy9m6Q" item_data="RES_Cloth_Silk" type="resource" count="7">
+            <name>Silk Cloth</name>
+            <category>textile</category>
+        </item>
+        
+        <item slot="32" guid="uImbo0Ln2osx9V24" item_data="RES_Herb_Guam" type="resource" count="853">
+            <name>Guam Herb</name>
+            <category>herb</category>
+        </item>
+        <item slot="33" guid="_orpoUuIC5l1pxW9" item_data="RES_Herb_Marrentill" type="resource" count="820">
+            <name>Marrentill</name>
+            <category>herb</category>
+        </item>
+        <item slot="34" guid="pi2O8kyZOHzMzXiH" item_data="RES_Herb_Tarromin" type="resource" count="670">
+            <name>Tarromin</name>
+            <category>herb</category>
+        </item>
+        <item slot="35" guid="WymZnEpX13HfaaCJHhBKCQ" item_data="RES_Herb_Harralander" type="resource" count="249">
+            <name>Harralander</name>
+            <category>herb</category>
+        </item>
+        <item slot="36" guid="z73lYE0CGoKpiJyHTCoMuQ" item_data="RES_Herb_Ranarr" type="resource" count="448">
+            <name>Ranarr</name>
+            <category>herb</category>
+        </item>
+        <item slot="72" guid="z73lYE0CGoKpiJyHTCoMuQ" item_data="RES_Herb_Ranarr" type="resource" count="32">
+            <name>Ranarr</name>
+            <category>herb</category>
+        </item>
+        <item slot="56" guid="WSYl8U-klcTG1omHXP1WHA" item_data="RES_Mushroom_Shiitake" type="resource" count="27">
+            <name>Shiitake Mushroom</name>
+            <category>food</category>
+        </item>
+        
+        <item slot="15" guid="PprNr0jdCds1EdS8" item_data="CONT_WaterFlask" type="container">
+            <charges remaining="150" max="200" />
+            <content_data>LIQUID_Water_Pure</content_data>
+            <name>Water Flask</name>
+            <material>glass</material>
+        </item>
+        
+        <item slot="80" guid="WH_P90JpHQvcyd-P9uxgOQ" item_data="KEY_DungeonMaster" type="key">
+            <name>Dungeon Master Key</name>
+            <unlocks>Ancient Crypt Door</unlocks>
+        </item>
+        <item slot="81" guid="KyZ_dECS5QMMSZWoI9_YZA" item_data="MAP_HighlandPass" type="misc">
+            <name>Map of Highland Pass</name>
+            <discovered>true</discovered>
+        </item>
+        <item slot="82" guid="9T8tAUZP3RdM7nChpoUD1A" item_data="BOOK_Spellcraft" type="misc">
+            <name>Advanced Spellcraft Tome</name>
+            <knowledge_gain>magic</knowledge_gain>
+        </item>
+        <item slot="83" guid="p-u8QEQhDkrJoPSqgUflXA" item_data="AMULET_Protection" type="trinket">
+            <name>Amulet of Protection</name>
+            <defense_bonus>5</defense_bonus>
+        </item>
+        <item slot="84" guid="sCLwJUMvQ5g8h4i3UJWhqg" item_data="RING_Stamina" type="trinket" count="14">
+            <name>Ring of Stamina</name>
+            <stamina_bonus>10</stamina_bonus>
+        </item>
+        <item slot="85" guid="BJEgtkRH9wzwSVGujkDKzQ" item_data="RUNE_Fire" type="spell">
+            <name>Fire Rune</name>
+            <spell_school>pyromancy</spell_school>
+            <damage>40</damage>
+        </item>
+        <item slot="86" guid="MBDez0zKJf7Gi8-Nnh7q6A" item_data="Elite_Sword_Enchanted" type="equipment">
+            <durability current="1706" max="1706" />
+            <vital_shield>0</vital_shield>
+            <name>Enchanted Iron Sword of Flame</name>
+            <rarity>legendary</rarity>
+        </item>
+        <item slot="87" guid="OJKE70nveY5kUH-xez9zBQ" item_data="Elite_Armor_Plate" type="equipment">
+            <durability current="1706" max="1706" />
+            <vital_shield>90</vital_shield>
+            <name>Plate Armor +2</name>
+            <rarity>rare</rarity>
+        </item>
+        <item slot="88" guid="jNxAE0HNGdy_mAqEUYFuCQ" item_data="HELM_Knight" type="equipment">
+            <vital_shield>0</vital_shield>
+            <name>Knight's Helmet</name>
+            <rarity>legendary</rarity>
+        </item>
+        <item slot="89" guid="BGQxsU4lh6f52XSN_jAgDQ" item_data="Boots_Leather_Enhanced" type="equipment">
+            <durability current="0" max="500" />
+            <vital_shield>0</vital_shield>
+            <name>Enhanced Leather Boots (Broken)</name>
+            <rarity>epic</rarity>
+        </item>
+    </inventory>
+
+    <personal_inventory max_slots="1">
+        <item slot="0" guid="9UvYuEUL367vr8m_jGumLg" item_data="CURRENCY_Gold" count="2">
+            <name>Gold Coin</name>
+            <value>2</value>
+        </item>
+    </personal_inventory>
+
+    <loadout>
+        <slot id="0">
+            <guid>MBDez0zKJf7Gi8-Nnh7q6A</guid>
+            <item_data>Elite_Sword_Enchanted</item_data>
+            <durability current="1706" max="1706" />
+            <vital_shield>0</vital_shield>
+            <name>Enchanted Iron Sword of Flame</name>
+        </slot>
+        <slot id="1">
+            <guid>OJKE70nveY5kUH-xez9zBQ</guid>
+            <item_data>Elite_Armor_Plate</item_data>
+            <durability current="1706" max="1706" />
+            <vital_shield>90</vital_shield>
+            <name>Plate Armor +2</name>
+        </slot>
+        <slot id="2">
+            <guid>XZUk_EMlMcV_eG2Lmqoz9w</guid>
+            <item_data>Shield_Iron_Large</item_data>
+            <durability current="1706" max="1706" />
+            <vital_shield>0</vital_shield>
+            <name>Iron Shield</name>
+        </slot>
+        <slot id="3">
+            <guid>jNxAE0HNGdy_mAqEUYFuCQ</guid>
+            <item_data>HELM_Knight</item_data>
+            <vital_shield>0</vital_shield>
+            <name>Knight's Helmet</name>
+        </slot>
+        <slot id="4">
+            <guid>BGQxsU4lh6f52XSN_jAgDQ</guid>
+            <item_data>Boots_Leather_Enhanced</item_data>
+            <durability current="0" max="500" />
+            <vital_shield>0</vital_shield>
+            <name>Enhanced Leather Boots (Broken)</name>
+        </slot>
+        <slot id="5">
+            <inventory_reference>56</inventory_reference>
+            <name>Reference to consumable</name>
+        </slot>
+    </loadout>
+
+    <quest_log>
+        <quest id="yrRZnkmro" state="active" title="The Wise Old Man's Request" priority="high">
+            <giver>Aldrin the Wise</giver>
+            <location>Crystal Tower</location>
+            <description>The ancient wizard Aldrin has asked you to find and defeat Velgar the Dragon</description>
+            <reward_gold>5000</reward_gold>
+            <reward_items>Dragon Scale Helmet</reward_items>
+            <objectives>
+                <objective id="1" status="completed">Speak to the Wise Old Man</objective>
+                <objective id="2" status="active">Kill Velgar the Dragon</objective>
+                <objective id="3" status="not_started">Bring proof of Velgar's defeat</objective>
+            </objectives>
+            <variables>
+                <variable name="HasSpokeToWOM" value="true" type="bool" />
+                <variable name="KnowVelgar" value="true" type="bool" />
+                <variable name="VelgarLocation" value="SkyPeak Mountains" type="string" />
+                <variable name="QuestBeat" value="2" type="int" />
+                <variable name="Progress" value="45" type="int" />
+            </variables>
+        </quest>
+        
+        <quest id="uftGB0es" state="completed" title="Death's Domain" priority="critical">
+            <giver>The Dark One</giver>
+            <location>The Underworld</location>
+            <description>Enter the Underworld and defeat the corrupted god Imaru</description>
+            <reward_gold>15000</reward_gold>
+            <reward_items>Imaru's Crown</reward_items>
+            <completion_date>Day 45, Month of Autumn</completion_date>
+            <objectives>
+                <objective id="1" status="completed">Enter the Underworld</objective>
+                <objective id="2" status="completed">Slay Imaru</objective>
+                <objective id="3" status="completed">Escape the Underworld</objective>
+            </objectives>
+            <variables>
+                <variable name="HasEnteredBefore" value="true" type="bool" />
+                <variable name="ImaruDefeated" value="true" type="bool" />
+                <variable name="HasRecievedImaruHead" value="false" type="bool" />
+                <variable name="EscapeUsed" value="true" type="bool" />
+                <variable name="DeathQuest_Beat" value="5" type="int" />
+            </variables>
+        </quest>
+        
+        <quest id="Fv3Rt0Dn18" state="active" title="The Collector's Calling" priority="medium">
+            <giver>The Collector</giver>
+            <location>Forbidden Library</location>
+            <description>Help The Collector find rare artifacts and magical items</description>
+            <reward_gold>3000</reward_gold>
+            <reward_items>Collector's Badge</reward_items>
+            <objectives>
+                <objective id="1" status="active">Find Necromancer Staff</objective>
+                <objective id="2" status="not_started">Retrieve Ancient Scrolls</objective>
+                <objective id="3" status="not_started">Safeguard the Artifacts</objective>
+            </objectives>
+            <variables>
+                <variable name="IntroDialogueDone" value="true" type="bool" />
+                <variable name="StaffLocation" value="Dark Catacombs" type="string" />
+                <variable name="CollectorsCalling_Beat" value="2" type="int" />
+                <variable name="ItemsNeeded" value="3" type="int" />
+                <variable name="ItemsCollected" value="1" type="int" />
+            </variables>
+        </quest>
+
+        <quest id="mq7K9Lp2m" state="active" title="Restoration of the Temple" priority="high">
+            <giver>High Priestess Elara</giver>
+            <location>Sacred Temple</location>
+            <description>Restore the ancient temple to its former glory</description>
+            <reward_gold>8000</reward_gold>
+            <reward_items>Blessed Robe of the Temple</reward_items>
+            <objectives>
+                <objective id="1" status="completed">Gather stone blocks</objective>
+                <objective id="2" status="in_progress">Repair the main hall</objective>
+                <objective id="3" status="not_started">Perform the blessing ceremony</objective>
+            </objectives>
+            <variables>
+                <variable name="StonesGathered" value="45" type="int" />
+                <variable name="StonesNeeded" value="50" type="int" />
+                <variable name="BlessingPrepared" value="false" type="bool" />
+            </variables>
+        </quest>
+
+        <quest id="qs4R6Tn9x" state="completed" title="The Lost Expedition" priority="low">
+            <giver>Captain Ironside</giver>
+            <location>Harbor Town</location>
+            <description>Find and rescue the lost expedition team</description>
+            <reward_gold>2500</reward_gold>
+            <completion_date>Day 38, Month of Summer</completion_date>
+            <objectives>
+                <objective id="1" status="completed">Find the expedition camp</objective>
+                <objective id="2" status="completed">Rescue the survivors</objective>
+                <objective id="3" status="completed">Return to Harbor Town</objective>
+            </objectives>
+            <variables>
+                <variable name="SurvivorsRescued" value="8" type="int" />
+                <variable name="CaptainRewarded" value="true" type="bool" />
+            </variables>
+        </quest>
+
+        <quest id="ax2D7Wq5y" state="active" title="Malice in the Wood" priority="medium">
+            <giver>Forest Ranger Elathan</giver>
+            <location>Ancient Forest</location>
+            <description>Investigate the mysterious darkness spreading through the forest</description>
+            <reward_gold>4000</reward_gold>
+            <objectives>
+                <objective id="1" status="completed">Speak with the Forest Ranger</objective>
+                <objective id="2" status="in_progress">Defeat corrupted creatures</objective>
+                <objective id="3" status="not_started">Find the source of the darkness</objective>
+            </objectives>
+            <variables>
+                <variable name="CreaturesDefeated" value="12" type="int" />
+                <variable name="CreaturesNeeded" value="20" type="int" />
+                <variable name="DarknessSource" value="unknown" type="string" />
+            </variables>
+        </quest>
+
+        <quest id="bd3E8Rs7z" state="not_started" title="The Mage's Secret" priority="low">
+            <giver>Master Thorne</giver>
+            <location>Tower of Knowledge</location>
+            <description>Unlock the secrets of ancient magic</description>
+            <reward_gold>6000</reward_gold>
+            <objectives>
+                <objective id="1" status="not_started">Find ancient runestones</objective>
+                <objective id="2" status="not_started">Decipher the ancient language</objective>
+                <objective id="3" status="not_started">Learn the forbidden spell</objective>
+            </objectives>
+            <variables>
+                <variable name="RunestonesToFind" value="5" type="int" />
+                <variable name="RunestonesFound" value="0" type="int" />
+            </variables>
+        </quest>
+
+        <quest id="ce4F9Uv1a" state="completed" title="Plague of Rats" priority="low">
+            <giver>Blacksmith Garrett</giver>
+            <location>Mining Town</location>
+            <description>Clear the rat infestation from the mines</description>
+            <reward_gold>1500</reward_gold>
+            <completion_date>Day 20, Month of Spring</completion_date>
+            <objectives>
+                <objective id="1" status="completed">Enter the mines</objective>
+                <objective id="2" status="completed">Kill rat colony</objective>
+                <objective id="3" status="completed">Seal the tunnels</objective>
+            </objectives>
+            <variables>
+                <variable name="RatsKilled" value="87" type="int" />
+                <variable name="TunnelsSealed" value="true" type="bool" />
+            </variables>
+        </quest>
+    </quest_log>
+
+    <progress>
+        <items_picked_up count="367">
+            <milestone_items count="13" />
+        </items_picked_up>
+        <actors_interacted count="14">
+            <actor>BP_BaseBuilding_Chest_Iron_C</actor>
+            <actor>BP_Crafting_WeaponBench_C</actor>
+            <actor>BP_NPC_PostiePete_Dowdun_C</actor>
+            <actor>BP_Crafting_CookingBench_C</actor>
+            <actor>BP_BaseBuilding_Bed_C</actor>
+            <actor>BP_LootChest_Prefab_Tier6_World_C</actor>
+            <actor>BP_DR_BuriedChest_C</actor>
+            <actor>BP_NPC_LucidMage_Dowdun_C</actor>
+            <actor>BP_InteractablePlayerTeleporter_RequiresQuestStep_DR_Portal_C</actor>
+            <actor>BP_DR_RecipeDispenser_Book_C</actor>
+            <actor>BP_BinaryLever_DR_C</actor>
+            <actor>BP_NPC_DreamingStone_Fragment_C</actor>
+            <actor>BP_LoreItem_C</actor>
+            <actor>BP_LootChest_Prefab_Tier6_World_VestigeChance_C</actor>
+        </actors_interacted>
+        <recipes_unlocked count="168">
+            <recipe id="rec_iron_sword">Craft Iron Sword</recipe>
+            <recipe id="rec_leather_armor">Craft Leather Armor</recipe>
+            <recipe id="rec_health_potion">Brew Health Potion</recipe>
+            <recipe id="rec_mana_potion">Brew Mana Potion</recipe>
+            <recipe id="rec_oak_shield">Craft Oak Shield</recipe>
+        </recipes_unlocked>
+        <discovered_locations count="42">
+            <location zone="GhornfellArea" discovered="true" />
+            <location zone="SkyPeak Mountains" discovered="true" />
+            <location zone="The Underworld" discovered="true" />
+            <location zone="Forbidden Library" discovered="true" />
+            <location zone="Sacred Temple" discovered="true" />
+            <location zone="Harbor Town" discovered="true" />
+            <location zone="Ancient Forest" discovered="true" />
+            <location zone="Tower of Knowledge" discovered="true" />
+            <location zone="Mining Town" discovered="true" />
+            <location zone="Crystal Valley" discovered="true" />
+        </discovered_locations>
+        <achievements earned="23">
+            <achievement id="ach_first_kill">First Blood</achievement>
+            <achievement id="ach_master_miner">Master Miner</achievement>
+            <achievement id="ach_quest_master">Quest Master (Completed 10 Quests)</achievement>
+            <achievement id="ach_dragon_slayer">Dragon Slayer</achievement>
+            <achievement id="ach_death_conqueror">Conqueror of Death</achievement>
+            <achievement id="ach_collector">Completionist (Collected 50 Items)</achievement>
+        </achievements>
+    </progress>
+
+    <statistics>
+        <combat_stats>
+            <enemies_defeated>487</enemies_defeated>
+            <bosses_defeated>8</bosses_defeated>
+            <deaths>3</deaths>
+            <revives>2</revives>
+        </combat_stats>
+        <resource_stats>
+            <items_crafted>156</items_crafted>
+            <items_harvested>892</items_harvested>
+            <total_gold_earned>42500</total_gold_earned>
+            <total_gold_spent>38200</total_gold_spent>
+        </resource_stats>
+        <distance_traveled>487235.45</distance_traveled>
+        <dungeons_completed>12</dungeons_completed>
+        <world_events_triggered>34</world_events_triggered>
+    </statistics>
+</save_data>
