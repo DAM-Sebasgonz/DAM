@@ -1,6 +1,6 @@
 USE ComplejoDeportivo;
 
-DELIMITER $$
+DELIMITER $$    
 
 -- ============================================================
 -- PROCEDIMIENTOS

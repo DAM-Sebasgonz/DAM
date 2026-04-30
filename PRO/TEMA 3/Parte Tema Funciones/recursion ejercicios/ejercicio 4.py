@@ -21,3 +21,4 @@ print(digitoNoSeEncuentra(1323, 3))  # False (el 3 SÍ está en 1323)
 print(digitoNoSeEncuentra(1323, 2))  # False (el 2 SÍ está en 1323)
 print(digitoNoSeEncuentra(456, 7))   # True (el 7 NO está en 456)
 print(digitoNoSeEncuentra(456, 5))   # False (el 5 SÍ está en 456)
+
