@@ -1,5 +1,5 @@
 -- Crear la base de datos
-CREATE DATABASE if not exists ComplejoDeportivo;
+CREATE DATABASE IF NOT EXISTS ComplejoDeportivo;
 USE ComplejoDeportivo;
 
 -- Tabla 1: Socios
@@ -40,8 +40,10 @@ CREATE TABLE Reservas (
     FechaReserva DATE,
     HoraInicio TIME,
     HoraFin TIME,
-    FOREIGN KEY (DNISocio) REFERENCES Socios(DNI),
-    FOREIGN KEY (IDInstalacion) REFERENCES Instalaciones(IDInstalacion)
+    CONSTRAINT fk_reserva_socio FOREIGN KEY (DNISocio) 
+        REFERENCES Socios(DNI) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_reserva_inst FOREIGN KEY (IDInstalacion) 
+        REFERENCES Instalaciones(IDInstalacion) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB;
 
 -- Tabla 5: Clases
@@ -53,21 +55,27 @@ CREATE TABLE Clases (
     HoraInicio TIME,
     HoraFin TIME,
     CupoMaximo INT,
-    FOREIGN KEY (DNIInstructor) REFERENCES Empleados(DNI)
+    CONSTRAINT fk_clase_instruc FOREIGN KEY (DNIInstructor) 
+        REFERENCES Empleados(DNI) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB;
 
+-- Tabla 6: Asistencias
 CREATE TABLE AsistenciasClase (
-    IDClase   INT NOT NULL,
-    DNISocio  VARCHAR(9) NOT NULL,
+    IDClase INT NOT NULL,
+    DNISocio VARCHAR(9) NOT NULL,
     PRIMARY KEY (IDClase, DNISocio),
-    FOREIGN KEY (IDClase) REFERENCES Clases(IDClase),
-    FOREIGN KEY (DNISocio) REFERENCES Socios(DNI)
+    CONSTRAINT fk_asist_clase FOREIGN KEY (IDClase) 
+        REFERENCES Clases(IDClase) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_asist_socio FOREIGN KEY (DNISocio) 
+        REFERENCES Socios(DNI) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB;
 
+-- Tabla 7: Historial
 CREATE TABLE HistorialMantenimiento (
     IDMantenimiento INT AUTO_INCREMENT PRIMARY KEY,
     IDInstalacion INT NOT NULL,
     FechaMantenimiento DATETIME NOT NULL,
     Comentario VARCHAR(255),
-    FOREIGN KEY (IDInstalacion) REFERENCES Instalaciones(IDInstalacion)
+    CONSTRAINT fk_mant_inst FOREIGN KEY (IDInstalacion) 
+        REFERENCES Instalaciones(IDInstalacion) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB;
