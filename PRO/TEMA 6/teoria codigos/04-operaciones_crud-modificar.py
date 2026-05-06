@@ -5,7 +5,7 @@ from getpass import getpass
 try:
     # Conectamos a la BD prueba con el usuario usrpostgre
     connection = psycopg2.connect(user="usrpostgre",
-                                  password=getpass("Introduzca la contraseña: "),
+                                  password=getpass("Introduzca la contraseña: "), 
                                   host="localhost",
                                   port="5432",
                                   database="prueba")

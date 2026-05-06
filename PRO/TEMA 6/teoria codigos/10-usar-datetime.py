@@ -31,7 +31,7 @@ try:
 
 except (Exception, Error) as error:
     print("Error...al intentar conectar con PostgreSQL", error)
-finally:
+else:
     if (connection):
         cursor.close()
         connection.close()
