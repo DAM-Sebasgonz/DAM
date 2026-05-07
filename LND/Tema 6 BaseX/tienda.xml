@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda>
+    <juego id="1" plataforma="PC">
+        <titulo>Cyber Quest</titulo>
+        <genero>RPG</genero>
+        <precio>45.50</precio>
+        <stock>15</stock>
+    </juego>
+    <juego id="2" plataforma="PS5">
+        <titulo>Speed Racer X</titulo>
+        <genero>Carreras</genero>
+        <precio>60.00</precio>
+        <stock>0</stock>
+    </juego>
+    <juego id="3" plataforma="PC">
+        <titulo>Star Builder</titulo>
+        <genero>Estrategia</genero>
+        <precio>20.00</precio>
+        <stock>42</stock>
+    </juego>
+    <juego id="4" plataforma="Switch">
+        <titulo>Jump Bros</titulo>
+        <genero>Plataformas</genero>
+        <precio>50.00</precio>
+        <stock>10</stock>
+    </juego>
+</tienda>
