@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A047">
+  <nombre>Dan</nombre>
+  <apellidos>Brown</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Estadounidense</nacionalidad>
+    <nacimiento>
+      <fecha>1964-06-22</fecha>
+      <lugar>Exeter</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <estado>Activo / Vivo</estado>
+    </fallecimiento>
+    <biografia>
+      Dan Brown es un autor de gran relevancia dentro del movimiento Thriller. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Símbolos, Religión, Conspiración.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Exeter, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L047_1">
+      <titulo>El código Da Vinci</titulo>
+      <anio>1994</anio>
+      <genero>Thriller</genero>
+      <isbn>047-0-94-L047_1</isbn>
+      <resumen>
+        Esta obra titulada "El código Da Vinci" es una de las piezas fundamentales de Dan Brown.
+        En ella, el autor despliega su maestría para tratar temas de Símbolos y Religión.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>385</paginas>
+        <ventas_estimadas>2450000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L047_2">
+      <titulo>Ángeles y demonios</titulo>
+      <anio>1995</anio>
+      <genero>Thriller</genero>
+      <isbn>047-1-94-L047_2</isbn>
+      <resumen>
+        Esta obra titulada "Ángeles y demonios" es una de las piezas fundamentales de Dan Brown.
+        En ella, el autor despliega su maestría para tratar temas de Símbolos y Religión.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>395</paginas>
+        <ventas_estimadas>2450000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L047_3">
+      <titulo>Inferno</titulo>
+      <anio>1996</anio>
+      <genero>Thriller</genero>
+      <isbn>047-2-94-L047_3</isbn>
+      <resumen>
+        Esta obra titulada "Inferno" es una de las piezas fundamentales de Dan Brown.
+        En ella, el autor despliega su maestría para tratar temas de Símbolos y Religión.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>405</paginas>
+        <ventas_estimadas>2450000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1997">Premio Nacional de Literatura</premio>
+    <premio anio="2007">Medalla de Oro de las Letras</premio>
+    <premio anio="2017">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Thriller</movimiento>
+    <temas>
+      <tema>Símbolos</tema>
+      <tema>Religión</tema>
+      <tema>Conspiración</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

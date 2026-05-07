@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro id="L031_1">
+  <titulo>2001: Una odisea del espacio</titulo>
+  <referencias>
+    <autor_id>A031</autor_id>
+    <editorial_id>E009</editorial_id>
+  </referencias>
+  <datos_edicion>
+    <fecha_publicacion>1960</fecha_publicacion>
+    <idioma_original>Español</idioma_original>
+    <traducciones>
+      <idioma>Inglés</idioma>
+      <idioma>Francés</idioma>
+      <idioma>Alemán</idioma>
+      <idioma>Japonés</idioma>
+    </traducciones>
+  </datos_edicion>
+  <caracteristicas_fisicas>
+    <formato>Tapa Dura</formato>
+    <dimensiones>15x23 cm</dimensiones>
+    <paginas>627</paginas>
+    <peso unidad="g">602</peso>
+    <isbn>978-57-249-5316-4</isbn>
+  </caracteristicas_fisicas>
+  <sinopsis>
+    La obra "2001: Una odisea del espacio" es una pieza fundamental de la literatura. 
+    En sus páginas, se exploran temas complejos y se desarrollan personajes memorables que han cautivado a generaciones.
+    Esta edición particular, publicada por la editorial vinculada, cuenta con un prólogo exclusivo y notas al pie que enriquecen la lectura.
+    Ideal para coleccionistas y estudiantes de literatura, ofrece una calidad de impresión superior y un diseño de portada artístico.
+    A través de su narrativa, el lector se sumerge en un mundo de emociones y reflexiones profundas sobre la sociedad y el individuo.
+    Considerada una de las mejores obras de su autor, sigue siendo un referente indiscutible en su género.
+  </sinopsis>
+  <inventario>
+    <ejemplares_totales>998</ejemplares_totales>
+    <disponibles>46</disponibles>
+    <precio moneda="EUR">28.40</precio>
+    <ubicacion_almacen>Pasillo 19, Estantería A1</ubicacion_almacen>
+  </inventario>
+  <valoraciones>
+    <critica puntuacion="9/10">Excelente narrativa y profundidad.</critica>
+    <usuarios promedio="4.8">Una lectura obligatoria para todos.</usuarios>
+  </valoraciones>
+</libro>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editorial id="E006">
+  <nombre>Anagrama</nombre>
+  <sede>
+    <ciudad>Barcelona</ciudad>
+    <pais>España</pais>
+  </sede>
+  <fundacion>1969</fundacion>
+  <contacto>
+    <email>contacto@anagrama.com</email>
+    <telefono>+34 912 636 609</telefono>
+    <sitio_web>https://www.anagrama.com</sitio_web>
+  </contacto>
+  <descripcion>
+    Anagrama es una de las editoriales más influyentes del mundo, con sede en Barcelona.
+    Desde su fundación en 1969, ha sido responsable de la publicación de miles de títulos, incluyendo clásicos y bestsellers contemporáneos.
+    Su catálogo abarca una amplia gama de géneros, desde la ficción literaria hasta la divulgación científica.
+    Cuenta con múltiples sellos editoriales especializados que garantizan la calidad y diversidad de su oferta.
+    A lo largo de su historia, ha recibido numerosos premios por su labor de difusión cultural y excelencia editorial.
+    Su presencia global le permite llegar a lectores en decenas de idiomas y mercados.
+  </descripcion>
+  <sedes_adicionales>
+    <sede>Londres</sede>
+    <sede>México D.F.</sede>
+    <sede>Buenos Aires</sede>
+  </sedes_adicionales>
+  <estadisticas_anuales>
+    <libros_publicados>1371</libros_publicados>
+    <autores_en_plantilla>160</autores_en_plantilla>
+  </estadisticas_anuales>
+</editorial>

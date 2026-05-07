@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editorial id="E009">
+  <nombre>Hachette Livre</nombre>
+  <sede>
+    <ciudad>París</ciudad>
+    <pais>Francia</pais>
+  </sede>
+  <fundacion>1826</fundacion>
+  <contacto>
+    <email>contacto@hachettelivre.com</email>
+    <telefono>+34 912 974 906</telefono>
+    <sitio_web>https://www.hachettelivre.com</sitio_web>
+  </contacto>
+  <descripcion>
+    Hachette Livre es una de las editoriales más influyentes del mundo, con sede en París.
+    Desde su fundación en 1826, ha sido responsable de la publicación de miles de títulos, incluyendo clásicos y bestsellers contemporáneos.
+    Su catálogo abarca una amplia gama de géneros, desde la ficción literaria hasta la divulgación científica.
+    Cuenta con múltiples sellos editoriales especializados que garantizan la calidad y diversidad de su oferta.
+    A lo largo de su historia, ha recibido numerosos premios por su labor de difusión cultural y excelencia editorial.
+    Su presencia global le permite llegar a lectores en decenas de idiomas y mercados.
+  </descripcion>
+  <sedes_adicionales>
+    <sede>Londres</sede>
+    <sede>México D.F.</sede>
+    <sede>Buenos Aires</sede>
+  </sedes_adicionales>
+  <estadisticas_anuales>
+    <libros_publicados>790</libros_publicados>
+    <autores_en_plantilla>467</autores_en_plantilla>
+  </estadisticas_anuales>
+</editorial>

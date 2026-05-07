@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A045">
+  <nombre>Yukio</nombre>
+  <apellidos>Mishima</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Japonesa</nacionalidad>
+    <nacimiento>
+      <fecha>1925-01-14</fecha>
+      <lugar>Tokio</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1970-11-25</fecha>
+      <lugar>Tokio</lugar>
+    </fallecimiento>
+    <biografia>
+      Yukio Mishima es un autor de gran relevancia dentro del movimiento Esteticismo Japonés. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Belleza, Tradición, Muerte.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Tokio, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L045_1">
+      <titulo>El pabellón de oro</titulo>
+      <anio>1990</anio>
+      <genero>Esteticismo Japonés</genero>
+      <isbn>045-0-90-L045_1</isbn>
+      <resumen>
+        Esta obra titulada "El pabellón de oro" es una de las piezas fundamentales de Yukio Mishima.
+        En ella, el autor despliega su maestría para tratar temas de Belleza y Tradición.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>375</paginas>
+        <ventas_estimadas>2350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L045_2">
+      <titulo>Confesiones de una máscara</titulo>
+      <anio>1991</anio>
+      <genero>Esteticismo Japonés</genero>
+      <isbn>045-1-90-L045_2</isbn>
+      <resumen>
+        Esta obra titulada "Confesiones de una máscara" es una de las piezas fundamentales de Yukio Mishima.
+        En ella, el autor despliega su maestría para tratar temas de Belleza y Tradición.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>385</paginas>
+        <ventas_estimadas>2350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L045_3">
+      <titulo>El mar de la fertilidad</titulo>
+      <anio>1992</anio>
+      <genero>Esteticismo Japonés</genero>
+      <isbn>045-2-90-L045_3</isbn>
+      <resumen>
+        Esta obra titulada "El mar de la fertilidad" es una de las piezas fundamentales de Yukio Mishima.
+        En ella, el autor despliega su maestría para tratar temas de Belleza y Tradición.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>395</paginas>
+        <ventas_estimadas>2350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1995">Premio Nacional de Literatura</premio>
+    <premio anio="2005">Medalla de Oro de las Letras</premio>
+    <premio anio="2015">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Esteticismo Japonés</movimiento>
+    <temas>
+      <tema>Belleza</tema>
+      <tema>Tradición</tema>
+      <tema>Muerte</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

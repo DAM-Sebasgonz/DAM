@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A009">
+  <nombre>Charles</nombre>
+  <apellidos>Dickens</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Británica</nacionalidad>
+    <nacimiento>
+      <fecha>1812-02-07</fecha>
+      <lugar>Portsmouth</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1870-06-09</fecha>
+      <lugar>Higham</lugar>
+    </fallecimiento>
+    <biografia>
+      Charles Dickens es un autor de gran relevancia dentro del movimiento Realismo Victoriano. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Pobreza, Infancia, Justicia social.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Portsmouth, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L009_1">
+      <titulo>Oliver Twist</titulo>
+      <anio>1918</anio>
+      <genero>Realismo Victoriano</genero>
+      <isbn>009-0-18-L009_1</isbn>
+      <resumen>
+        Esta obra titulada "Oliver Twist" es una de las piezas fundamentales de Charles Dickens.
+        En ella, el autor despliega su maestría para tratar temas de Pobreza y Infancia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>195</paginas>
+        <ventas_estimadas>550000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L009_2">
+      <titulo>Historia de dos ciudades</titulo>
+      <anio>1919</anio>
+      <genero>Realismo Victoriano</genero>
+      <isbn>009-1-18-L009_2</isbn>
+      <resumen>
+        Esta obra titulada "Historia de dos ciudades" es una de las piezas fundamentales de Charles Dickens.
+        En ella, el autor despliega su maestría para tratar temas de Pobreza y Infancia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>205</paginas>
+        <ventas_estimadas>550000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L009_3">
+      <titulo>Grandes esperanzas</titulo>
+      <anio>1920</anio>
+      <genero>Realismo Victoriano</genero>
+      <isbn>009-2-18-L009_3</isbn>
+      <resumen>
+        Esta obra titulada "Grandes esperanzas" es una de las piezas fundamentales de Charles Dickens.
+        En ella, el autor despliega su maestría para tratar temas de Pobreza y Infancia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>215</paginas>
+        <ventas_estimadas>550000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1959">Premio Nacional de Literatura</premio>
+    <premio anio="1969">Medalla de Oro de las Letras</premio>
+    <premio anio="1979">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Realismo Victoriano</movimiento>
+    <temas>
+      <tema>Pobreza</tema>
+      <tema>Infancia</tema>
+      <tema>Justicia social</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

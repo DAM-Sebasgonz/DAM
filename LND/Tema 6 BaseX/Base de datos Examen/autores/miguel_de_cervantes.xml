@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A001">
+  <nombre>Miguel</nombre>
+  <apellidos>de Cervantes</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Española</nacionalidad>
+    <nacimiento>
+      <fecha>1547-09-29</fecha>
+      <lugar>Alcalá de Henares</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1616-04-22</fecha>
+      <lugar>Madrid</lugar>
+    </fallecimiento>
+    <biografia>
+      Miguel de Cervantes es un autor de gran relevancia dentro del movimiento Realismo/Renacimiento. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Humor, Sátira, Idealismo.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Alcalá de Henares, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L001_1">
+      <titulo>Don Quijote de la Mancha</titulo>
+      <anio>1902</anio>
+      <genero>Realismo/Renacimiento</genero>
+      <isbn>001-0-02-L001_1</isbn>
+      <resumen>
+        Esta obra titulada "Don Quijote de la Mancha" es una de las piezas fundamentales de Miguel de Cervantes.
+        En ella, el autor despliega su maestría para tratar temas de Humor y Sátira.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>155</paginas>
+        <ventas_estimadas>150000</ventas_estimadas>
+        <puntuacion_critica>9.1</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L001_2">
+      <titulo>Novelas Ejemplares</titulo>
+      <anio>1903</anio>
+      <genero>Realismo/Renacimiento</genero>
+      <isbn>001-1-02-L001_2</isbn>
+      <resumen>
+        Esta obra titulada "Novelas Ejemplares" es una de las piezas fundamentales de Miguel de Cervantes.
+        En ella, el autor despliega su maestría para tratar temas de Humor y Sátira.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>165</paginas>
+        <ventas_estimadas>150000</ventas_estimadas>
+        <puntuacion_critica>9.1</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L001_3">
+      <titulo>La Galatea</titulo>
+      <anio>1904</anio>
+      <genero>Realismo/Renacimiento</genero>
+      <isbn>001-2-02-L001_3</isbn>
+      <resumen>
+        Esta obra titulada "La Galatea" es una de las piezas fundamentales de Miguel de Cervantes.
+        En ella, el autor despliega su maestría para tratar temas de Humor y Sátira.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>175</paginas>
+        <ventas_estimadas>150000</ventas_estimadas>
+        <puntuacion_critica>9.1</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1951">Premio Nacional de Literatura</premio>
+    <premio anio="1961">Medalla de Oro de las Letras</premio>
+    <premio anio="1971">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Realismo/Renacimiento</movimiento>
+    <temas>
+      <tema>Humor</tema>
+      <tema>Sátira</tema>
+      <tema>Idealismo</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

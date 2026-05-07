@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A040">
+  <nombre>George</nombre>
+  <apellidos>R.R. Martin</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Estadounidense</nacionalidad>
+    <nacimiento>
+      <fecha>1948-09-20</fecha>
+      <lugar>Bayonne</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <estado>Activo / Vivo</estado>
+    </fallecimiento>
+    <biografia>
+      George R.R. Martin es un autor de gran relevancia dentro del movimiento Fantasía Épica. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Poder, Guerra, Traición.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Bayonne, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L040_1">
+      <titulo>Juego de Tronos</titulo>
+      <anio>1980</anio>
+      <genero>Fantasía Épica</genero>
+      <isbn>040-0-80-L040_1</isbn>
+      <resumen>
+        Esta obra titulada "Juego de Tronos" es una de las piezas fundamentales de George R.R. Martin.
+        En ella, el autor despliega su maestría para tratar temas de Poder y Guerra.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>350</paginas>
+        <ventas_estimadas>2100000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L040_2">
+      <titulo>Choque de Reyes</titulo>
+      <anio>1981</anio>
+      <genero>Fantasía Épica</genero>
+      <isbn>040-1-80-L040_2</isbn>
+      <resumen>
+        Esta obra titulada "Choque de Reyes" es una de las piezas fundamentales de George R.R. Martin.
+        En ella, el autor despliega su maestría para tratar temas de Poder y Guerra.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>360</paginas>
+        <ventas_estimadas>2100000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L040_3">
+      <titulo>Tormenta de Espadas</titulo>
+      <anio>1982</anio>
+      <genero>Fantasía Épica</genero>
+      <isbn>040-2-80-L040_3</isbn>
+      <resumen>
+        Esta obra titulada "Tormenta de Espadas" es una de las piezas fundamentales de George R.R. Martin.
+        En ella, el autor despliega su maestría para tratar temas de Poder y Guerra.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>370</paginas>
+        <ventas_estimadas>2100000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1990">Premio Nacional de Literatura</premio>
+    <premio anio="2000">Medalla de Oro de las Letras</premio>
+    <premio anio="2010">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Fantasía Épica</movimiento>
+    <temas>
+      <tema>Poder</tema>
+      <tema>Guerra</tema>
+      <tema>Traición</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

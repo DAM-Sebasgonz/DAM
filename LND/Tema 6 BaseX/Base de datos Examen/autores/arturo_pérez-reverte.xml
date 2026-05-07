@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A050">
+  <nombre>Arturo</nombre>
+  <apellidos>Pérez-Reverte</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Española</nacionalidad>
+    <nacimiento>
+      <fecha>1951-11-25</fecha>
+      <lugar>Cartagena</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <estado>Activo / Vivo</estado>
+    </fallecimiento>
+    <biografia>
+      Arturo Pérez-Reverte es un autor de gran relevancia dentro del movimiento Aventura/Histórica. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Historia, Honor, Libros.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Cartagena, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L050_1">
+      <titulo>El club Dumas</titulo>
+      <anio>2000</anio>
+      <genero>Aventura/Histórica</genero>
+      <isbn>050-0-100-L050_1</isbn>
+      <resumen>
+        Esta obra titulada "El club Dumas" es una de las piezas fundamentales de Arturo Pérez-Reverte.
+        En ella, el autor despliega su maestría para tratar temas de Historia y Honor.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>400</paginas>
+        <ventas_estimadas>2600000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L050_2">
+      <titulo>La carta esférica</titulo>
+      <anio>2001</anio>
+      <genero>Aventura/Histórica</genero>
+      <isbn>050-1-100-L050_2</isbn>
+      <resumen>
+        Esta obra titulada "La carta esférica" es una de las piezas fundamentales de Arturo Pérez-Reverte.
+        En ella, el autor despliega su maestría para tratar temas de Historia y Honor.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>410</paginas>
+        <ventas_estimadas>2600000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L050_3">
+      <titulo>El capitán Alatriste</titulo>
+      <anio>2002</anio>
+      <genero>Aventura/Histórica</genero>
+      <isbn>050-2-100-L050_3</isbn>
+      <resumen>
+        Esta obra titulada "El capitán Alatriste" es una de las piezas fundamentales de Arturo Pérez-Reverte.
+        En ella, el autor despliega su maestría para tratar temas de Historia y Honor.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>420</paginas>
+        <ventas_estimadas>2600000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="2000">Premio Nacional de Literatura</premio>
+    <premio anio="2010">Medalla de Oro de las Letras</premio>
+    <premio anio="2020">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Aventura/Histórica</movimiento>
+    <temas>
+      <tema>Historia</tema>
+      <tema>Honor</tema>
+      <tema>Libros</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

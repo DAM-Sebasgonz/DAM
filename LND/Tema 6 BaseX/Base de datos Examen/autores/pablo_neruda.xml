@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A018">
+  <nombre>Pablo</nombre>
+  <apellidos>Neruda</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Chilena</nacionalidad>
+    <nacimiento>
+      <fecha>1904-07-12</fecha>
+      <lugar>Parral</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1973-09-23</fecha>
+      <lugar>Santiago</lugar>
+    </fallecimiento>
+    <biografia>
+      Pablo Neruda es un autor de gran relevancia dentro del movimiento Surrealismo/Vanguardismo. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Amor, Política, Naturaleza.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Parral, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L018_1">
+      <titulo>Veinte poemas de amor</titulo>
+      <anio>1936</anio>
+      <genero>Surrealismo/Vanguardismo</genero>
+      <isbn>018-0-36-L018_1</isbn>
+      <resumen>
+        Esta obra titulada "Veinte poemas de amor" es una de las piezas fundamentales de Pablo Neruda.
+        En ella, el autor despliega su maestría para tratar temas de Amor y Política.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>240</paginas>
+        <ventas_estimadas>1000000</ventas_estimadas>
+        <puntuacion_critica>9.8</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L018_2">
+      <titulo>Canto General</titulo>
+      <anio>1937</anio>
+      <genero>Surrealismo/Vanguardismo</genero>
+      <isbn>018-1-36-L018_2</isbn>
+      <resumen>
+        Esta obra titulada "Canto General" es una de las piezas fundamentales de Pablo Neruda.
+        En ella, el autor despliega su maestría para tratar temas de Amor y Política.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>250</paginas>
+        <ventas_estimadas>1000000</ventas_estimadas>
+        <puntuacion_critica>9.8</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L018_3">
+      <titulo>Residencia en la tierra</titulo>
+      <anio>1938</anio>
+      <genero>Surrealismo/Vanguardismo</genero>
+      <isbn>018-2-36-L018_3</isbn>
+      <resumen>
+        Esta obra titulada "Residencia en la tierra" es una de las piezas fundamentales de Pablo Neruda.
+        En ella, el autor despliega su maestría para tratar temas de Amor y Política.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>260</paginas>
+        <ventas_estimadas>1000000</ventas_estimadas>
+        <puntuacion_critica>9.8</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1968">Premio Nacional de Literatura</premio>
+    <premio anio="1978">Medalla de Oro de las Letras</premio>
+    <premio anio="1988">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Surrealismo/Vanguardismo</movimiento>
+    <temas>
+      <tema>Amor</tema>
+      <tema>Política</tema>
+      <tema>Naturaleza</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

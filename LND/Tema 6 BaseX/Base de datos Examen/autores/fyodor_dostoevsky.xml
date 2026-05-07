@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A011">
+  <nombre>Fyodor</nombre>
+  <apellidos>Dostoevsky</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Rusa</nacionalidad>
+    <nacimiento>
+      <fecha>1821-11-11</fecha>
+      <lugar>Moscú</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1881-02-09</fecha>
+      <lugar>San Petersburgo</lugar>
+    </fallecimiento>
+    <biografia>
+      Fyodor Dostoevsky es un autor de gran relevancia dentro del movimiento Existencialismo Psicológico. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Culpa, Redención, Fe.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Moscú, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L011_1">
+      <titulo>Crimen y castigo</titulo>
+      <anio>1922</anio>
+      <genero>Existencialismo Psicológico</genero>
+      <isbn>011-0-22-L011_1</isbn>
+      <resumen>
+        Esta obra titulada "Crimen y castigo" es una de las piezas fundamentales de Fyodor Dostoevsky.
+        En ella, el autor despliega su maestría para tratar temas de Culpa y Redención.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>205</paginas>
+        <ventas_estimadas>650000</ventas_estimadas>
+        <puntuacion_critica>9.1</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L011_2">
+      <titulo>Los hermanos Karamazov</titulo>
+      <anio>1923</anio>
+      <genero>Existencialismo Psicológico</genero>
+      <isbn>011-1-22-L011_2</isbn>
+      <resumen>
+        Esta obra titulada "Los hermanos Karamazov" es una de las piezas fundamentales de Fyodor Dostoevsky.
+        En ella, el autor despliega su maestría para tratar temas de Culpa y Redención.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>215</paginas>
+        <ventas_estimadas>650000</ventas_estimadas>
+        <puntuacion_critica>9.1</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L011_3">
+      <titulo>El idiota</titulo>
+      <anio>1924</anio>
+      <genero>Existencialismo Psicológico</genero>
+      <isbn>011-2-22-L011_3</isbn>
+      <resumen>
+        Esta obra titulada "El idiota" es una de las piezas fundamentales de Fyodor Dostoevsky.
+        En ella, el autor despliega su maestría para tratar temas de Culpa y Redención.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>225</paginas>
+        <ventas_estimadas>650000</ventas_estimadas>
+        <puntuacion_critica>9.1</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1961">Premio Nacional de Literatura</premio>
+    <premio anio="1971">Medalla de Oro de las Letras</premio>
+    <premio anio="1981">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Existencialismo Psicológico</movimiento>
+    <temas>
+      <tema>Culpa</tema>
+      <tema>Redención</tema>
+      <tema>Fe</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>
