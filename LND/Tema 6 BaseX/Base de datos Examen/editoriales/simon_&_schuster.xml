@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editorial id="E003">
-  <nombre>Simon & Schuster</nombre>
+  <nombre>Simon &amp; Schuster</nombre>
   <sede>
     <ciudad>Nueva York</ciudad>
     <pais>EE.UU.</pais>
   </sede>
   <fundacion>1924</fundacion>
   <contacto>
-    <email>contacto@simon&schuster.com</email>
+    <email>contacto@simon&amp;schuster.com</email>
     <telefono>+34 912 749 513</telefono>
-    <sitio_web>https://www.simon&schuster.com</sitio_web>
+    <sitio_web>https://www.simon&amp;schuster.com</sitio_web>
   </contacto>
   <descripcion>
-    Simon & Schuster es una de las editoriales más influyentes del mundo, con sede en Nueva York.
+    Simon &amp; Schuster es una de las editoriales más influyentes del mundo, con sede en Nueva York.
     Desde su fundación en 1924, ha sido responsable de la publicación de miles de títulos, incluyendo clásicos y bestsellers contemporáneos.
     Su catálogo abarca una amplia gama de géneros, desde la ficción literaria hasta la divulgación científica.
     Cuenta con múltiples sellos editoriales especializados que garantizan la calidad y diversidad de su oferta.
