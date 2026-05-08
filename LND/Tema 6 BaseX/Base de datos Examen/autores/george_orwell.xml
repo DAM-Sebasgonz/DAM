@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A005">
+  <nombre>George</nombre>
+  <apellidos>Orwell</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Británica</nacionalidad>
+    <nacimiento>
+      <fecha>1903-06-25</fecha>
+      <lugar>Motihari</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1950-01-21</fecha>
+      <lugar>Londres</lugar>
+    </fallecimiento>
+    <biografia>
+      George Orwell es un autor de gran relevancia dentro del movimiento Distopía. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Totalitarismo, Justicia, Verdad.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Motihari, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L005_1">
+      <titulo>1984</titulo>
+      <anio>1910</anio>
+      <genero>Distopía</genero>
+      <isbn>005-0-10-L005_1</isbn>
+      <resumen>
+        Esta obra titulada "1984" es una de las piezas fundamentales de George Orwell.
+        En ella, el autor despliega su maestría para tratar temas de Totalitarismo y Justicia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>175</paginas>
+        <ventas_estimadas>350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L005_2">
+      <titulo>Rebelión en la granja</titulo>
+      <anio>1911</anio>
+      <genero>Distopía</genero>
+      <isbn>005-1-10-L005_2</isbn>
+      <resumen>
+        Esta obra titulada "Rebelión en la granja" es una de las piezas fundamentales de George Orwell.
+        En ella, el autor despliega su maestría para tratar temas de Totalitarismo y Justicia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>185</paginas>
+        <ventas_estimadas>350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L005_3">
+      <titulo>Homenaje a Cataluña</titulo>
+      <anio>1912</anio>
+      <genero>Distopía</genero>
+      <isbn>005-2-10-L005_3</isbn>
+      <resumen>
+        Esta obra titulada "Homenaje a Cataluña" es una de las piezas fundamentales de George Orwell.
+        En ella, el autor despliega su maestría para tratar temas de Totalitarismo y Justicia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>195</paginas>
+        <ventas_estimadas>350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1955">Premio Nacional de Literatura</premio>
+    <premio anio="1965">Medalla de Oro de las Letras</premio>
+    <premio anio="1975">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Distopía</movimiento>
+    <temas>
+      <tema>Totalitarismo</tema>
+      <tema>Justicia</tema>
+      <tema>Verdad</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A049">
+  <nombre>Carlos</nombre>
+  <apellidos>Ruiz Zafón</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Española</nacionalidad>
+    <nacimiento>
+      <fecha>1964-09-25</fecha>
+      <lugar>Barcelona</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>2020-06-19</fecha>
+      <lugar>Los Ángeles</lugar>
+    </fallecimiento>
+    <biografia>
+      Carlos Ruiz Zafón es un autor de gran relevancia dentro del movimiento Gótico Contemporáneo. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Libros, Barcelona, Misterio.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Barcelona, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L049_1">
+      <titulo>La sombra del viento</titulo>
+      <anio>1998</anio>
+      <genero>Gótico Contemporáneo</genero>
+      <isbn>049-0-98-L049_1</isbn>
+      <resumen>
+        Esta obra titulada "La sombra del viento" es una de las piezas fundamentales de Carlos Ruiz Zafón.
+        En ella, el autor despliega su maestría para tratar temas de Libros y Barcelona.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>395</paginas>
+        <ventas_estimadas>2550000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L049_2">
+      <titulo>El juego del ángel</titulo>
+      <anio>1999</anio>
+      <genero>Gótico Contemporáneo</genero>
+      <isbn>049-1-98-L049_2</isbn>
+      <resumen>
+        Esta obra titulada "El juego del ángel" es una de las piezas fundamentales de Carlos Ruiz Zafón.
+        En ella, el autor despliega su maestría para tratar temas de Libros y Barcelona.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>405</paginas>
+        <ventas_estimadas>2550000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L049_3">
+      <titulo>El prisionero del cielo</titulo>
+      <anio>2000</anio>
+      <genero>Gótico Contemporáneo</genero>
+      <isbn>049-2-98-L049_3</isbn>
+      <resumen>
+        Esta obra titulada "El prisionero del cielo" es una de las piezas fundamentales de Carlos Ruiz Zafón.
+        En ella, el autor despliega su maestría para tratar temas de Libros y Barcelona.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>415</paginas>
+        <ventas_estimadas>2550000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1999">Premio Nacional de Literatura</premio>
+    <premio anio="2009">Medalla de Oro de las Letras</premio>
+    <premio anio="2019">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Gótico Contemporáneo</movimiento>
+    <temas>
+      <tema>Libros</tema>
+      <tema>Barcelona</tema>
+      <tema>Misterio</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

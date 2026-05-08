@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A042">
+  <nombre>Italo</nombre>
+  <apellidos>Calvino</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Italiana</nacionalidad>
+    <nacimiento>
+      <fecha>1923-10-15</fecha>
+      <lugar>Santiago de las Vegas</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1985-09-19</fecha>
+      <lugar>Siena</lugar>
+    </fallecimiento>
+    <biografia>
+      Italo Calvino es un autor de gran relevancia dentro del movimiento Postmodernismo. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Narrativa, Fantástico, Estructura.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Santiago de las Vegas, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L042_1">
+      <titulo>Las ciudades invisibles</titulo>
+      <anio>1984</anio>
+      <genero>Postmodernismo</genero>
+      <isbn>042-0-84-L042_1</isbn>
+      <resumen>
+        Esta obra titulada "Las ciudades invisibles" es una de las piezas fundamentales de Italo Calvino.
+        En ella, el autor despliega su maestría para tratar temas de Narrativa y Fantástico.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>360</paginas>
+        <ventas_estimadas>2200000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L042_2">
+      <titulo>Si una noche de invierno un viajero</titulo>
+      <anio>1985</anio>
+      <genero>Postmodernismo</genero>
+      <isbn>042-1-84-L042_2</isbn>
+      <resumen>
+        Esta obra titulada "Si una noche de invierno un viajero" es una de las piezas fundamentales de Italo Calvino.
+        En ella, el autor despliega su maestría para tratar temas de Narrativa y Fantástico.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>370</paginas>
+        <ventas_estimadas>2200000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L042_3">
+      <titulo>El barón rampante</titulo>
+      <anio>1986</anio>
+      <genero>Postmodernismo</genero>
+      <isbn>042-2-84-L042_3</isbn>
+      <resumen>
+        Esta obra titulada "El barón rampante" es una de las piezas fundamentales de Italo Calvino.
+        En ella, el autor despliega su maestría para tratar temas de Narrativa y Fantástico.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>380</paginas>
+        <ventas_estimadas>2200000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1992">Premio Nacional de Literatura</premio>
+    <premio anio="2002">Medalla de Oro de las Letras</premio>
+    <premio anio="2012">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Postmodernismo</movimiento>
+    <temas>
+      <tema>Narrativa</tema>
+      <tema>Fantástico</tema>
+      <tema>Estructura</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

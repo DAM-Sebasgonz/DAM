@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A032">
+  <nombre>Ray</nombre>
+  <apellidos>Bradbury</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Estadounidense</nacionalidad>
+    <nacimiento>
+      <fecha>1920-08-22</fecha>
+      <lugar>Waukegan</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>2012-06-05</fecha>
+      <lugar>Los Ángeles</lugar>
+    </fallecimiento>
+    <biografia>
+      Ray Bradbury es un autor de gran relevancia dentro del movimiento Ciencia Ficción/Fantasía. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Censura, Nostalgia, Tecnología.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Waukegan, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L032_1">
+      <titulo>Fahrenheit 451</titulo>
+      <anio>1964</anio>
+      <genero>Ciencia Ficción/Fantasía</genero>
+      <isbn>032-0-64-L032_1</isbn>
+      <resumen>
+        Esta obra titulada "Fahrenheit 451" es una de las piezas fundamentales de Ray Bradbury.
+        En ella, el autor despliega su maestría para tratar temas de Censura y Nostalgia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>310</paginas>
+        <ventas_estimadas>1700000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L032_2">
+      <titulo>Crónicas marcianas</titulo>
+      <anio>1965</anio>
+      <genero>Ciencia Ficción/Fantasía</genero>
+      <isbn>032-1-64-L032_2</isbn>
+      <resumen>
+        Esta obra titulada "Crónicas marcianas" es una de las piezas fundamentales de Ray Bradbury.
+        En ella, el autor despliega su maestría para tratar temas de Censura y Nostalgia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>320</paginas>
+        <ventas_estimadas>1700000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L032_3">
+      <titulo>El hombre ilustrado</titulo>
+      <anio>1966</anio>
+      <genero>Ciencia Ficción/Fantasía</genero>
+      <isbn>032-2-64-L032_3</isbn>
+      <resumen>
+        Esta obra titulada "El hombre ilustrado" es una de las piezas fundamentales de Ray Bradbury.
+        En ella, el autor despliega su maestría para tratar temas de Censura y Nostalgia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>330</paginas>
+        <ventas_estimadas>1700000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1982">Premio Nacional de Literatura</premio>
+    <premio anio="1992">Medalla de Oro de las Letras</premio>
+    <premio anio="2002">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Ciencia Ficción/Fantasía</movimiento>
+    <temas>
+      <tema>Censura</tema>
+      <tema>Nostalgia</tema>
+      <tema>Tecnología</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

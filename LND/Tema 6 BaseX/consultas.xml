@@ -1,0 +1,15 @@
+for $juego in doc("tienda.xml")//juego
+return $juego/titulo/text()
+
+for $juego in doc("tienda.xml")//juego
+where $juego/@plataforma = "PC"
+return $juego/titulo/text()
+
+for $juego in doc("tienda.xml")//juego
+where $juego/precio < 50
+return $juego/titulo/text()
+
+for $juego in doc("tienda.xml")//juego
+where $juego/stock > 0
+order by $juego/titulo ascending
+return <li>{ $juego/titulo/text() }</li>

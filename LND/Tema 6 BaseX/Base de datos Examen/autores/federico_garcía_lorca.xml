@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A019">
+  <nombre>Federico</nombre>
+  <apellidos>García Lorca</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Española</nacionalidad>
+    <nacimiento>
+      <fecha>1898-06-05</fecha>
+      <lugar>Fuente Vaqueros</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1936-08-18</fecha>
+      <lugar>Víznar</lugar>
+    </fallecimiento>
+    <biografia>
+      Federico García Lorca es un autor de gran relevancia dentro del movimiento Generación del 27. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Tragedia, Pasión, Muerte.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Fuente Vaqueros, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L019_1">
+      <titulo>Bodas de sangre</titulo>
+      <anio>1938</anio>
+      <genero>Generación del 27</genero>
+      <isbn>019-0-38-L019_1</isbn>
+      <resumen>
+        Esta obra titulada "Bodas de sangre" es una de las piezas fundamentales de Federico García Lorca.
+        En ella, el autor despliega su maestría para tratar temas de Tragedia y Pasión.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>245</paginas>
+        <ventas_estimadas>1050000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L019_2">
+      <titulo>Yerma</titulo>
+      <anio>1939</anio>
+      <genero>Generación del 27</genero>
+      <isbn>019-1-38-L019_2</isbn>
+      <resumen>
+        Esta obra titulada "Yerma" es una de las piezas fundamentales de Federico García Lorca.
+        En ella, el autor despliega su maestría para tratar temas de Tragedia y Pasión.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>255</paginas>
+        <ventas_estimadas>1050000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L019_3">
+      <titulo>La casa de Bernarda Alba</titulo>
+      <anio>1940</anio>
+      <genero>Generación del 27</genero>
+      <isbn>019-2-38-L019_3</isbn>
+      <resumen>
+        Esta obra titulada "La casa de Bernarda Alba" es una de las piezas fundamentales de Federico García Lorca.
+        En ella, el autor despliega su maestría para tratar temas de Tragedia y Pasión.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>265</paginas>
+        <ventas_estimadas>1050000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1969">Premio Nacional de Literatura</premio>
+    <premio anio="1979">Medalla de Oro de las Letras</premio>
+    <premio anio="1989">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Generación del 27</movimiento>
+    <temas>
+      <tema>Tragedia</tema>
+      <tema>Pasión</tema>
+      <tema>Muerte</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

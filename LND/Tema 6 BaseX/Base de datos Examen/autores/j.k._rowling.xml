@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A039">
+  <nombre>J.K.</nombre>
+  <apellidos>Rowling</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Británica</nacionalidad>
+    <nacimiento>
+      <fecha>1965-07-31</fecha>
+      <lugar>Yate</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <estado>Activo / Vivo</estado>
+    </fallecimiento>
+    <biografia>
+      J.K. Rowling es un autor de gran relevancia dentro del movimiento Fantasía. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Magia, Amistad, Poder.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Yate, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L039_1">
+      <titulo>Harry Potter y la piedra filosofal</titulo>
+      <anio>1978</anio>
+      <genero>Fantasía</genero>
+      <isbn>039-0-78-L039_1</isbn>
+      <resumen>
+        Esta obra titulada "Harry Potter y la piedra filosofal" es una de las piezas fundamentales de J.K. Rowling.
+        En ella, el autor despliega su maestría para tratar temas de Magia y Amistad.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>345</paginas>
+        <ventas_estimadas>2050000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L039_2">
+      <titulo>Una vacante imprevista</titulo>
+      <anio>1979</anio>
+      <genero>Fantasía</genero>
+      <isbn>039-1-78-L039_2</isbn>
+      <resumen>
+        Esta obra titulada "Una vacante imprevista" es una de las piezas fundamentales de J.K. Rowling.
+        En ella, el autor despliega su maestría para tratar temas de Magia y Amistad.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>355</paginas>
+        <ventas_estimadas>2050000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L039_3">
+      <titulo>El canto del cuco</titulo>
+      <anio>1980</anio>
+      <genero>Fantasía</genero>
+      <isbn>039-2-78-L039_3</isbn>
+      <resumen>
+        Esta obra titulada "El canto del cuco" es una de las piezas fundamentales de J.K. Rowling.
+        En ella, el autor despliega su maestría para tratar temas de Magia y Amistad.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>365</paginas>
+        <ventas_estimadas>2050000</ventas_estimadas>
+        <puntuacion_critica>9.9</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1989">Premio Nacional de Literatura</premio>
+    <premio anio="1999">Medalla de Oro de las Letras</premio>
+    <premio anio="2009">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Fantasía</movimiento>
+    <temas>
+      <tema>Magia</tema>
+      <tema>Amistad</tema>
+      <tema>Poder</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A037">
+  <nombre>Agatha</nombre>
+  <apellidos>Christie</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Británica</nacionalidad>
+    <nacimiento>
+      <fecha>1890-09-15</fecha>
+      <lugar>Torquay</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1976-01-12</fecha>
+      <lugar>Wallingford</lugar>
+    </fallecimiento>
+    <biografia>
+      Agatha Christie es un autor de gran relevancia dentro del movimiento Misterio. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Crimen, Deducción, Justicia.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Torquay, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L037_1">
+      <titulo>Diez negritos</titulo>
+      <anio>1974</anio>
+      <genero>Misterio</genero>
+      <isbn>037-0-74-L037_1</isbn>
+      <resumen>
+        Esta obra titulada "Diez negritos" es una de las piezas fundamentales de Agatha Christie.
+        En ella, el autor despliega su maestría para tratar temas de Crimen y Deducción.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>335</paginas>
+        <ventas_estimadas>1950000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L037_2">
+      <titulo>Asesinato en el Orient Express</titulo>
+      <anio>1975</anio>
+      <genero>Misterio</genero>
+      <isbn>037-1-74-L037_2</isbn>
+      <resumen>
+        Esta obra titulada "Asesinato en el Orient Express" es una de las piezas fundamentales de Agatha Christie.
+        En ella, el autor despliega su maestría para tratar temas de Crimen y Deducción.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>345</paginas>
+        <ventas_estimadas>1950000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L037_3">
+      <titulo>El asesinato de Roger Ackroyd</titulo>
+      <anio>1976</anio>
+      <genero>Misterio</genero>
+      <isbn>037-2-74-L037_3</isbn>
+      <resumen>
+        Esta obra titulada "El asesinato de Roger Ackroyd" es una de las piezas fundamentales de Agatha Christie.
+        En ella, el autor despliega su maestría para tratar temas de Crimen y Deducción.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>355</paginas>
+        <ventas_estimadas>1950000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1987">Premio Nacional de Literatura</premio>
+    <premio anio="1997">Medalla de Oro de las Letras</premio>
+    <premio anio="2007">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Misterio</movimiento>
+    <temas>
+      <tema>Crimen</tema>
+      <tema>Deducción</tema>
+      <tema>Justicia</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

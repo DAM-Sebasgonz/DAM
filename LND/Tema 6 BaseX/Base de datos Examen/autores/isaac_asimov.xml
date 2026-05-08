@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A030">
+  <nombre>Isaac</nombre>
+  <apellidos>Asimov</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Estadounidense</nacionalidad>
+    <nacimiento>
+      <fecha>1920-01-02</fecha>
+      <lugar>Petróvichi</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1992-04-06</fecha>
+      <lugar>Nueva York</lugar>
+    </fallecimiento>
+    <biografia>
+      Isaac Asimov es un autor de gran relevancia dentro del movimiento Ciencia Ficción. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Robótica, Historia futura, Ciencia.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Petróvichi, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L030_1">
+      <titulo>Fundación</titulo>
+      <anio>1960</anio>
+      <genero>Ciencia Ficción</genero>
+      <isbn>030-0-60-L030_1</isbn>
+      <resumen>
+        Esta obra titulada "Fundación" es una de las piezas fundamentales de Isaac Asimov.
+        En ella, el autor despliega su maestría para tratar temas de Robótica y Historia futura.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>300</paginas>
+        <ventas_estimadas>1600000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L030_2">
+      <titulo>Yo, Robot</titulo>
+      <anio>1961</anio>
+      <genero>Ciencia Ficción</genero>
+      <isbn>030-1-60-L030_2</isbn>
+      <resumen>
+        Esta obra titulada "Yo, Robot" es una de las piezas fundamentales de Isaac Asimov.
+        En ella, el autor despliega su maestría para tratar temas de Robótica y Historia futura.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>310</paginas>
+        <ventas_estimadas>1600000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L030_3">
+      <titulo>El fin de la Eternidad</titulo>
+      <anio>1962</anio>
+      <genero>Ciencia Ficción</genero>
+      <isbn>030-2-60-L030_3</isbn>
+      <resumen>
+        Esta obra titulada "El fin de la Eternidad" es una de las piezas fundamentales de Isaac Asimov.
+        En ella, el autor despliega su maestría para tratar temas de Robótica y Historia futura.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>320</paginas>
+        <ventas_estimadas>1600000</ventas_estimadas>
+        <puntuacion_critica>9.0</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1980">Premio Nacional de Literatura</premio>
+    <premio anio="1990">Medalla de Oro de las Letras</premio>
+    <premio anio="2000">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Ciencia Ficción</movimiento>
+    <temas>
+      <tema>Robótica</tema>
+      <tema>Historia futura</tema>
+      <tema>Ciencia</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

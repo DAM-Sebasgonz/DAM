@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro id="L028_3">
+  <titulo>El corazón delator</titulo>
+  <referencias>
+    <autor_id>A028</autor_id>
+    <editorial_id>E003</editorial_id>
+  </referencias>
+  <datos_edicion>
+    <fecha_publicacion>1982</fecha_publicacion>
+    <idioma_original>Español</idioma_original>
+    <traducciones>
+      <idioma>Inglés</idioma>
+      <idioma>Francés</idioma>
+      <idioma>Alemán</idioma>
+      <idioma>Japonés</idioma>
+    </traducciones>
+  </datos_edicion>
+  <caracteristicas_fisicas>
+    <formato>Tapa Dura</formato>
+    <dimensiones>15x23 cm</dimensiones>
+    <paginas>207</paginas>
+    <peso unidad="g">649</peso>
+    <isbn>978-83-158-6198-5</isbn>
+  </caracteristicas_fisicas>
+  <sinopsis>
+    La obra "El corazón delator" es una pieza fundamental de la literatura. 
+    En sus páginas, se exploran temas complejos y se desarrollan personajes memorables que han cautivado a generaciones.
+    Esta edición particular, publicada por la editorial vinculada, cuenta con un prólogo exclusivo y notas al pie que enriquecen la lectura.
+    Ideal para coleccionistas y estudiantes de literatura, ofrece una calidad de impresión superior y un diseño de portada artístico.
+    A través de su narrativa, el lector se sumerge en un mundo de emociones y reflexiones profundas sobre la sociedad y el individuo.
+    Considerada una de las mejores obras de su autor, sigue siendo un referente indiscutible en su género.
+  </sinopsis>
+  <inventario>
+    <ejemplares_totales>563</ejemplares_totales>
+    <disponibles>10</disponibles>
+    <precio moneda="EUR">38.44</precio>
+    <ubicacion_almacen>Pasillo 12, Estantería C6</ubicacion_almacen>
+  </inventario>
+  <valoraciones>
+    <critica puntuacion="9/10">Excelente narrativa y profundidad.</critica>
+    <usuarios promedio="4.8">Una lectura obligatoria para todos.</usuarios>
+  </valoraciones>
+</libro>

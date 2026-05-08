@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A038">
+  <nombre>Stephen</nombre>
+  <apellidos>King</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Estadounidense</nacionalidad>
+    <nacimiento>
+      <fecha>1947-09-21</fecha>
+      <lugar>Portland</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <estado>Activo / Vivo</estado>
+    </fallecimiento>
+    <biografia>
+      Stephen King es un autor de gran relevancia dentro del movimiento Terror. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Miedo, Sobrenatural, Amistad.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Portland, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L038_1">
+      <titulo>It</titulo>
+      <anio>1976</anio>
+      <genero>Terror</genero>
+      <isbn>038-0-76-L038_1</isbn>
+      <resumen>
+        Esta obra titulada "It" es una de las piezas fundamentales de Stephen King.
+        En ella, el autor despliega su maestría para tratar temas de Miedo y Sobrenatural.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>340</paginas>
+        <ventas_estimadas>2000000</ventas_estimadas>
+        <puntuacion_critica>9.8</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L038_2">
+      <titulo>El resplandor</titulo>
+      <anio>1977</anio>
+      <genero>Terror</genero>
+      <isbn>038-1-76-L038_2</isbn>
+      <resumen>
+        Esta obra titulada "El resplandor" es una de las piezas fundamentales de Stephen King.
+        En ella, el autor despliega su maestría para tratar temas de Miedo y Sobrenatural.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>350</paginas>
+        <ventas_estimadas>2000000</ventas_estimadas>
+        <puntuacion_critica>9.8</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L038_3">
+      <titulo>Misery</titulo>
+      <anio>1978</anio>
+      <genero>Terror</genero>
+      <isbn>038-2-76-L038_3</isbn>
+      <resumen>
+        Esta obra titulada "Misery" es una de las piezas fundamentales de Stephen King.
+        En ella, el autor despliega su maestría para tratar temas de Miedo y Sobrenatural.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>360</paginas>
+        <ventas_estimadas>2000000</ventas_estimadas>
+        <puntuacion_critica>9.8</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1988">Premio Nacional de Literatura</premio>
+    <premio anio="1998">Medalla de Oro de las Letras</premio>
+    <premio anio="2008">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Terror</movimiento>
+    <temas>
+      <tema>Miedo</tema>
+      <tema>Sobrenatural</tema>
+      <tema>Amistad</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

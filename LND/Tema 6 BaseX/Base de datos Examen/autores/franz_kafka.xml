@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A007">
+  <nombre>Franz</nombre>
+  <apellidos>Kafka</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Checa</nacionalidad>
+    <nacimiento>
+      <fecha>1883-07-03</fecha>
+      <lugar>Praga</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1924-06-03</fecha>
+      <lugar>Kierling</lugar>
+    </fallecimiento>
+    <biografia>
+      Franz Kafka es un autor de gran relevancia dentro del movimiento Existencialismo. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Absurdo, Burocracia, Alienable.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Praga, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L007_1">
+      <titulo>La metamorfosis</titulo>
+      <anio>1914</anio>
+      <genero>Existencialismo</genero>
+      <isbn>007-0-14-L007_1</isbn>
+      <resumen>
+        Esta obra titulada "La metamorfosis" es una de las piezas fundamentales de Franz Kafka.
+        En ella, el autor despliega su maestría para tratar temas de Absurdo y Burocracia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>185</paginas>
+        <ventas_estimadas>450000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L007_2">
+      <titulo>El proceso</titulo>
+      <anio>1915</anio>
+      <genero>Existencialismo</genero>
+      <isbn>007-1-14-L007_2</isbn>
+      <resumen>
+        Esta obra titulada "El proceso" es una de las piezas fundamentales de Franz Kafka.
+        En ella, el autor despliega su maestría para tratar temas de Absurdo y Burocracia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>195</paginas>
+        <ventas_estimadas>450000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L007_3">
+      <titulo>El castillo</titulo>
+      <anio>1916</anio>
+      <genero>Existencialismo</genero>
+      <isbn>007-2-14-L007_3</isbn>
+      <resumen>
+        Esta obra titulada "El castillo" es una de las piezas fundamentales de Franz Kafka.
+        En ella, el autor despliega su maestría para tratar temas de Absurdo y Burocracia.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>205</paginas>
+        <ventas_estimadas>450000</ventas_estimadas>
+        <puntuacion_critica>9.7</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1957">Premio Nacional de Literatura</premio>
+    <premio anio="1967">Medalla de Oro de las Letras</premio>
+    <premio anio="1977">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Existencialismo</movimiento>
+    <temas>
+      <tema>Absurdo</tema>
+      <tema>Burocracia</tema>
+      <tema>Alienable</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A022">
+  <nombre>Marcel</nombre>
+  <apellidos>Proust</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Francesa</nacionalidad>
+    <nacimiento>
+      <fecha>1871-07-10</fecha>
+      <lugar>París</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1922-11-18</fecha>
+      <lugar>París</lugar>
+    </fallecimiento>
+    <biografia>
+      Marcel Proust es un autor de gran relevancia dentro del movimiento Modernismo. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Memoria, Tiempo, Arte.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en París, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L022_1">
+      <titulo>En busca del tiempo perdido</titulo>
+      <anio>1944</anio>
+      <genero>Modernismo</genero>
+      <isbn>022-0-44-L022_1</isbn>
+      <resumen>
+        Esta obra titulada "En busca del tiempo perdido" es una de las piezas fundamentales de Marcel Proust.
+        En ella, el autor despliega su maestría para tratar temas de Memoria y Tiempo.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>260</paginas>
+        <ventas_estimadas>1200000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L022_2">
+      <titulo>Los placeres y los días</titulo>
+      <anio>1945</anio>
+      <genero>Modernismo</genero>
+      <isbn>022-1-44-L022_2</isbn>
+      <resumen>
+        Esta obra titulada "Los placeres y los días" es una de las piezas fundamentales de Marcel Proust.
+        En ella, el autor despliega su maestría para tratar temas de Memoria y Tiempo.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>270</paginas>
+        <ventas_estimadas>1200000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L022_3">
+      <titulo>Jean Santeuil</titulo>
+      <anio>1946</anio>
+      <genero>Modernismo</genero>
+      <isbn>022-2-44-L022_3</isbn>
+      <resumen>
+        Esta obra titulada "Jean Santeuil" es una de las piezas fundamentales de Marcel Proust.
+        En ella, el autor despliega su maestría para tratar temas de Memoria y Tiempo.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>280</paginas>
+        <ventas_estimadas>1200000</ventas_estimadas>
+        <puntuacion_critica>9.2</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1972">Premio Nacional de Literatura</premio>
+    <premio anio="1982">Medalla de Oro de las Letras</premio>
+    <premio anio="1992">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Modernismo</movimiento>
+    <temas>
+      <tema>Memoria</tema>
+      <tema>Tiempo</tema>
+      <tema>Arte</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

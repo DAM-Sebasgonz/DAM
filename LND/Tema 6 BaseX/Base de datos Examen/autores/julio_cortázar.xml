@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A015">
+  <nombre>Julio</nombre>
+  <apellidos>Cortázar</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Argentina</nacionalidad>
+    <nacimiento>
+      <fecha>1914-08-26</fecha>
+      <lugar>Ixelles</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1984-02-12</fecha>
+      <lugar>París</lugar>
+    </fallecimiento>
+    <biografia>
+      Julio Cortázar es un autor de gran relevancia dentro del movimiento Boom Latinoamericano. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Juego, Metafísica, Cotidiano.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Ixelles, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L015_1">
+      <titulo>Rayuela</titulo>
+      <anio>1930</anio>
+      <genero>Boom Latinoamericano</genero>
+      <isbn>015-0-30-L015_1</isbn>
+      <resumen>
+        Esta obra titulada "Rayuela" es una de las piezas fundamentales de Julio Cortázar.
+        En ella, el autor despliega su maestría para tratar temas de Juego y Metafísica.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>225</paginas>
+        <ventas_estimadas>850000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L015_2">
+      <titulo>Bestiario</titulo>
+      <anio>1931</anio>
+      <genero>Boom Latinoamericano</genero>
+      <isbn>015-1-30-L015_2</isbn>
+      <resumen>
+        Esta obra titulada "Bestiario" es una de las piezas fundamentales de Julio Cortázar.
+        En ella, el autor despliega su maestría para tratar temas de Juego y Metafísica.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>235</paginas>
+        <ventas_estimadas>850000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L015_3">
+      <titulo>Final del juego</titulo>
+      <anio>1932</anio>
+      <genero>Boom Latinoamericano</genero>
+      <isbn>015-2-30-L015_3</isbn>
+      <resumen>
+        Esta obra titulada "Final del juego" es una de las piezas fundamentales de Julio Cortázar.
+        En ella, el autor despliega su maestría para tratar temas de Juego y Metafísica.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>245</paginas>
+        <ventas_estimadas>850000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1965">Premio Nacional de Literatura</premio>
+    <premio anio="1975">Medalla de Oro de las Letras</premio>
+    <premio anio="1985">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Boom Latinoamericano</movimiento>
+    <temas>
+      <tema>Juego</tema>
+      <tema>Metafísica</tema>
+      <tema>Cotidiano</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

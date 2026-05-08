@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A014">
+  <nombre>Jorge</nombre>
+  <apellidos>Luis Borges</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Argentina</nacionalidad>
+    <nacimiento>
+      <fecha>1899-08-24</fecha>
+      <lugar>Buenos Aires</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1986-06-14</fecha>
+      <lugar>Ginebra</lugar>
+    </fallecimiento>
+    <biografia>
+      Jorge Luis Borges es un autor de gran relevancia dentro del movimiento Ultraísmo/Fantástico. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Laberintos, Espejos, Infinito.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en Buenos Aires, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L014_1">
+      <titulo>Ficciones</titulo>
+      <anio>1928</anio>
+      <genero>Ultraísmo/Fantástico</genero>
+      <isbn>014-0-28-L014_1</isbn>
+      <resumen>
+        Esta obra titulada "Ficciones" es una de las piezas fundamentales de Jorge Luis Borges.
+        En ella, el autor despliega su maestría para tratar temas de Laberintos y Espejos.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>220</paginas>
+        <ventas_estimadas>800000</ventas_estimadas>
+        <puntuacion_critica>9.4</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L014_2">
+      <titulo>El Aleph</titulo>
+      <anio>1929</anio>
+      <genero>Ultraísmo/Fantástico</genero>
+      <isbn>014-1-28-L014_2</isbn>
+      <resumen>
+        Esta obra titulada "El Aleph" es una de las piezas fundamentales de Jorge Luis Borges.
+        En ella, el autor despliega su maestría para tratar temas de Laberintos y Espejos.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>230</paginas>
+        <ventas_estimadas>800000</ventas_estimadas>
+        <puntuacion_critica>9.4</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L014_3">
+      <titulo>El libro de arena</titulo>
+      <anio>1930</anio>
+      <genero>Ultraísmo/Fantástico</genero>
+      <isbn>014-2-28-L014_3</isbn>
+      <resumen>
+        Esta obra titulada "El libro de arena" es una de las piezas fundamentales de Jorge Luis Borges.
+        En ella, el autor despliega su maestría para tratar temas de Laberintos y Espejos.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>240</paginas>
+        <ventas_estimadas>800000</ventas_estimadas>
+        <puntuacion_critica>9.4</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1964">Premio Nacional de Literatura</premio>
+    <premio anio="1974">Medalla de Oro de las Letras</premio>
+    <premio anio="1984">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Ultraísmo/Fantástico</movimiento>
+    <temas>
+      <tema>Laberintos</tema>
+      <tema>Espejos</tema>
+      <tema>Infinito</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>

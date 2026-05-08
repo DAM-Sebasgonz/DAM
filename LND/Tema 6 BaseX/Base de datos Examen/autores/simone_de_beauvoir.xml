@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autor id="A025">
+  <nombre>Simone</nombre>
+  <apellidos>de Beauvoir</apellidos>
+  <datos_biograficos>
+    <nacionalidad>Francesa</nacionalidad>
+    <nacimiento>
+      <fecha>1908-01-09</fecha>
+      <lugar>París</lugar>
+    </nacimiento>
+    <fallecimiento>
+      <fecha>1986-04-14</fecha>
+      <lugar>París</lugar>
+    </fallecimiento>
+    <biografia>
+      Simone de Beauvoir es un autor de gran relevancia dentro del movimiento Feminismo Existencial. 
+      Su obra ha sido traducida a múltiples idiomas y ha dejado una huella indeleble en la literatura universal.
+      A lo largo de su carrera, ha explorado temas profundos como Género, Ética, Política.
+      Su estilo se caracteriza por una mezcla única de técnica y pasión, lo que le ha valido el reconocimiento de la crítica y el público.
+      Nacido en París, su entorno influyó notablemente en sus primeras obras, dotándolas de una autenticidad excepcional.
+      Con el paso de los años, su técnica evolucionó hacia formas más complejas, consolidándolo como un referente en su género.
+      La importancia de su legado se refleja no solo en sus libros, sino también en las generaciones de escritores que han seguido sus pasos.
+      Cada una de sus publicaciones es esperada con gran expectación, siendo garantía de calidad literaria y profundidad intelectual.
+    </biografia>
+  </datos_biograficos>
+  <bibliografia>
+    <libro id="L025_1">
+      <titulo>El segundo sexo</titulo>
+      <anio>1950</anio>
+      <genero>Feminismo Existencial</genero>
+      <isbn>025-0-50-L025_1</isbn>
+      <resumen>
+        Esta obra titulada "El segundo sexo" es una de las piezas fundamentales de Simone de Beauvoir.
+        En ella, el autor despliega su maestría para tratar temas de Género y Ética.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>275</paginas>
+        <ventas_estimadas>1350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L025_2">
+      <titulo>Los mandarines</titulo>
+      <anio>1951</anio>
+      <genero>Feminismo Existencial</genero>
+      <isbn>025-1-50-L025_2</isbn>
+      <resumen>
+        Esta obra titulada "Los mandarines" es una de las piezas fundamentales de Simone de Beauvoir.
+        En ella, el autor despliega su maestría para tratar temas de Género y Ética.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>285</paginas>
+        <ventas_estimadas>1350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+    <libro id="L025_3">
+      <titulo>La invitada</titulo>
+      <anio>1952</anio>
+      <genero>Feminismo Existencial</genero>
+      <isbn>025-2-50-L025_3</isbn>
+      <resumen>
+        Esta obra titulada "La invitada" es una de las piezas fundamentales de Simone de Beauvoir.
+        En ella, el autor despliega su maestría para tratar temas de Género y Ética.
+        La trama cautiva al lector desde la primera página, ofreciendo una visión única sobre la condición humana.
+        Considerada por muchos críticos como una obra maestra, sigue siendo objeto de estudio en universidades de todo el mundo.
+        La profundidad de sus personajes y la riqueza de su lenguaje la convierten en una lectura imprescindible.
+      </resumen>
+      <estadisticas>
+        <paginas>295</paginas>
+        <ventas_estimadas>1350000</ventas_estimadas>
+        <puntuacion_critica>9.5</puntuacion_critica>
+      </estadisticas>
+    </libro>
+  </bibliografia>
+  <premios>
+    <premio anio="1975">Premio Nacional de Literatura</premio>
+    <premio anio="1985">Medalla de Oro de las Letras</premio>
+    <premio anio="1995">Premio de la Crítica</premio>
+  </premios>
+  <estilo>
+    <movimiento>Feminismo Existencial</movimiento>
+    <temas>
+      <tema>Género</tema>
+      <tema>Ética</tema>
+      <tema>Política</tema>
+    </temas>
+    <influencias>
+      <influencia>Clásicos Universales</influencia>
+      <influencia>Literatura Contemporánea</influencia>
+    </influencias>
+  </estilo>
+  <comentarios_criticos>
+    <critica fuente="The New York Times">Una voz única que redefine su generación.</critica>
+    <critica fuente="El País">Imprescindible para entender la literatura moderna.</critica>
+  </comentarios_criticos>
+</autor>
