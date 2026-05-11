@@ -14,5 +14,3 @@ return
     <nombre>{ $miembro/nombre/text() }</nombre>
     <totalItems>{ $numItems }</totalItems>
   </resultado> :)
-
-
