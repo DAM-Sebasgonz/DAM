@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gremio nombre="Dragones de Fuego">
+    <miembro id="m1" clase="Guerrero" nivel="35">
+        <nombre>Kael</nombre>
+        <inventario>
+            <item tipo="arma" danio="50">Espada Larga</item>
+            <item tipo="pocion" cura="20">Poción Menor</item>
+        </inventario>
+    </miembro>
+    <miembro id="m2" clase="Mago" nivel="60">
+        <nombre>Lyra</nombre>
+        <inventario>
+            <item tipo="arma" danio="120">Báculo de Hielo</item>
+            <item tipo="armadura" defensa="30">Túnica de Sabio</item>
+            <item tipo="pocion" cura="100">Poción Mayor</item>
+        </inventario>
+    </miembro>
+    <miembro id="m3" clase="Mago" nivel="40">
+        <nombre>Zarek</nombre>
+        <inventario>
+            <item tipo="accesorio" magia="15">Anillo de Fuego</item>
+        </inventario>
+    </miembro>
+    <miembro id="m4" clase="Pícaro" nivel="55">
+        <nombre>Sly</nombre>
+        <inventario>
+            <item tipo="arma" danio="40">Daga Venenosa</item>
+            <item tipo="arma" danio="40">Daga Rápida</item>
+        </inventario>
+    </miembro>
+</gremio>
