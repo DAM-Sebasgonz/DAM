@@ -163,7 +163,7 @@ def generar_tickets_y_mensajes(conexion, clientes_ids, operador_ids, ids_categor
         fecha_creacion = fake.date_time_between(start_date='-2y', end_date='now')
 
         if nombre_estado in estados_cierre:
-            fecha_cierre = fecha_creacion + timedelta(days=random.randint(1, 240))
+            fecha_cierre = fecha_creacion + timedelta(days=random.randint(1, 14))
         else:
             fecha_cierre = None
 

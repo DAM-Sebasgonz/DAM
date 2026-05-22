@@ -1,7 +1,0 @@
-[2026-05-15 13:48:22] INFO: --- Inicio de ejecución del seeder ---
-[2026-05-15 13:48:22] INFO: Conexión exitosa a la base de datos
-[2026-05-15 13:48:22] INFO: Catálogos de Categoria, Estado y Prioridad generados con éxito
-[2026-05-15 13:48:22] INFO: 4 Departamentos generados con éxito
-[2026-05-15 13:48:22] INFO: 10 Operadores generados con éxito
-[2026-05-15 13:48:22] INFO: 50 Clientes generados con éxito
-[2026-05-15 13:48:22] INFO: Error durante la generación de datos: 1292 (22007): Incorrect datetime value: '2026-03-29 01:56:37' for column 'FechaCierre' at row 1

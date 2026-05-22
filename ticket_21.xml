@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ticket>
+    <Titulo>Juego hacerlo participación hacer.</Titulo>
+    <Descripcion>Fuerzas éxito respuesta ii mar la modo uno. Pie artículo alguien. vergüenza</Descripcion>
+    <FechaCreacion>2026-04-18 19:50:17</FechaCreacion>
+    <FechaCierre>2026-04-20 19:50:17</FechaCierre>
+    <Cliente>
+        <NombreCliente>Ileana Planas Valenciano</NombreCliente>
+        <Email>arsenioarnaiz@example.net</Email>
+        <Telefono>+34 979 705 641</Telefono>
+        <FechaRegistro>2026-05-22 11:41:55</FechaRegistro>
+    </Cliente>
+    <Operador>
+        <NombreOperador>Carlota Pujadas</NombreOperador>
+        <CorreoCorporativo>reynaldo51@estrella.com</CorreoCorporativo>
+    </Operador>
+    <Historial>
+        <Mensaje>
+            <Cuerpo>Señaló central ella.</Cuerpo>
+            <FechaHora>2026-04-18 20:34:17</FechaHora>
+        </Mensaje>
+        <Mensaje>
+            <Cuerpo>Diferencia gobierno manuel hacia cuatro. Acto antes américa b.</Cuerpo>
+            <FechaHora>2026-04-18 21:02:17</FechaHora>
+        </Mensaje>
+        <Mensaje>
+            <Cuerpo>Resultado tales aumento elementos. Solución ellos película económica.</Cuerpo>
+            <FechaHora>2026-04-18 21:16:17</FechaHora>
+        </Mensaje>
+    </Historial>
+</ticket>
