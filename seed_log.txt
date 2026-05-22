@@ -1,2 +1,11 @@
-
-
+[2026-05-15 13:45:12] INFO: --- Inicio de ejecución del seeder ---
+[2026-05-15 13:45:12] INFO: Conexión exitosa a la base de datos
+[2026-05-15 13:45:12] INFO: Error durante la generación de datos: 1062 (23000): Duplicate entry 'Hardware' for key 'categoria.NombreCategoria'
+[2026-05-15 13:45:44] INFO: --- Inicio de ejecución del seeder ---
+[2026-05-15 13:45:44] INFO: Conexión exitosa a la base de datos
+[2026-05-15 13:45:44] INFO: Catálogos de Categoria, Estado y Prioridad generados con éxito
+[2026-05-15 13:45:44] INFO: 4 Departamentos generados con éxito
+[2026-05-15 13:45:44] INFO: 10 Operadores generados con éxito
+[2026-05-15 13:45:44] INFO: 50 Clientes generados con éxito
+[2026-05-15 13:45:44] INFO: 200 Tickets y sus hilos de conversación generados con éxito
+[2026-05-15 13:45:44] INFO: Inserción completada. 50 Clientes y 200 Tickets generados con éxito

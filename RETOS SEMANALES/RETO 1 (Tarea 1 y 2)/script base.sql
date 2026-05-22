@@ -1,88 +1,79 @@
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+CREATE SCHEMA IF NOT EXISTS `Hermes IT support` DEFAULT CHARACTER SET utf8 ;
+USE `Hermes IT support` ;
 
-CREATE SCHEMA IF NOT EXISTS `Hermes IT support` DEFAULT CHARACTER SET utf8;
-USE `Hermes IT support`;
+CREATE TABLE Cliente (
+    IdCliente INT PRIMARY KEY AUTO_INCREMENT,
+    NombreCompleto VARCHAR(200) NOT NULL,
+    Email VARCHAR(150) NOT NULL UNIQUE,
+    Telefono VARCHAR(20),
+    FechaRegistro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_email (Email)
+);
 
-CREATE TABLE IF NOT EXISTS `Mensaje` (
-  `idMensaje` INT NOT NULL AUTO_INCREMENT,
-  `Cuerpo`    TEXT NOT NULL,
-  `FechaHora` DATETIME NOT NULL,
-  PRIMARY KEY (`idMensaje`)
-) ENGINE = InnoDB;
+CREATE TABLE Categoria (
+    IdCategoria INT PRIMARY KEY AUTO_INCREMENT,
+    NombreCategoria VARCHAR(100) NOT NULL UNIQUE,
+    Descripcion TEXT,
+    Activa BOOLEAN DEFAULT TRUE
+);
 
-CREATE TABLE IF NOT EXISTS `Operador` (
-  `idEmpleado`        INT NOT NULL AUTO_INCREMENT,
-  `CorreoCorporativo` VARCHAR(100) NOT NULL,
-  `Nombre`            VARCHAR(100) NOT NULL,
-  `Mensaje_idMensaje` INT NOT NULL,
-  PRIMARY KEY (`idEmpleado`),
-  INDEX `fk_Operador_Mensaje1_idx` (`Mensaje_idMensaje` ASC),
-  CONSTRAINT `fk_Operador_Mensaje1`
-    FOREIGN KEY (`Mensaje_idMensaje`)
-    REFERENCES `Mensaje` (`idMensaje`)
-    ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB;
+CREATE TABLE Estado (
+    IdEstado INT PRIMARY KEY AUTO_INCREMENT,
+    NombreEstado VARCHAR(50) NOT NULL UNIQUE,
+    Descripcion VARCHAR(200),
+    OrdenVisualizacion INT
+);
 
-CREATE TABLE IF NOT EXISTS `Ticket` (
-  `CodigoTicket`       INT NOT NULL AUTO_INCREMENT,
-  `Prioridad`          VARCHAR(45) NOT NULL,
-  `Categoria`          VARCHAR(45) NOT NULL,
-  `Titulo`             VARCHAR(100) NOT NULL,
-  `Descripcion`        TEXT NOT NULL,
-  `FechaCreacion`      DATE NOT NULL,
-  `FechaCierre`        DATE NULL,
-  `Estado`             VARCHAR(45) NOT NULL,
-  `Mensaje_idMensaje`  INT NOT NULL,
-  `Operador_idEmpleado` INT NOT NULL,
-  PRIMARY KEY (`CodigoTicket`),
-  INDEX `fk_Ticket_Mensaje1_idx` (`Mensaje_idMensaje` ASC),
-  INDEX `fk_Ticket_Operador1_idx` (`Operador_idEmpleado` ASC),
-  CONSTRAINT `fk_Ticket_Mensaje1`
-    FOREIGN KEY (`Mensaje_idMensaje`)
-    REFERENCES `Mensaje` (`idMensaje`)
-    ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Ticket_Operador1`
-    FOREIGN KEY (`Operador_idEmpleado`)
-    REFERENCES `Operador` (`idEmpleado`)
-    ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB;
+CREATE TABLE Prioridad (
+    IdPrioridad INT PRIMARY KEY AUTO_INCREMENT,
+    NombrePrioridad VARCHAR(50) NOT NULL UNIQUE,
+    Nivel INT NOT NULL,
+    UNIQUE KEY uk_nivel (Nivel)
+);
 
-CREATE TABLE IF NOT EXISTS `Cliente` (
-  `idCliente`          INT NOT NULL AUTO_INCREMENT,
-  `NombreCompleto`     VARCHAR(100) NOT NULL,
-  `Email`              VARCHAR(100) NOT NULL,
-  `Telefono`           INT NOT NULL,
-  `Mensaje_idMensaje`  INT NOT NULL,
-  `Ticket_CodigoTicket` INT NOT NULL,
-  PRIMARY KEY (`idCliente`),
-  UNIQUE INDEX `Email_UNIQUE` (`Email` ASC),
-  INDEX `fk_Cliente_Mensaje_idx` (`Mensaje_idMensaje` ASC),
-  INDEX `fk_Cliente_Ticket1_idx` (`Ticket_CodigoTicket` ASC),
-  CONSTRAINT `fk_Cliente_Mensaje`
-    FOREIGN KEY (`Mensaje_idMensaje`)
-    REFERENCES `Mensaje` (`idMensaje`)
-    ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Cliente_Ticket1`
-    FOREIGN KEY (`Ticket_CodigoTicket`)
-    REFERENCES `Ticket` (`CodigoTicket`)
-    ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB;
+CREATE TABLE Departamento (
+    IdDepartamento INT PRIMARY KEY AUTO_INCREMENT,
+    NombreDep VARCHAR(100) NOT NULL,
+    Ubicacion VARCHAR(200),
+    Activo BOOLEAN DEFAULT TRUE
+);
 
-CREATE TABLE IF NOT EXISTS `Departamento` (
-  `idDepartamento`     INT NOT NULL AUTO_INCREMENT,
-  `Ubicacion`          VARCHAR(45) NOT NULL,
-  `NombreDep`          VARCHAR(45) NOT NULL,
-  `Operador_idEmpleado` INT NOT NULL,
-  PRIMARY KEY (`idDepartamento`, `Operador_idEmpleado`),
-  INDEX `fk_Departamento_Operador1_idx` (`Operador_idEmpleado` ASC),
-  CONSTRAINT `fk_Departamento_Operador1`
-    FOREIGN KEY (`Operador_idEmpleado`)
-    REFERENCES `Operador` (`idEmpleado`)
-    ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB;
+CREATE TABLE Operador (
+    IdEmpleado INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(200) NOT NULL,
+    CorreoCorporativo VARCHAR(150) NOT NULL UNIQUE,
+    IdDepartamento INT NOT NULL,
+    FechaIngreso DATE,
+    Activo BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (IdDepartamento) REFERENCES Departamento(IdDepartamento) ON DELETE RESTRICT ON UPDATE CASCADE
+);
 
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+CREATE TABLE Ticket (
+    CodigoTicket INT PRIMARY KEY AUTO_INCREMENT,
+    Titulo VARCHAR(255) NOT NULL,
+    Descripcion TEXT NOT NULL,
+    FechaCreacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FechaCierre TIMESTAMP NULL,
+    IdCliente INT NOT NULL,
+    IdCategoria INT NOT NULL,
+    IdEstado INT NOT NULL,
+    IdPrioridad INT NOT NULL,
+    IdEmpleado INT NULL, -- Agregado para asignar técnico
+    FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente),
+    FOREIGN KEY (IdCategoria) REFERENCES Categoria(IdCategoria),
+    FOREIGN KEY (IdEstado) REFERENCES Estado(IdEstado),
+    FOREIGN KEY (IdPrioridad) REFERENCES Prioridad(IdPrioridad),
+    FOREIGN KEY (IdEmpleado) REFERENCES Operador(IdEmpleado)
+);
+
+CREATE TABLE Mensaje (
+    IdMensaje INT PRIMARY KEY AUTO_INCREMENT,
+    Cuerpo TEXT NOT NULL,
+    FechaHora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CodigoTicket INT NOT NULL,
+    IdCliente INT NULL,
+    IdEmpleado INT NULL,
+    FOREIGN KEY (CodigoTicket) REFERENCES Ticket(CodigoTicket) ON DELETE CASCADE,
+    FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente),
+    FOREIGN KEY (IdEmpleado) REFERENCES Operador(IdEmpleado)
+);
