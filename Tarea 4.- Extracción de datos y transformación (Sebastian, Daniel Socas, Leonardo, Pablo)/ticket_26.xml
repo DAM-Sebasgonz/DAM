@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ticket>
+    <Titulo>Derecha están premio.</Titulo>
+    <Descripcion>Punto varios conocer n primeros mirada. Como millones pero cama obras tipo vio
+        desde.</Descripcion>
+    <FechaCreacion>2024-12-01 13:37:24</FechaCreacion>
+    <FechaCierre>2024-12-02 13:37:24</FechaCierre>
+    <Cliente>
+        <NombreCliente>Martirio Rocamora Becerra</NombreCliente>
+        <Email>qberenguer@example.org</Email>
+        <Telefono>+34887 408 651</Telefono>
+        <FechaRegistro>2026-05-24 19:40:57</FechaRegistro>
+    </Cliente>
+    <Operador>
+        <NombreOperador>Geraldo Mora Calatayud</NombreOperador>
+        <CorreoCorporativo>aliagaamalia@salom.es</CorreoCorporativo>
+    </Operador>
+    <Historial>
+        <Mensaje>
+            <Cuerpo>En su jóvenes esos materia n razón quería.</Cuerpo>
+            <FechaHora>2024-12-01 15:06:24</FechaHora>
+        </Mensaje>
+        <Mensaje>
+            <Cuerpo>Mantener conocer texto universidad partido enero solución estaba.</Cuerpo>
+            <FechaHora>2024-12-01 15:36:24</FechaHora>
+        </Mensaje>
+    </Historial>
+</ticket>

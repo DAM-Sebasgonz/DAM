@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ticket>
+    <Titulo>Fuerte modo demasiado metros especialmente.</Titulo>
+    <Descripcion>Caso años sin.</Descripcion>
+    <FechaCreacion>2025-05-31 19:25:36</FechaCreacion>
+    <FechaCierre>2025-06-02 19:25:36</FechaCierre>
+    <Cliente>
+        <NombreCliente>Joan Sala</NombreCliente>
+        <Email>jordiexposito@example.com</Email>
+        <Telefono>+34971 643 704</Telefono>
+        <FechaRegistro>2026-05-24 19:40:57</FechaRegistro>
+    </Cliente>
+    <Operador>
+        <NombreOperador>Ambrosio Juan Antonio Iniesta Zabaleta</NombreOperador>
+        <CorreoCorporativo>jaime94@familia.net</CorreoCorporativo>
+    </Operador>
+    <Historial>
+        <Mensaje>
+            <Cuerpo>Papel duda tierra tales ciudad teatro carne cerca.</Cuerpo>
+            <FechaHora>2025-05-31 20:16:36</FechaHora>
+        </Mensaje>
+        <Mensaje>
+            <Cuerpo>Cama tener club fuerte efectos.</Cuerpo>
+            <FechaHora>2025-05-31 20:25:36</FechaHora>
+            <cliente_enfadado>si</cliente_enfadado>
+        </Mensaje>
+    </Historial>
+</ticket>

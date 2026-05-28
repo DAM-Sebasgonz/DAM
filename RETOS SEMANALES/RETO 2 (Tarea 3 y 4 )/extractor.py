@@ -31,13 +31,14 @@ def conectar_bd():
 
 # Función calcular_sla(fecha_creacion, fecha_cierre)
 def calcular_sla(fecha_creacion, fecha_cierre):
+    if not fecha_cierre:
+        return None
     diferencia = (fecha_cierre - fecha_creacion).days
     if diferencia > 7:
         return diferencia - 7
-    else:
-        return None
+    return None
 
-# Función def analizar_sentimiento(mensajes)
+# Función analizar_sentimiento(mensajes)
 def analizar_sentimiento(mensajes):
     palabras_clave = ['incompetentes', 'denuncia', 'vergüenza', 'lento']
     for mensaje in mensajes:
@@ -86,16 +87,18 @@ def generar_xml_ticket(ticket, cliente, operador, mensajes):
         fecha = ET.SubElement(nodo_mensaje, 'FechaHora')
         fecha.text = str(mensaje['FechaHora'])
 
+    # Alerta SLA solo si hay retraso real
     retraso = calcular_sla(ticket['FechaCreacion'], ticket['FechaCierre'])
     if retraso:
         alerta = ET.SubElement(raiz, 'alerta_sla')
         alerta.text = f'{retraso} días de retraso'
 
     if analizar_sentimiento([m['Cuerpo'] for m in mensajes]):
-        raiz.set('cliente_enfadado', 'si')
+        cliente_enfadado = ET.SubElement(raiz, 'cliente_enfadado')
+        cliente_enfadado.text = 'si'
+
     ruta = f"ticket_{ticket['CodigoTicket']}.xml"
     ET.ElementTree(raiz).write(ruta, encoding='utf-8', xml_declaration=True)
-
 
 
 if __name__ == '__main__':
@@ -104,8 +107,8 @@ if __name__ == '__main__':
     cursor = conexion.cursor(dictionary=True)
     cursor.execute("""
         SELECT t.CodigoTicket, t.Titulo, t.Descripcion, t.FechaCreacion, t.FechaCierre,
-        c.NombreCompleto, c.Email, c.Telefono, c.FechaRegistro,
-        o.Nombre, o.CorreoCorporativo
+               c.NombreCompleto, c.Email, c.Telefono, c.FechaRegistro,
+               o.Nombre, o.CorreoCorporativo
         FROM Ticket t
         JOIN Cliente c ON t.IdCliente = c.IdCliente
         JOIN Operador o ON t.IdEmpleado = o.IdEmpleado
@@ -114,6 +117,7 @@ if __name__ == '__main__':
     """)
     tickets = cursor.fetchall()
     contador = 0
+
     for ticket in tickets:
         cursor.execute("""
             SELECT Cuerpo, FechaHora 
@@ -121,8 +125,8 @@ if __name__ == '__main__':
             WHERE CodigoTicket = %s
             ORDER BY FechaHora ASC
         """, (ticket['CodigoTicket'],))
-        mensaje = cursor.fetchall()
-        generar_xml_ticket(ticket, ticket, ticket, mensaje)
+        mensajes = cursor.fetchall()
+        generar_xml_ticket(ticket, ticket, ticket, mensajes)
         contador += 1
 
     escribir_log(f'{contador} archivos XML generados con éxito')

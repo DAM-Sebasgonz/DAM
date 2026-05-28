@@ -1,0 +1,2 @@
+[2026-05-24 19:52:44] INFO: Conexión exitosa a la base de datos
+[2026-05-24 19:52:44] INFO: 58 archivos XML generados con éxito

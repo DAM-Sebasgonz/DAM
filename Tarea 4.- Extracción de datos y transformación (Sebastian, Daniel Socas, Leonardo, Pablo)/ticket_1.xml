@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ticket>
+    <Titulo>Distintas puntos tengo.</Titulo>
+    <Descripcion>Adelante de conocimiento resulta tras libro resulta.</Descripcion>
+    <FechaCreacion>2025-08-21 17:46:29</FechaCreacion>
+    <FechaCierre>2025-09-03 17:46:29</FechaCierre>
+    <Cliente>
+        <NombreCliente>Jose Carlos España Cobos</NombreCliente>
+        <Email>santos06@example.net</Email>
+        <Telefono>+34944 14 15 81</Telefono>
+        <FechaRegistro>2026-05-24 19:40:57</FechaRegistro>
+    </Cliente>
+    <Operador>
+        <NombreOperador>Felicidad Oliveras Lobo</NombreOperador>
+        <CorreoCorporativo>valenzuelarosendo@consultoria.com</CorreoCorporativo>
+    </Operador>
+    <Historial>
+        <Mensaje>
+            <Cuerpo>Éxito pues hacia flores pasado. Cuyo internacional tenido mil don esta.</Cuerpo>
+            <FechaHora>2025-08-21 18:25:29</FechaHora>
+        </Mensaje>
+        <Mensaje>
+            <Cuerpo>Debía medidas llevar material cambio. Dolor actividad ambos posibilidad.</Cuerpo>
+            <FechaHora>2025-08-21 18:28:29</FechaHora>
+        </Mensaje>
+        <Mensaje>
+            <Cuerpo>Tenemos debe creo muestra respecto resultado realidad gente.</Cuerpo>
+            <FechaHora>2025-08-21 19:39:29</FechaHora>
+        </Mensaje>
+    </Historial>
+    <alerta_sla>6 días de retraso</alerta_sla>
+</ticket>
