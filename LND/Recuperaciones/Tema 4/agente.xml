@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<agente carnet="ag-123" rango="General" ultima_mision="2025"> 
+    <nombre_clave>Agente_Super_Secreto_X</nombre_clave>
+    <especialidades>S10 S202</especialidades> 
+    <equipo>
+        <dispositivo categoria="vuelo" energia="150">Dron-Espía</dispositivo> 
+    </equipo>
+    <estado>MUERTO</estado> 
+</agente>
+
+<!-- El rango tiene que ser una enumeracion de los siguiente Recluta, Oficial, Comandatante o Director-->
+<!-- El año tiene que ser un valor fijo este tiene que ser igual a 2026-->
+<!-- El atributo categoria solo puede tener como valores espionaje\defensa\asalto-->
+<!-- La primera habilidad le falta un numero para que siga el formato: S-123-->
+<!-- El estado deberia encontrarse entre dos valores operativo|Herido-->
+<!-- La energia solo se puede encontrar entre 0-100-->
+<!-- Faltaria el elemento hijo <coordenadas> -->

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE incidente SYSTEM "incidente.dtd">
+<incidente codigo="101" nivel="alto">
+    <emisor id="E01">Sebastian</emisor>
+    <descripcion>Incidente de alto nivel</descripcion>
+    <evidencia tipo="captura" hash="2007"></evidencia>
+</incidente>

@@ -1,0 +1,14 @@
+<!ELEMENT incidente (emisor, descripcion, evidencia)>
+<!ATTLIST incidente  
+    codigo CDATA #REQUIRED
+    nivel (bajo|medio|alto) "medio">
+
+<!ELEMENT emisor (#PCDATA)>
+<!ATTLIST emisor id CDATA #REQUIRED>
+
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT evidencia EMPTY>
+<!ATTLIST evidencia 
+    tipo (log|captura|volcado) #REQUIRED
+    hash CDATA #REQUIRED>

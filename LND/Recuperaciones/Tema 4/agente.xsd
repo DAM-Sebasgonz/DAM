@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="agente">
+        <xs:sequence>
+            <xs:element name="nombre_clave">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="15"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="especialidades">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="S[1-9]{3}" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="equipo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="dispositivo">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="espionaje" />
+                                    <xs:enumeration value="defensa" />
+                                    <xs:enumeration value="asalto" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="estado">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Activo" />
+                        <xs:enumeration value="Inactivo" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+
+        </xs:sequence>
+
+        <xs:attribute name="carnet">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Z]{3}-[1-9]{5}" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+
+        <xs:attribute name="rango">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Recluta" />
+                    <xs:enumeration value="Oficial" />
+                    <xs:enumeration value="Comandante" />
+                    <xs:enumeration value="Director" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+
+        <xs:attribute name="ultima_mision">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="2026"></xs:pattern>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+
+    </xs:complexType>
+</xs:schema>
