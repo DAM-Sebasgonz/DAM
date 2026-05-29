@@ -12,6 +12,10 @@ let nivel = 0;
 // 3. Crea una constante 'btnInicio' 
 // 4. Crea una constante 'botonesJuego' que seleccione TODOS los botones de colores
 
+const spanNivel = document.getElementById('nivel');
+const mensajeEstado = document.getElementById('mensaje-estado');
+const btnInicio = document.getElementById('btn-inicio');
+const botonesJuego = document.querySelectorAll('.btn-color');
 
 
 // ======================================================================
@@ -24,6 +28,13 @@ function comenzarJuego() {
     // 2. Poner la variable 'nivel' a 0.
     // 3. Llamar a la función siguienteNivel().
     mensajeEstado.innerText = "¡Sigue la secuencia!";
+
+    nivel = 0;
+    secuenciaMaquina = [];
+    secuenciaJugador = [];
+    siguienteNivel();
+    spanNivel.innerText = nivel;
+
 }
 
 function siguienteNivel() {
@@ -31,6 +42,13 @@ function siguienteNivel() {
     // 1. Aumentar la variable nivel en 1 tanto en datos como visual.
     // 2. Lo necesario para el jugador y añadir un nuevo color a la secuencia.
     // 3. Llamar a reproducirSecuencia() (ya está creada abajo).
+
+    nivel++;
+    spanNivel.innerText = nivel;
+    secuenciaJugador = [];
+    secuenciaMaquina.push(colores[Math.floor(Math.random() * colores.length)]);
+    reproducirSecuencia();
+
 }
 
 function manejarClick(colorClickado) {
@@ -42,11 +60,19 @@ function manejarClick(colorClickado) {
     // 2. Ilumina el botón con la funcion auxiliar
     
     // 3. Llama a la función que verifica si ha sido el color correcto.
+    
+    iluminarBoton(colorClickado);
+    verificarRespuesta(colorClickado);
+    secuenciaJugador.push(colorClickado);
+    document.write(secuenciaJugador);
+    document.write(secuenciaMaquina);
 }
 
 function verificarRespuesta(indice) {
     // TAREA E: Lógica del juego 
     // 1. Haz lo necesario para verificar si el color es el correcto
+
+    
     
         // SI ES IGUAL (CORRECTO):
             // Comprueba si hemos terminado toda la secuencia de esta ronda y en ese caso ejecuta el codigo de abajo.
