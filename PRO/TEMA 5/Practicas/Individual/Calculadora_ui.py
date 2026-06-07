@@ -1,168 +1,99 @@
-import sys
-from PySide6.QtCore import QRect
-from PySide6.QtWidgets import QApplication, QLineEdit, QMainWindow, QPushButton, QStatusBar, QWidget
 
-class UiCalculadora(object):
-    def configurarInterfaz(self, ventanaPrincipal):
-        if not ventanaPrincipal.objectName():
-            ventanaPrincipal.setObjectName(u"Calculadora")
-        ventanaPrincipal.resize(491, 600)
-        
-        self.widgetCentral = QWidget(ventanaPrincipal)
-        self.widgetCentral.setObjectName(u"widgetCentral")
-        
-        # --- DEFINICIÓN DE LA PANTALLA (Visor) ---
-        self.pantallaVisor = QLineEdit(self.widgetCentral)
-        self.pantallaVisor.setObjectName(u"pantallaVisor")
-        self.pantallaVisor.setGeometry(QRect(10, 10, 471, 111))
-        self.pantallaVisor.setReadOnly(True)
-        
-        # --- DEFINICIÓN DE BOTONES NUMÉRICOS ---
-        self.boton1 = QPushButton(self.widgetCentral)
-        self.boton1.setGeometry(QRect(40, 160, 81, 71))
-        self.boton1.setText("1")
-        
-        self.boton2 = QPushButton(self.widgetCentral)
-        self.boton2.setGeometry(QRect(150, 160, 81, 71))
-        self.boton2.setText("2")
-        
-        self.boton3 = QPushButton(self.widgetCentral)
-        self.boton3.setGeometry(QRect(260, 160, 81, 71))
-        self.boton3.setText("3")
-        
-        self.boton4 = QPushButton(self.widgetCentral)
-        self.boton4.setGeometry(QRect(40, 250, 81, 71))
-        self.boton4.setText("4")
-        
-        self.boton5 = QPushButton(self.widgetCentral)
-        self.boton5.setGeometry(QRect(150, 250, 81, 71))
-        self.boton5.setText("5")
-        
-        self.boton6 = QPushButton(self.widgetCentral)
-        self.boton6.setGeometry(QRect(260, 250, 81, 71))
-        self.boton6.setText("6")
-        
-        self.boton7 = QPushButton(self.widgetCentral)
-        self.boton7.setGeometry(QRect(40, 340, 81, 71))
-        self.boton7.setText("7")
-        
-        self.boton8 = QPushButton(self.widgetCentral)
-        self.boton8.setGeometry(QRect(150, 340, 81, 71))
-        self.boton8.setText("8")
-        
-        self.boton9 = QPushButton(self.widgetCentral)
-        self.boton9.setGeometry(QRect(260, 340, 81, 71))
-        self.boton9.setText("9")
-        
-        self.boton0 = QPushButton(self.widgetCentral)
-        self.boton0.setGeometry(QRect(150, 430, 81, 71))
-        self.boton0.setText("0")
-        
-        # --- DEFINICIÓN DE BOTONES DE OPERACIONES Y CONTROL ---
-        self.botonSuma = QPushButton(self.widgetCentral)
-        self.botonSuma.setGeometry(QRect(370, 160, 81, 71))
-        self.botonSuma.setText("+")
-        
-        self.botonResta = QPushButton(self.widgetCentral)
-        self.botonResta.setGeometry(QRect(370, 250, 81, 71))
-        self.botonResta.setText("-")
-        
-        self.botonMultiplicacion = QPushButton(self.widgetCentral)
-        self.botonMultiplicacion.setGeometry(QRect(370, 340, 81, 71))
-        self.botonMultiplicacion.setText("*")
-        
-        self.botonDivision = QPushButton(self.widgetCentral)
-        self.botonDivision.setGeometry(QRect(370, 430, 81, 71))
-        self.botonDivision.setText("/")
-        
-        self.botonIgual = QPushButton(self.widgetCentral)
-        self.botonIgual.setGeometry(QRect(260, 430, 81, 71))
-        self.botonIgual.setText("=")
-        
-        self.botonBorrar = QPushButton(self.widgetCentral)
-        self.botonBorrar.setGeometry(QRect(40, 430, 81, 71))
-        self.botonBorrar.setText("<")
-        
-        ventanaPrincipal.setCentralWidget(self.widgetCentral)
-        self.barraEstado = QStatusBar(ventanaPrincipal)
-        ventanaPrincipal.setStatusBar(self.barraEstado)
-        ventanaPrincipal.setWindowTitle("Calculadora")
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QLineEdit, QMainWindow, QPushButton,
+    QSizePolicy, QStatusBar, QWidget)
 
+class Ui_Calculadora(object):
+    def setupUi(self, Calculadora):
+        if not Calculadora.objectName():
+            Calculadora.setObjectName(u"Calculadora")
+        Calculadora.resize(491, 600)
+        self.centralwidget = QWidget(Calculadora)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.pushButton = QPushButton(self.centralwidget)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(150, 160, 81, 71))
+        self.pushButton_2 = QPushButton(self.centralwidget)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setGeometry(QRect(40, 160, 81, 71))
+        self.pushButton_3 = QPushButton(self.centralwidget)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setGeometry(QRect(260, 160, 81, 71))
+        self.pushButton_4 = QPushButton(self.centralwidget)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.pushButton_4.setGeometry(QRect(150, 250, 81, 71))
+        self.pushButton_5 = QPushButton(self.centralwidget)
+        self.pushButton_5.setObjectName(u"pushButton_5")
+        self.pushButton_5.setGeometry(QRect(260, 250, 81, 71))
+        self.pushButton_6 = QPushButton(self.centralwidget)
+        self.pushButton_6.setObjectName(u"pushButton_6")
+        self.pushButton_6.setGeometry(QRect(40, 250, 81, 71))
+        self.pushButton_7 = QPushButton(self.centralwidget)
+        self.pushButton_7.setObjectName(u"pushButton_7")
+        self.pushButton_7.setGeometry(QRect(150, 340, 81, 71))
+        self.pushButton_8 = QPushButton(self.centralwidget)
+        self.pushButton_8.setObjectName(u"pushButton_8")
+        self.pushButton_8.setGeometry(QRect(260, 340, 81, 71))
+        self.pushButton_9 = QPushButton(self.centralwidget)
+        self.pushButton_9.setObjectName(u"pushButton_9")
+        self.pushButton_9.setGeometry(QRect(40, 340, 81, 71))
+        self.pushButton_10 = QPushButton(self.centralwidget)
+        self.pushButton_10.setObjectName(u"pushButton_10")
+        self.pushButton_10.setGeometry(QRect(150, 430, 81, 71))
+        self.pushButton_11 = QPushButton(self.centralwidget)
+        self.pushButton_11.setObjectName(u"pushButton_11")
+        self.pushButton_11.setGeometry(QRect(260, 430, 81, 71))
+        self.pushButton_12 = QPushButton(self.centralwidget)
+        self.pushButton_12.setObjectName(u"pushButton_12")
+        self.pushButton_12.setGeometry(QRect(40, 430, 81, 71))
+        self.lineEdit = QLineEdit(self.centralwidget)
+        self.lineEdit.setObjectName(u"lineEdit")
+        self.lineEdit.setGeometry(QRect(10, 10, 471, 111))
+        self.pushButton_13 = QPushButton(self.centralwidget)
+        self.pushButton_13.setObjectName(u"pushButton_13")
+        self.pushButton_13.setGeometry(QRect(370, 340, 81, 71))
+        self.pushButton_14 = QPushButton(self.centralwidget)
+        self.pushButton_14.setObjectName(u"pushButton_14")
+        self.pushButton_14.setGeometry(QRect(370, 430, 81, 71))
+        self.pushButton_15 = QPushButton(self.centralwidget)
+        self.pushButton_15.setObjectName(u"pushButton_15")
+        self.pushButton_15.setGeometry(QRect(370, 160, 81, 71))
+        self.pushButton_16 = QPushButton(self.centralwidget)
+        self.pushButton_16.setObjectName(u"pushButton_16")
+        self.pushButton_16.setGeometry(QRect(370, 250, 81, 71))
+        Calculadora.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(Calculadora)
+        self.statusbar.setObjectName(u"statusbar")
+        Calculadora.setStatusBar(self.statusbar)
 
-class CalculadoraPrincipal(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        
-        self.ui = UiCalculadora()
-        self.ui.configurarInterfaz(self)
-        
-        self.ui.pantallaVisor.setText("0")
-        
-        # Conectamos todos los botones de numeros y operadores al mismo metodo
-        # dentro del metodo usamos sender() para saber cual se pulso
-        self.ui.boton0.clicked.connect(self.agregarCaracter)
-        self.ui.boton1.clicked.connect(self.agregarCaracter)
-        self.ui.boton2.clicked.connect(self.agregarCaracter)
-        self.ui.boton3.clicked.connect(self.agregarCaracter)
-        self.ui.boton4.clicked.connect(self.agregarCaracter)
-        self.ui.boton5.clicked.connect(self.agregarCaracter)
-        self.ui.boton6.clicked.connect(self.agregarCaracter)
-        self.ui.boton7.clicked.connect(self.agregarCaracter)
-        self.ui.boton8.clicked.connect(self.agregarCaracter)
-        self.ui.boton9.clicked.connect(self.agregarCaracter)
-        
-        self.ui.botonSuma.clicked.connect(self.agregarCaracter)
-        self.ui.botonResta.clicked.connect(self.agregarCaracter)
-        self.ui.botonMultiplicacion.clicked.connect(self.agregarCaracter)
-        self.ui.botonDivision.clicked.connect(self.agregarCaracter)
-        
-        self.ui.botonBorrar.clicked.connect(self.borrarUltimoCaracter)
-        self.ui.botonIgual.clicked.connect(self.calcularResultado)
+        self.retranslateUi(Calculadora)
 
-    def agregarCaracter(self):
-        # sender() nos devuelve el boton que disparo la señal
-        # con text() leemos lo que pone en el boton: "1", "+", etc.
-        caracter = self.sender().text()
-        textoActual = self.ui.pantallaVisor.text()
-        
-        if textoActual == "0" or textoActual == "Error":
-            if caracter.isdigit() or caracter == "-":
-                self.ui.pantallaVisor.setText(caracter)
-            else:
-                self.ui.pantallaVisor.setText("0" + caracter)
-        else:
-            self.ui.pantallaVisor.setText(textoActual + caracter)
+        QMetaObject.connectSlotsByName(Calculadora)
+    # setupUi
 
-    def borrarUltimoCaracter(self):
-        textoActual = self.ui.pantallaVisor.text()
-        
-        if textoActual == "Error":
-            self.ui.pantallaVisor.setText("0")
-            return
-            
-        nuevoTexto = textoActual[:-1]
-        
-        if len(nuevoTexto) == 0:
-            self.ui.pantallaVisor.setText("0")
-        else:
-            self.ui.pantallaVisor.setText(nuevoTexto)
+    def retranslateUi(self, Calculadora):
+        Calculadora.setWindowTitle(QCoreApplication.translate("Calculadora", u"Calculadora", None))
+        self.pushButton.setText(QCoreApplication.translate("Calculadora", u"2", None))
+        self.pushButton_2.setText(QCoreApplication.translate("Calculadora", u"1", None))
+        self.pushButton_3.setText(QCoreApplication.translate("Calculadora", u"3", None))
+        self.pushButton_4.setText(QCoreApplication.translate("Calculadora", u"5", None))
+        self.pushButton_5.setText(QCoreApplication.translate("Calculadora", u"6", None))
+        self.pushButton_6.setText(QCoreApplication.translate("Calculadora", u"4", None))
+        self.pushButton_7.setText(QCoreApplication.translate("Calculadora", u"8", None))
+        self.pushButton_8.setText(QCoreApplication.translate("Calculadora", u"9", None))
+        self.pushButton_9.setText(QCoreApplication.translate("Calculadora", u"7", None))
+        self.pushButton_10.setText(QCoreApplication.translate("Calculadora", u"0", None))
+        self.pushButton_11.setText(QCoreApplication.translate("Calculadora", u"=", None))
+        self.pushButton_12.setText(QCoreApplication.translate("Calculadora", u"<", None))
+        self.pushButton_13.setText(QCoreApplication.translate("Calculadora", u"*", None))
+        self.pushButton_14.setText(QCoreApplication.translate("Calculadora", u"/", None))
+        self.pushButton_15.setText(QCoreApplication.translate("Calculadora", u"+", None))
+        self.pushButton_16.setText(QCoreApplication.translate("Calculadora", u"-", None))
+    # retranslateUi
 
-    def calcularResultado(self):
-        expresion = self.ui.pantallaVisor.text()
-        
-        try:
-            expresionProcesada = expresion.replace("/", "//")
-            resultado = eval(expresionProcesada)
-            self.ui.pantallaVisor.setText(str(resultado))
-            
-        except ZeroDivisionError:
-            self.ui.pantallaVisor.setText("Error")
-        except Exception:
-            self.ui.pantallaVisor.setText("Error")
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    ventana = CalculadoraPrincipal()
-    ventana.show()
-    sys.exit(app.exec())
