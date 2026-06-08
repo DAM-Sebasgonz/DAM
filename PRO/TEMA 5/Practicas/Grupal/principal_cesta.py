@@ -4,13 +4,15 @@ from PySide6.QtWidgets import QApplication, QWidget, QMessageBox, QPushButton
 from CestaCompra_ui import Ui_Form
 
 class VentanaCestaCompra(QWidget, Ui_Form):
-    def __init__(self, listaProductos, totalCompra, parent=None):
+    def __init__(self, listaProductos, totalCompra, ventanaPadre, parent=None):
         super(VentanaCestaCompra, self).__init__(parent)
         self.setupUi(self)
         self.setWindowTitle("Cesta de la compra")
-
+        
         self.listaProductos = listaProductos
+        self.ventanaPadre = ventanaPadre
         self.totalCompra = totalCompra
+
 
         self.botonCerrar = QPushButton("Cerrar", self)
         self.botonCerrar.setGeometry(500, 370, 93, 28)
@@ -65,13 +67,15 @@ class VentanaCestaCompra(QWidget, Ui_Form):
 
     def eliminarSeleccionados(self):
         coleccionFilas = self.obtenerFilas()
+        
+        self.ventanaPadre.importeTotal = sum(articulo["precio"] for articulo in self.listaProductos)
 
         indicesAEliminar = [indice for indice, fila in enumerate(coleccionFilas) if fila["seleccion"].isChecked()]
 
         for indice in sorted(indicesAEliminar, reverse=True):
             if indice < len(self.listaProductos):
                 del self.listaProductos[indice]
-                
+                self.ventanaPadre.importeTotal = sum(articulo["precio"] for articulo in self.listaProductos)
         self.totalCompra[0] = sum(articulo["precio"] for articulo in self.listaProductos)
 
         self.actualizarVistaCesta()
@@ -81,6 +85,7 @@ class VentanaCestaCompra(QWidget, Ui_Form):
 
     def vaciarCesta(self):
         self.listaProductos.clear()
+        self.ventanaPadre.importeTotal = 0.0
         self.totalCompra[0] = 0.0
 
         self.actualizarVistaCesta()
@@ -91,7 +96,7 @@ class VentanaCestaCompra(QWidget, Ui_Form):
         self.botonCerrar.setVisible(True)
 
     def procesarCompra(self):
-        importeFinal = self.totalCompra[0]
+        importeFinal = self.ventanaPadre.importeTotal
 
         ventanaMensaje = QMessageBox(self)
         ventanaMensaje.setWindowTitle("Confirmar compra")
