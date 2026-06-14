@@ -9,15 +9,13 @@ preciosBase = {
 }
 
 listaCesta = [] 
+importeTotal = [0.0] 
 
 class VentanaProducto(QWidget, Ui_Form):
     def __init__(self, parent=None):
         super(VentanaProducto, self).__init__(parent)
         self.setupUi(self)
         self.setWindowTitle("Tienda Deportiva")
-        
-        self.importeTotal = 0.0
-        # A ver podiamos haberlo hecho de dos maneras una con una variable global (del tipo importeTotal = [0.0]) o con una herencia de la clase VentanaProducto.
 
         # Nos olvidamos de poner los botones Añadir y Ver cesta en el QTdesigner así que los pusimos aquí
         self.botonAnadir = QPushButton("Añadir", self)
@@ -109,14 +107,14 @@ class VentanaProducto(QWidget, Ui_Form):
             if len(listaCesta) < 3:
                 listaCesta.append(nuevoProducto)
 
-        self.importeTotal = sum(articulo["precio"] for articulo in listaCesta)
-        self.leImporte.setText(str(self.importeTotal))
+        importeTotal[0] = sum(articulo["precio"] for articulo in listaCesta)
+        self.leImporte.setText(str(importeTotal[0]))
         self.reiniciarVentana()
         self.botonVerCesta.setEnabled(len(listaCesta) > 0)
 
     def abrirCesta(self):
         from principal_cesta import VentanaCestaCompra
-        self.ventanaCesta = VentanaCestaCompra(listaCesta, self.importeTotal, ventanaPadre = self)
+        self.ventanaCesta = VentanaCestaCompra(listaCesta, importeTotal)
         self.ventanaCesta.show()
 
     def reiniciarControles(self):
